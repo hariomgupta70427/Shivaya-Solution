@@ -1,0 +1,548 @@
+[
+  {
+    "category": "Metal Pens",
+    "subcategories": [
+      {
+        "name": "Astral Series",
+        "products": [
+          {
+            "id": "M-101",
+            "name": "Sovereign",
+            "category": "Metal Pens",
+            "subcategory": "Astral Series",
+            "brand": "Dyna",
+            "series": "Astral Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Astral Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "astral_sovereign.jpg"
+          },
+          {
+            "id": "M-102",
+            "name": "Zenith",
+            "category": "Metal Pens",
+            "subcategory": "Astral Series",
+            "brand": "Dyna",
+            "series": "Astral Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Astral Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "astral_zenith.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Vertex Series",
+        "products": [
+          {
+            "id": "M-201",
+            "name": "Essence",
+            "category": "Metal Pens",
+            "subcategory": "Vertex Series",
+            "brand": "Dyna",
+            "series": "Vertex Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Vertex Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "vertex_essence.jpg"
+          },
+          {
+            "id": "M-202",
+            "name": "Essence",
+            "category": "Metal Pens",
+            "subcategory": "Vertex Series",
+            "brand": "Dyna",
+            "series": "Vertex Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Vertex Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "vertex_essence_2.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Lumin Series",
+        "products": [
+          {
+            "id": "M-301",
+            "name": "Galaxy",
+            "category": "Metal Pens",
+            "subcategory": "Lumin Series",
+            "brand": "Dyna",
+            "series": "Lumin Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Lumin Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "lumin_galaxy.jpg"
+          },
+          {
+            "id": "M-302",
+            "name": "Galaxy",
+            "category": "Metal Pens",
+            "subcategory": "Lumin Series",
+            "brand": "Dyna",
+            "series": "Lumin Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Lumin Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "lumin_galaxy_2.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Innovate & Other Series",
+        "products": [
+          {
+            "id": "M-401",
+            "name": "Divine Pen 1",
+            "category": "Metal Pens",
+            "subcategory": "Innovate & Other Series",
+            "brand": "Dyna",
+            "series": "Innovate Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Innovate Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "innovate_divine_1.jpg"
+          },
+          {
+            "id": "M-402",
+            "name": "Divine Pen 2",
+            "category": "Metal Pens",
+            "subcategory": "Innovate & Other Series",
+            "brand": "Dyna",
+            "series": "Innovate Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Innovate Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "innovate_divine_2.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Household Products",
+    "subcategories": [
+      {
+        "name": "Water Buckets",
+        "products": [
+          {
+            "id": "HH-WB-001",
+            "name": "Stallio Bucket",
+            "category": "Household Products",
+            "subcategory": "Water Buckets",
+            "brand": "Stallio",
+            "variants": [
+              "Stallio 07 Print",
+              "Stallio 11 Print",
+              "Stallio 15 Print",
+              "Stallio 18 Print",
+              "Stallio 20 Print",
+              "Stallio 25 Print",
+              "Stallio Bucket 07",
+              "Stallio Bucket 11",
+              "Stallio Bucket 15",
+              "Stallio Bucket WL 15",
+              "Stallio Bucket 18",
+              "Stallio Bucket WL 18",
+              "Stallio Bucket 20",
+              "Stallio Bucket WL 20",
+              "Stallio Bucket 25",
+              "Stallio Bucket WL 25"
+            ],
+            "features": [
+              "Available with or without lid",
+              "Durable plastic",
+              "Printed options"
+            ],
+            "description": "Durable plastic buckets available in various sizes and with optional lids",
+            "image": "stallio_bucket.jpg"
+          },
+          {
+            "id": "HH-WB-002",
+            "name": "Round Bucket",
+            "category": "Household Products",
+            "subcategory": "Water Buckets",
+            "variants": [
+              "Round Printed 18",
+              "Round Bucket Plain 18"
+            ],
+            "description": "Round buckets available in printed or plain designs",
+            "image": "round_bucket.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Bath Mug",
+        "products": [
+          {
+            "id": "HH-BM-001",
+            "name": "Mug Polo",
+            "category": "Household Products",
+            "subcategory": "Bath Mug",
+            "variants": [
+              "Mug Polo 1000",
+              "Mug Polo 2"
+            ],
+            "description": "Durable plastic bath mugs in the Polo design",
+            "image": "mug_polo.jpg"
+          },
+          {
+            "id": "HH-BM-002",
+            "name": "Mug Square",
+            "category": "Household Products",
+            "subcategory": "Bath Mug",
+            "variants": [
+              "Mug Square 100",
+              "Mug Square 150",
+              "Mug Square Printed 100",
+              "Mug Square Printed 150"
+            ],
+            "description": "Square-shaped bath mugs available in plain or printed designs",
+            "image": "mug_square.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Storage Containers",
+        "products": [
+          {
+            "id": "HH-SC-001",
+            "name": "Papad Box",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "variants": [
+              "Printed 222",
+              "Printed 333",
+              "Printed 444",
+              "Papad Box Set"
+            ],
+            "description": "Specialized containers for storing papads and similar dry snacks",
+            "image": "papad_box.jpg"
+          },
+          {
+            "id": "HH-SC-002",
+            "name": "TP Set",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "variants": [
+              "TP 111",
+              "TP 222",
+              "TP 333",
+              "TP 444",
+              "222, 333, 444 (TP Set)",
+              "222, 333, 444 (Printed Set)"
+            ],
+            "description": "Set of transparent plastic containers for food storage",
+            "image": "tp_set.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Kitchen World",
+    "subcategories": [
+      {
+        "name": "Pressure Cookers",
+        "products": [
+          {
+            "id": "KW-PC-001",
+            "name": "Aluminium Pressure Cooker",
+            "category": "Kitchen World",
+            "subcategory": "Pressure Cookers",
+            "brand": "OJAS",
+            "material": "Aluminium",
+            "sizes": ["8L", "10L", "12L", "15L", "18L", "20L", "22L"],
+            "description": "Crafted from virgin aluminium. Extra heavy gauge, rust-free stainless steel vent tube, bakelite heat-resistant handles, and safety valve.",
+            "features": [
+              "Virgin aluminium construction",
+              "Heavy gauge material",
+              "Rust-free stainless steel vent tube",
+              "Heat-resistant bakelite handles",
+              "Safety valve"
+            ],
+            "image": "aluminium_pressure_cooker.jpg"
+          },
+          {
+            "id": "KW-PC-002",
+            "name": "Elegance Plain Aluminium Pressure Cooker",
+            "category": "Kitchen World",
+            "subcategory": "Pressure Cookers",
+            "brand": "OJAS",
+            "material": "Aluminium",
+            "sizes": ["1.5L", "2L", "3L", "5L", "7L", "35L", "40L", "60L", "80L"],
+            "description": "Premium virgin aluminium, extra heavy gauge. Rust-free SS vent, heat-resistant bakelite handles, safety valve, and curved body for easy stirring.",
+            "features": [
+              "Premium virgin aluminium",
+              "Extra heavy gauge",
+              "Rust-free stainless steel vent",
+              "Heat-resistant bakelite handles",
+              "Safety valve",
+              "Curved body for easy stirring"
+            ],
+            "image": "elegance_plain_cooker.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Gas Stoves",
+        "products": [
+          {
+            "id": "KW-GS-001",
+            "name": "Single Burner Stove",
+            "category": "Kitchen World",
+            "subcategory": "Gas Stoves",
+            "brand": "OJAS",
+            "models": [
+              {
+                "model_no": "SB 1001",
+                "name": "Solo B"
+              },
+              {
+                "model_no": "SB 1011",
+                "name": "Solo Mini"
+              }
+            ],
+            "description": "Compact gas stoves ideal for single-burner kitchens, student accommodations or as auxiliary burners.",
+            "image": "single_burner_stove.jpg"
+          },
+          {
+            "id": "KW-GS-002",
+            "name": "Double Burner Stove",
+            "category": "Kitchen World",
+            "subcategory": "Gas Stoves",
+            "brand": "OJAS",
+            "models": [
+              { "model_no": "DB-2001", "name": "Classic" },
+              { "model_no": "DB-2041", "name": "Commando" },
+              { "model_no": "DB-2011", "name": "Vs2 Tablet" }
+            ],
+            "description": "Wide range of double-burner stoves in varying finishes, features, and designs for household or semi-commercial use.",
+            "image": "double_burner_stove.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Industrial Plastic Crates",
+    "subcategories": [
+      {
+        "name": "300 x 200 Series",
+        "products": [
+          {
+            "id": "IPC-300-001",
+            "name": "300 x 200 x 70 mm Crate",
+            "category": "Industrial Plastic Crates",
+            "subcategory": "300 x 200 Series",
+            "brand": "Saran",
+            "outer_dimension": "300 x 200 x 70 mm",
+            "inner_dimension": "265 x 165 x 65 mm",
+            "capacity_l": 2,
+            "description": "Industrial plastic crate suitable for small parts storage",
+            "image": "300x200x70_crate.jpg"
+          },
+          {
+            "id": "IPC-300-002",
+            "name": "300 x 200 x 100 mm Crate",
+            "category": "Industrial Plastic Crates",
+            "subcategory": "300 x 200 Series",
+            "brand": "Saran",
+            "outer_dimension": "300 x 200 x 100 mm",
+            "inner_dimension": "265 x 165 x 95 mm",
+            "capacity_l": 4,
+            "description": "Industrial plastic crate suitable for small parts storage",
+            "image": "300x200x100_crate.jpg"
+          }
+        ]
+      },
+      {
+        "name": "400 x 300 Series",
+        "products": [
+          {
+            "id": "IPC-400-001",
+            "name": "400 x 300 x 65 mm Crate",
+            "category": "Industrial Plastic Crates",
+            "subcategory": "400 x 300 Series",
+            "brand": "Saran",
+            "outer_dimension": "400 x 300 x 65 mm",
+            "inner_dimension": "365 x 265 x 60 mm",
+            "capacity_l": 6,
+            "description": "Industrial plastic crate suitable for medium parts storage",
+            "image": "400x300x65_crate.jpg"
+          },
+          {
+            "id": "IPC-400-002",
+            "name": "400 x 300 x 100 mm Crate",
+            "category": "Industrial Plastic Crates",
+            "subcategory": "400 x 300 Series",
+            "brand": "Saran",
+            "outer_dimension": "400 x 300 x 100 mm",
+            "inner_dimension": "365 x 265 x 95 mm",
+            "capacity_l": 9,
+            "description": "Industrial plastic crate suitable for medium parts storage",
+            "image": "400x300x100_crate.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Hotel Amenities",
+    "subcategories": [
+      {
+        "name": "Hotel Soaps",
+        "products": [
+          {
+            "id": "HA-HS-001",
+            "name": "Hotel Soap – Square (Orange)",
+            "category": "Hotel Amenities",
+            "subcategory": "Hotel Soaps",
+            "packaging": "Bulk",
+            "colors": ["Orange"],
+            "moq": 5000,
+            "price_per_kg": 150,
+            "description": "Available in transparent orange square form. Bulk packaging for hotels.",
+            "image": "hotel_soap_orange.jpg"
+          },
+          {
+            "id": "HA-HS-002",
+            "name": "Hotel Soap – Round (Yellow)",
+            "category": "Hotel Amenities",
+            "subcategory": "Hotel Soaps",
+            "packaging": "Bulk",
+            "colors": ["Yellow"],
+            "moq": 5000,
+            "price_per_kg": 150,
+            "description": "Round yellow soap bars, ideal for hotel amenities.",
+            "image": "hotel_soap_yellow.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Guest Toiletries",
+        "products": [
+          {
+            "id": "HA-GT-001",
+            "name": "Moisturizer",
+            "category": "Hotel Amenities",
+            "subcategory": "Guest Toiletries",
+            "size_ml": 20,
+            "packaging": "Plastic bottle",
+            "moq": 1000,
+            "features": [
+              "Premium, skin-friendly ingredients",
+              "Recyclable bottles",
+              "Custom branding available"
+            ],
+            "description": "High-quality 20ml moisturizer, travel-sized for hotels. Custom branding and eco-friendly packaging.",
+            "image": "moisturizer_20ml.jpg"
+          },
+          {
+            "id": "HA-GT-002",
+            "name": "Conditioner",
+            "category": "Hotel Amenities",
+            "subcategory": "Guest Toiletries",
+            "size_ml": 20,
+            "packaging": "Plastic bottle",
+            "moq": 1000,
+            "features": [
+              "Premium, skin-friendly ingredients",
+              "Recyclable bottles",
+              "Custom branding available"
+            ],
+            "description": "20ml hotel conditioner in convenient bottle. Custom hotel branding possible.",
+            "image": "conditioner_20ml.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Premium Cookware",
+    "subcategories": [
+      {
+        "name": "Tri-Ply Stainless Steel",
+        "products": [
+          {
+            "id": "PC-TP-001",
+            "name": "Triply Kadai",
+            "category": "Premium Cookware",
+            "subcategory": "Tri-Ply Stainless Steel",
+            "brand": "Bergner",
+            "series": "TriPro",
+            "finish": "Triply Stainless Steel",
+            "sizes_cm": [20, 22, 24, 26, 28, 30],
+            "options": [
+              {
+                "with_lid": true,
+                "description": "Stainless steel kadai with triply construction, matching lid available."
+              },
+              {
+                "with_lid": false,
+                "description": "Stainless steel kadai with triply construction, without lid option."
+              }
+            ],
+            "features": [
+              "Tri-ply construction: even heat distribution, prevents hot spots",
+              "Compatible with induction and gas stoves",
+              "Premium handles and finishing"
+            ],
+            "description": "Premium triply stainless steel kadai available in multiple sizes with or without lid",
+            "image": "triply_kadai.jpg"
+          },
+          {
+            "id": "PC-TP-002",
+            "name": "Triply Tasla",
+            "category": "Premium Cookware",
+            "subcategory": "Tri-Ply Stainless Steel",
+            "brand": "Bergner",
+            "series": "TriPro",
+            "finish": "Triply Stainless Steel",
+            "sizes_cm": [20, 22, 24, 26, 28, 30],
+            "description": "Same body as kadai, but without handles; triply construction.",
+            "features": [
+              "Tri-ply construction: even heat distribution, prevents hot spots",
+              "Compatible with induction and gas stoves",
+              "Premium finishing"
+            ],
+            "image": "triply_tasla.jpg"
+          }
+        ]
+      }
+    ]
+  }
+] 

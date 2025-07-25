@@ -1,0 +1,71 @@
+# dependencies
+/node_modules
+
+# production
+/build
+/dist
+
+# misc
+.DS_Store
+.env
+.env.*
+
+# local env files
+*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# OS generated files
+Thumbs.db
+Desktop.ini
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache
+
+# next.js build output
+.next
+
+# vercel
+.vercel
+
+# coverage directory used by tools like istanbul
+coverage
+
+# SvelteKit build output
+.svelte-kit
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Mac system files
+.AppleDouble
+.LSOverride

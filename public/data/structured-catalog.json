@@ -1,0 +1,2040 @@
+[
+  {
+    "category": "Metal Pens",
+    "subcategories": [
+      {
+        "name": "Astral Series",
+        "products": [
+          {
+            "id": "M-101",
+            "name": "Sovereign",
+            "category": "Metal Pens",
+            "subcategory": "Astral Series",
+            "brand": "Dyna",
+            "series": "Astral Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Astral Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "astral_sovereign.jpg"
+          },
+          {
+            "id": "M-102",
+            "name": "Zenith",
+            "category": "Metal Pens",
+            "subcategory": "Astral Series",
+            "brand": "Dyna",
+            "series": "Astral Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Astral Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "astral_zenith.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Vertex Series",
+        "products": [
+          {
+            "id": "M-201",
+            "name": "Essence",
+            "category": "Metal Pens",
+            "subcategory": "Vertex Series",
+            "brand": "Dyna",
+            "series": "Vertex Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Vertex Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "vertex_essence.jpg"
+          },
+          {
+            "id": "M-202",
+            "name": "Essence",
+            "category": "Metal Pens",
+            "subcategory": "Vertex Series",
+            "brand": "Dyna",
+            "series": "Vertex Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Vertex Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "vertex_essence_2.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Lumin Series",
+        "products": [
+          {
+            "id": "M-301",
+            "name": "Galaxy",
+            "category": "Metal Pens",
+            "subcategory": "Lumin Series",
+            "brand": "Dyna",
+            "series": "Lumin Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Lumin Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "lumin_galaxy.jpg"
+          },
+          {
+            "id": "M-302",
+            "name": "Galaxy",
+            "category": "Metal Pens",
+            "subcategory": "Lumin Series",
+            "brand": "Dyna",
+            "series": "Lumin Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Lumin Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "lumin_galaxy_2.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Innovate & Other Series",
+        "products": [
+          {
+            "id": "M-401",
+            "name": "Divine Pen 1",
+            "category": "Metal Pens",
+            "subcategory": "Innovate & Other Series",
+            "brand": "Dyna",
+            "series": "Innovate Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Innovate Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "innovate_divine_1.jpg"
+          },
+          {
+            "id": "M-402",
+            "name": "Divine Pen 2",
+            "category": "Metal Pens",
+            "subcategory": "Innovate & Other Series",
+            "brand": "Dyna",
+            "series": "Innovate Series",
+            "material": "Metal",
+            "description": "Premium metal pen from the Innovate Series collection",
+            "features": [
+              "Smooth writing experience",
+              "Premium metal construction",
+              "Elegant design"
+            ],
+            "image": "innovate_divine_2.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Household Products",
+    "subcategories": [
+      {
+        "name": "Water Buckets",
+        "products": [
+          {
+            "id": "HH-WB-001",
+            "name": "Stallio Bucket",
+            "category": "Household Products",
+            "subcategory": "Water Buckets",
+            "brand": "Stallio",
+            "variants": [
+              "Stallio 07 Print",
+              "Stallio 11 Print",
+              "Stallio 15 Print",
+              "Stallio 18 Print",
+              "Stallio 20 Print",
+              "Stallio 25 Print",
+              "Stallio Bucket 07",
+              "Stallio Bucket 11",
+              "Stallio Bucket 15",
+              "Stallio Bucket WL 15",
+              "Stallio Bucket 18",
+              "Stallio Bucket WL 18",
+              "Stallio Bucket 20",
+              "Stallio Bucket WL 20",
+              "Stallio Bucket 25",
+              "Stallio Bucket WL 25"
+            ],
+            "features": [
+              "Available with or without lid",
+              "Durable plastic",
+              "Printed options"
+            ],
+            "description": "Durable plastic buckets available in various sizes and with optional lids",
+            "image": "stallio_bucket.jpg"
+          },
+          {
+            "id": "HH-WB-002",
+            "name": "Round Bucket",
+            "category": "Household Products",
+            "subcategory": "Water Buckets",
+            "variants": [
+              "Round Printed 18",
+              "Round Bucket Plain 18"
+            ],
+            "description": "Round buckets available in printed or plain designs",
+            "image": "round_bucket.jpg"
+          },
+          {
+            "id": "HH-WB-003",
+            "name": "Rainbow Bucket",
+            "category": "Household Products",
+            "subcategory": "Water Buckets",
+            "variants": [
+              "Rainbow Bucket 20 (Printed/Plain)",
+              "Rainbow Bucket 22 (Printed/Plain)"
+            ],
+            "description": "Colorful rainbow-themed buckets in multiple sizes",
+            "image": "rainbow_bucket.jpg"
+          },
+          {
+            "id": "HH-WB-004",
+            "name": "Dot Bucket",
+            "category": "Household Products",
+            "subcategory": "Water Buckets",
+            "variants": [
+              "Dot Bucket Printed 18"
+            ],
+            "description": "Buckets with dot pattern print design",
+            "image": "dot_bucket.jpg"
+          },
+          {
+            "id": "HH-WB-005",
+            "name": "Eco Bucket",
+            "category": "Household Products",
+            "subcategory": "Water Buckets",
+            "variants": [
+              "Bucket PH Eco 103",
+              "Bucket PH Eco 1105",
+              "Bucket PH Eco 1107",
+              "Bucket PH Eco 1109",
+              "Bucket PH Eco 1113",
+              "Bucket PH Eco 125",
+              "Bucket PH Eco 0116",
+              "Bucket PH Eco 1114",
+              "Bucket PH Eco 1118",
+              "Bucket PH Eco 1125",
+              "Bucket UB 19"
+            ],
+            "features": ["Option for lid"],
+            "description": "Eco-friendly bucket series in various sizes",
+            "image": "eco_bucket.jpg"
+          },
+          {
+            "id": "HH-WB-006",
+            "name": "Frosty Bucket",
+            "category": "Household Products",
+            "subcategory": "Water Buckets",
+            "variants": [
+              "Frosty Bucket 07",
+              "Frosty Bucket 09",
+              "Frosty Bucket 13",
+              "Frosty Bucket WL 13",
+              "Frosty Bucket 16",
+              "Frosty Bucket WL 16",
+              "Frosty Bucket 18",
+              "Frosty Bucket WL 18",
+              "Frosty Bucket 25",
+              "Frosty Bucket WL 25"
+            ],
+            "description": "Frosted finish buckets with or without lids in various sizes",
+            "image": "frosty_bucket.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Bath Mug",
+        "products": [
+          {
+            "id": "HH-BM-001",
+            "name": "Mug Polo",
+            "category": "Household Products",
+            "subcategory": "Bath Mug",
+            "variants": [
+              "Mug Polo 1000",
+              "Mug Polo 2"
+            ],
+            "description": "Durable plastic bath mugs in the Polo design",
+            "image": "mug_polo.jpg"
+          },
+          {
+            "id": "HH-BM-002",
+            "name": "Mug Square",
+            "category": "Household Products",
+            "subcategory": "Bath Mug",
+            "variants": [
+              "Mug Square 100",
+              "Mug Square 150",
+              "Mug Square Printed 100",
+              "Mug Square Printed 150"
+            ],
+            "description": "Square-shaped bath mugs available in plain or printed designs",
+            "image": "mug_square.jpg"
+          },
+          {
+            "id": "HH-BM-003",
+            "name": "Mug Stallio",
+            "category": "Household Products",
+            "subcategory": "Bath Mug",
+            "variants": [
+              "Mug Stallio 1000",
+              "Mug Stallio 1500",
+              "Mug Stallio 2000"
+            ],
+            "description": "Stallio brand bath mugs in various capacities",
+            "image": "mug_stallio.jpg"
+          },
+          {
+            "id": "HH-BM-004",
+            "name": "Standard Mugs",
+            "category": "Household Products",
+            "subcategory": "Bath Mug",
+            "variants": [
+              "Mug 115 CH",
+              "Mug 211 (500 ml)",
+              "Mug 213",
+              "Mug 217",
+              "Mug 218",
+              "Mug 219",
+              "Mug Printed 213",
+              "Mug New Printed 213",
+              "Mug Printed 217",
+              "Mug New Printed 217"
+            ],
+            "description": "Standard bath mugs in various designs and capacities",
+            "image": "standard_mug.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Storage Containers",
+        "products": [
+          {
+            "id": "HH-SC-001",
+            "name": "Papad Box",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "variants": [
+              "Printed 222",
+              "Printed 333",
+              "Printed 444",
+              "Papad Box Set"
+            ],
+            "description": "Specialized containers for storing papads and similar dry snacks",
+            "image": "papad_box.jpg"
+          },
+          {
+            "id": "HH-SC-002",
+            "name": "TP Set",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "variants": [
+              "TP 111",
+              "TP 222",
+              "TP 333",
+              "TP 444",
+              "222, 333, 444 (TP Set)",
+              "222, 333, 444 (Printed Set)"
+            ],
+            "description": "Set of transparent plastic containers for food storage",
+            "image": "tp_set.jpg"
+          },
+          {
+            "id": "HH-SC-003",
+            "name": "Container TP/Printed",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "sizes": ["1 KG", "2 KG", "3 KG", "5 KG", "7 KG", "10 KG", "15 KG"],
+            "variants": [
+              "Container 1 KG TP/Printed",
+              "Container 2 KG TP/Printed",
+              "Container 3 KG TP/Printed",
+              "Container 5 KG TP/Printed",
+              "Container 7 KG TP/Printed",
+              "Container 10 KG TP/Printed",
+              "Container 15 KG TP/Printed"
+            ],
+            "description": "Transparent or printed containers in various capacities",
+            "image": "container_tp.jpg"
+          },
+          {
+            "id": "HH-SC-004",
+            "name": "Euro Container",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "capacities": [
+              "200 ml (6 pc)",
+              "250 ml (6 pc)",
+              "500 ml (6 pc)",
+              "750 ml (6 pc)",
+              "1000 ml (3 pc)",
+              "1500 ml (3 pc)",
+              "2000 ml (3 pc)",
+              "3000 ml (1 pc)"
+            ],
+            "description": "European style containers in various capacities and set configurations",
+            "image": "euro_container.jpg"
+          },
+          {
+            "id": "HH-SC-005",
+            "name": "Ever Fresh",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "variants": [
+              "Ever Fresh TP 4pc 300g",
+              "Ever Fresh TP 3pc 500g",
+              "Ever Fresh TP 3pc 750g",
+              "Ever Fresh TP 3pc 1000g",
+              "Ever Fresh TP 3pc 1500g",
+              "Ever Fresh TP 3pc 2000g"
+            ],
+            "description": "Ever Fresh series containers in various capacities and set configurations",
+            "image": "ever_fresh.jpg"
+          },
+          {
+            "id": "HH-SC-006",
+            "name": "Sunshine",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "capacities": [
+              "250ml (3 pc)",
+              "500ml (3 pc)",
+              "750ml (3 pc)",
+              "1000ml (3 pc)",
+              "1500ml (3 pc)",
+              "2000ml (3 pc)"
+            ],
+            "description": "Sunshine series containers in various capacities",
+            "image": "sunshine_container.jpg"
+          },
+          {
+            "id": "HH-SC-007",
+            "name": "Steelo",
+            "category": "Household Products",
+            "subcategory": "Storage Containers",
+            "capacities": [
+              "500ml (3 pc)",
+              "1000ml (3 pc)",
+              "1500ml (3 pc)",
+              "2000ml (3 pc)"
+            ],
+            "description": "Steelo series containers in various capacities",
+            "image": "steelo_container.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Fridge Bottles",
+        "products": [
+          {
+            "id": "HH-FB-001",
+            "name": "SPL PET Bottles",
+            "category": "Household Products",
+            "subcategory": "Fridge Bottles",
+            "variants": [
+              "SPL Trolly (6 pc)",
+              "SPL Super Delux (6 pc)",
+              "SPL Flip Cap Classic (6 pc)",
+              "SPL Pouch Packing (6 pc)",
+              "SPL Trolly 29 mm 1000 (6 pc)",
+              "SPL Trolly 29 mm 500 (6 pc)"
+            ],
+            "description": "Special PET bottles for refrigerator storage in various designs",
+            "image": "spl_pet_bottles.jpg"
+          },
+          {
+            "id": "HH-FB-002",
+            "name": "DLX Series",
+            "category": "Household Products",
+            "subcategory": "Fridge Bottles",
+            "variants": [
+              "Tokyo DLX 1000 ml",
+              "Canada DLX 1000 ml",
+              "Sydney DLX 1000 ml",
+              "Paris DLX 1000 ml",
+              "London DLX 1000 ml"
+            ],
+            "description": "Deluxe series fridge bottles in various designs",
+            "image": "dlx_series.jpg"
+          },
+          {
+            "id": "HH-FB-003",
+            "name": "Regular Series",
+            "category": "Household Products",
+            "subcategory": "Fridge Bottles",
+            "variants": [
+              "Sydney 1000 ml",
+              "Canada 1000 ml",
+              "Brazil 1000 ml",
+              "Texas 1000 ml",
+              "Brazil 500 ml",
+              "Texas 500 ml",
+              "London 1000 ml",
+              "Paris 1000 ml",
+              "Tokyo 1000 ml"
+            ],
+            "description": "Regular series fridge bottles in various designs and capacities",
+            "image": "regular_series.jpg"
+          },
+          {
+            "id": "HH-FB-004",
+            "name": "Flora",
+            "category": "Household Products",
+            "subcategory": "Fridge Bottles",
+            "variants": [
+              "Flora (P) 1000 ml",
+              "Flora (P) 500 ml"
+            ],
+            "description": "Flora design fridge bottles in multiple capacities",
+            "image": "flora_bottles.jpg"
+          },
+          {
+            "id": "HH-FB-005",
+            "name": "PP Bottles",
+            "category": "Household Products",
+            "subcategory": "Fridge Bottles",
+            "variants": [
+              "Yamuna PP 1000 ml",
+              "Narmada PP 1000 ml",
+              "Ganga I Plain Cap 500 ml"
+            ],
+            "description": "Polypropylene bottles in river-themed designs",
+            "image": "pp_bottles.jpg"
+          },
+          {
+            "id": "HH-FB-006",
+            "name": "Ganga Flip Cap",
+            "category": "Household Products",
+            "subcategory": "Fridge Bottles",
+            "variants": [
+              "Ganga Flip Cap PP 1000 ml",
+              "Ganga Flip Cap PP 500 ml"
+            ],
+            "description": "Ganga series bottles with convenient flip cap design",
+            "image": "ganga_flip_cap.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Tubs & Basins",
+        "products": [
+          {
+            "id": "HH-TB-001",
+            "name": "Tubs",
+            "category": "Household Products",
+            "subcategory": "Tubs & Basins",
+            "variants": [
+              "Tub 1033 Printed",
+              "Tub 1035 Printed",
+              "Square Tub 200 Printed",
+              "Frosty Tub 816",
+              "Frosty Tub 818",
+              "Deep Tub 1060",
+              "Deep Tub 1033",
+              "Deep Tub 1055",
+              "Deep Tub 1050",
+              "Frosty Tub 820",
+              "Square Tub 350 Printed",
+              "Square Tub 200",
+              "Square Tub 350",
+              "Unbreakable Tasla 620",
+              "Unbreakable Tasla 716",
+              "Unbreakable Tasla 717",
+              "Unbreakable Tasla 720",
+              "Unbreakable Tasla 722",
+              "Deep Tub 1052",
+              "Deep Tub 1053",
+              "LEO Tub 1021",
+              "Construction Tasla 171/181",
+              "Tub 825 With Handle",
+              "Tub 828 With Handle"
+            ],
+            "description": "Various tub designs for multiple household uses",
+            "image": "tubs.jpg"
+          },
+          {
+            "id": "HH-TB-002",
+            "name": "Basins",
+            "category": "Household Products",
+            "subcategory": "Tubs & Basins",
+            "variants": [
+              "Basins 512 to Basins 524"
+            ],
+            "description": "Range of basin designs for household use",
+            "image": "basins.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Patla",
+        "products": [
+          {
+            "id": "HH-PT-001",
+            "name": "Patla Collection",
+            "category": "Household Products",
+            "subcategory": "Patla",
+            "variants": [
+              "Patla 440 (Height 6 inch)",
+              "Patla 441 (Height 5.5 inch)",
+              "Patla 442 (Height 8.5 inch, Printed Option)",
+              "Patla 444 (Height 10 inch)",
+              "Patla 445 (Height 10.5 inch, Printed Option)",
+              "Patla 446",
+              "Patla 447 (Height 11.5 inch)",
+              "Patla 448 (Height 12 inch, Height 15 inch)",
+              "Patla 501 (Height 4 inch)",
+              "Patla 502 (Height 4 inch)",
+              "Patla 503 (Height 4 inch, Printed Option)",
+              "Patla 507 (Height 5.25 inch, Printed Option)",
+              "Patla 508 (Height 5.5 inch, Printed Option)",
+              "Patla 509 (Height 7 inch, Printed Option)",
+              "Patla 510 (Height 4.5 inch)",
+              "Patla 511 (Height 5.25 inch)"
+            ],
+            "description": "Traditional patla stools in various heights and designs",
+            "image": "patla.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Dustbins & Drums",
+        "products": [
+          {
+            "id": "HH-DD-001",
+            "name": "Waste Paper Basket",
+            "category": "Household Products",
+            "subcategory": "Dustbins & Drums",
+            "variants": [
+              "WPB 900 (10 Ltr)",
+              "WPB 901 (8 Ltr)",
+              "WPB 902 (5 Ltr)",
+              "WPB 903 (6 Ltr)",
+              "WPB 904 (7 Ltr)",
+              "WPB 905 (8 Ltr, Printed)",
+              "WPB 906 (10 Ltr)",
+              "WPB 1113 (11 Ltr)",
+              "WPB with Lid 1113"
+            ],
+            "description": "Waste paper baskets in various capacities and designs",
+            "image": "waste_paper_basket.jpg"
+          },
+          {
+            "id": "HH-DD-002",
+            "name": "Paddle Bin",
+            "category": "Household Products",
+            "subcategory": "Dustbins & Drums",
+            "variants": [
+              "Paddle Bin 006 (Printed Option)",
+              "Paddle Bin 007 (Printed Dot)",
+              "Paddle Bin 008 (Printed)",
+              "Paddle Bin 009 (16.5 Ltr, Printed Option)",
+              "Paddle Bin New Dot 007",
+              "Paddle Bin New Dot 008"
+            ],
+            "description": "Foot-operated paddle bins in various designs and capacities",
+            "image": "paddle_bin.jpg"
+          },
+          {
+            "id": "HH-DD-003",
+            "name": "Swing Bin",
+            "category": "Household Products",
+            "subcategory": "Dustbins & Drums",
+            "variants": [
+              "Swing Bin 1125",
+              "Swing Bin 1032",
+              "Swing Bin 1042",
+              "Swing Bin 1080",
+              "Swing Bin 1060"
+            ],
+            "description": "Swing-top bins in various designs and capacities",
+            "image": "swing_bin.jpg"
+          },
+          {
+            "id": "HH-DD-004",
+            "name": "Dome",
+            "category": "Household Products",
+            "subcategory": "Dustbins & Drums",
+            "variants": ["Dome 1060"],
+            "description": "Dome-style bin for household use",
+            "image": "dome_bin.jpg"
+          },
+          {
+            "id": "HH-DD-005",
+            "name": "Drums",
+            "category": "Household Products",
+            "subcategory": "Dustbins & Drums",
+            "variants": [
+              "Drum 125",
+              "Drum 1125",
+              "Drum 1042",
+              "Drum 1060",
+              "Drum 1080",
+              "Drum 1032",
+              "Drum 1100"
+            ],
+            "description": "Storage drums in various capacities",
+            "image": "drums.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Basket & Rack",
+        "products": [
+          {
+            "id": "HH-BR-001",
+            "name": "Shopping Basket",
+            "category": "Household Products",
+            "subcategory": "Basket & Rack",
+            "variants": [
+              "Juhi Big",
+              "Shoppers Big",
+              "Shoppers Medium",
+              "Shoppers Small",
+              "Rockey"
+            ],
+            "description": "Shopping baskets in various sizes and designs",
+            "image": "shopping_basket.jpg"
+          },
+          {
+            "id": "HH-BR-002",
+            "name": "Fruit Basket",
+            "category": "Household Products",
+            "subcategory": "Basket & Rack",
+            "variants": [
+              "Round Tokra",
+              "Basket Ventilated 611",
+              "File Try 607",
+              "Basket Alyia"
+            ],
+            "description": "Baskets designed for fruit storage and display",
+            "image": "fruit_basket.jpg"
+          },
+          {
+            "id": "HH-BR-003",
+            "name": "Multipurpose",
+            "category": "Household Products",
+            "subcategory": "Basket & Rack",
+            "variants": [
+              "Corner 3",
+              "Corner 2",
+              "Basket 602",
+              "Basket 603",
+              "Basket 604 (Rectangular)",
+              "Tulip 4/3/2",
+              "Karina Small/Big",
+              "Sonam",
+              "Lily 4/3/2",
+              "Basket 301/302/303",
+              "Daisy 4/3/2"
+            ],
+            "description": "Multipurpose baskets in various designs and sizes",
+            "image": "multipurpose_basket.jpg"
+          },
+          {
+            "id": "HH-BR-004",
+            "name": "Multipurpose Rack",
+            "category": "Household Products",
+            "subcategory": "Basket & Rack",
+            "variants": [
+              "Marigold 4/3/2",
+              "Rack Filler 3",
+              "Lotus 3/2",
+              "Tower 3/2",
+              "Liza 3/2",
+              "Dux 3/2"
+            ],
+            "description": "Multipurpose storage racks in various designs and tiers",
+            "image": "multipurpose_rack.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Bathroom Set",
+        "products": [
+          {
+            "id": "HH-BS-001",
+            "name": "Glamour Bathroom Set",
+            "category": "Household Products",
+            "subcategory": "Bathroom Set",
+            "variants": ["11 + 1 PC"],
+            "description": "Complete bathroom accessory set with 12 pieces",
+            "image": "glamour_bathroom_set.jpg"
+          },
+          {
+            "id": "HH-BS-002",
+            "name": "Maxx Bathroom Set",
+            "category": "Household Products",
+            "subcategory": "Bathroom Set",
+            "variants": ["11 PC"],
+            "description": "Complete bathroom accessory set with 11 pieces",
+            "image": "maxx_bathroom_set.jpg"
+          },
+          {
+            "id": "HH-BS-003",
+            "name": "Grand Bathroom Set",
+            "category": "Household Products",
+            "subcategory": "Bathroom Set",
+            "variants": ["9 + 1 PC"],
+            "description": "Complete bathroom accessory set with 10 pieces",
+            "image": "grand_bathroom_set.jpg"
+          },
+          {
+            "id": "HH-BS-004",
+            "name": "Supreme Bathroom Set",
+            "category": "Household Products",
+            "subcategory": "Bathroom Set",
+            "variants": ["8 + 1 PC"],
+            "description": "Complete bathroom accessory set with 9 pieces",
+            "image": "supreme_bathroom_set.jpg"
+          },
+          {
+            "id": "HH-BS-005",
+            "name": "Galaxy Bathroom Set",
+            "category": "Household Products",
+            "subcategory": "Bathroom Set",
+            "variants": ["6 PC"],
+            "description": "Complete bathroom accessory set with 6 pieces",
+            "image": "galaxy_bathroom_set.jpg"
+          },
+          {
+            "id": "HH-BS-006",
+            "name": "Sunshine Bathroom Set",
+            "category": "Household Products",
+            "subcategory": "Bathroom Set",
+            "variants": ["6 PC"],
+            "description": "Complete bathroom accessory set with 6 pieces",
+            "image": "sunshine_bathroom_set.jpg"
+          },
+          {
+            "id": "HH-BS-007",
+            "name": "Ronak Bathroom Set",
+            "category": "Household Products",
+            "subcategory": "Bathroom Set",
+            "variants": ["6 PC"],
+            "description": "Complete bathroom accessory set with 6 pieces",
+            "image": "ronak_bathroom_set.jpg"
+          },
+          {
+            "id": "HH-BS-008",
+            "name": "Glory Bathroom Set",
+            "category": "Household Products",
+            "subcategory": "Bathroom Set",
+            "variants": ["6 PC"],
+            "description": "Complete bathroom accessory set with 6 pieces",
+            "image": "glory_bathroom_set.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Kitchen World",
+    "subcategories": [
+      {
+        "name": "Pressure Cookers",
+        "products": [
+          {
+            "id": "KW-PC-001",
+            "name": "Aluminium Pressure Cooker",
+            "category": "Kitchen World",
+            "subcategory": "Pressure Cookers",
+            "brand": "OJAS",
+            "material": "Aluminium",
+            "sizes": ["8L", "10L", "12L", "15L", "18L", "20L", "22L"],
+            "description": "Crafted from virgin aluminium. Extra heavy gauge, rust-free stainless steel vent tube, bakelite heat-resistant handles, and safety valve.",
+            "features": [
+              "Virgin aluminium construction",
+              "Heavy gauge material",
+              "Rust-free stainless steel vent tube",
+              "Heat-resistant bakelite handles",
+              "Safety valve"
+            ],
+            "image": "aluminium_pressure_cooker.jpg"
+          },
+          {
+            "id": "KW-PC-002",
+            "name": "Elegance Plain Aluminium Pressure Cooker",
+            "category": "Kitchen World",
+            "subcategory": "Pressure Cookers",
+            "brand": "OJAS",
+            "material": "Aluminium",
+            "sizes": ["1.5L", "2L", "3L", "5L", "7L", "35L", "40L", "60L", "80L"],
+            "description": "Premium virgin aluminium, extra heavy gauge. Rust-free SS vent, heat-resistant bakelite handles, safety valve, and curved body for easy stirring.",
+            "features": [
+              "Premium virgin aluminium",
+              "Extra heavy gauge",
+              "Rust-free stainless steel vent",
+              "Heat-resistant bakelite handles",
+              "Safety valve",
+              "Curved body for easy stirring"
+            ],
+            "image": "elegance_plain_cooker.jpg"
+          },
+          {
+            "id": "KW-PC-003",
+            "name": "Elegance Handi Aluminium Pressure Cooker",
+            "category": "Kitchen World",
+            "subcategory": "Pressure Cookers",
+            "brand": "OJAS",
+            "material": "Aluminium",
+            "sizes": ["1.5L", "2L", "3L", "5L", "7L", "8L", "10L", "12L"],
+            "description": "Handi shape for traditional Indian cooking, with the same high standards of safety and durability as other Ojas cookers.",
+            "features": [
+              "Handi shape ideal for Indian cooking",
+              "Virgin aluminium construction",
+              "Heavy gauge material",
+              "Rust-free stainless steel vent tube",
+              "Heat-resistant bakelite handles",
+              "Safety valve"
+            ],
+            "image": "elegance_handi_cooker.jpg"
+          },
+          {
+            "id": "KW-PC-004",
+            "name": "Elegance Contura Aluminium Pressure Cooker",
+            "category": "Kitchen World",
+            "subcategory": "Pressure Cookers",
+            "brand": "OJAS",
+            "material": "Aluminium",
+            "sizes": ["1.5L", "2L", "3L", "5L"],
+            "description": "Contura body for convenient stirring. Virgin aluminium, heavy gauge, secure handles and safety features.",
+            "features": [
+              "Contura body design for easy stirring",
+              "Virgin aluminium construction",
+              "Heavy gauge material",
+              "Rust-free stainless steel vent tube",
+              "Heat-resistant bakelite handles",
+              "Safety valve"
+            ],
+            "image": "elegance_contura_cooker.jpg"
+          },
+          {
+            "id": "KW-PC-005",
+            "name": "Hard Anodised Pressure Cooker",
+            "category": "Kitchen World",
+            "subcategory": "Pressure Cookers",
+            "brand": "OJAS",
+            "material": "Hard Anodized Aluminium",
+            "sizes": ["2L", "3L", "5L"],
+            "description": "Hard anodized finish for extra durability and corrosion resistance. Standard Ojas safety and handling features.",
+            "features": [
+              "Hard anodized finish",
+              "Extra durability",
+              "Corrosion resistance",
+              "Rust-free stainless steel vent tube",
+              "Heat-resistant bakelite handles",
+              "Safety valve"
+            ],
+            "image": "hard_anodised_cooker.jpg"
+          },
+          {
+            "id": "KW-PC-006",
+            "name": "Stainless Steel Pressure Cooker",
+            "category": "Kitchen World",
+            "subcategory": "Pressure Cookers",
+            "brand": "OJAS",
+            "material": "Stainless Steel",
+            "sizes": ["2L", "3L", "5L"],
+            "description": "Rust-proof, elegant stainless steel body. Equipped with all standard Ojas safety and durability features.",
+            "features": [
+              "Rust-proof stainless steel body",
+              "Elegant finish",
+              "Rust-free stainless steel vent tube",
+              "Heat-resistant bakelite handles",
+              "Safety valve"
+            ],
+            "image": "stainless_steel_cooker.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Gas Stoves",
+        "products": [
+          {
+            "id": "KW-GS-001",
+            "name": "Single Burner Stove",
+            "category": "Kitchen World",
+            "subcategory": "Gas Stoves",
+            "brand": "OJAS",
+            "models": [
+              {
+                "model_no": "SB 1001",
+                "name": "Solo B"
+              },
+              {
+                "model_no": "SB 1011",
+                "name": "Solo Mini"
+              }
+            ],
+            "description": "Compact gas stoves ideal for single-burner kitchens, student accommodations or as auxiliary burners.",
+            "features": [
+              "Compact design",
+              "Efficient gas consumption",
+              "Durable construction",
+              "Easy to clean"
+            ],
+            "image": "single_burner_stove.jpg"
+          },
+          {
+            "id": "KW-GS-002",
+            "name": "Double Burner Stove",
+            "category": "Kitchen World",
+            "subcategory": "Gas Stoves",
+            "brand": "OJAS",
+            "models": [
+              { "model_no": "DB-2001", "name": "Classic" },
+              { "model_no": "DB-2041", "name": "Commando" },
+              { "model_no": "DB-2011", "name": "Vs2 Tablet" },
+              { "model_no": "DB-2021", "name": "Triplet" },
+              { "model_no": "DB-2031", "name": "Minimum" },
+              { "model_no": "DB-2051", "name": "Saturn" },
+              { "model_no": "DB-2091", "name": "Pajaro" },
+              { "model_no": "DB-2081", "name": "Lite" },
+              { "model_no": "DB-2081", "name": "Chrome" },
+              { "model_no": "DB-2211", "name": "Super Max" },
+              { "model_no": "DB-2301", "name": "2Check Glen" },
+              { "model_no": "DB-2171", "name": "Polo" },
+              { "model_no": "DB-2161", "name": "Omega" },
+              { "model_no": "DB-2311", "name": "2 Plus Glen" },
+              { "model_no": "DB-2421", "name": "Black" },
+              { "model_no": "DB-2422", "name": "Mirror" },
+              { "model_no": "DB-2423", "name": "Coloured" },
+              { "model_no": "DB-2405", "name": "Kaff-2.0" },
+              { "model_no": "DB-2422", "name": "Semi Digital" },
+              { "model_no": "DB-2423", "name": "Digital" }
+            ],
+            "description": "Wide range of double-burner stoves in varying finishes, features, and designs for household or semi-commercial use.",
+            "features": [
+              "Dual burners for simultaneous cooking",
+              "Multiple design options",
+              "Available in standard, digital and semi-digital variants",
+              "Efficient gas consumption",
+              "Durable construction"
+            ],
+            "image": "double_burner_stove.jpg"
+          },
+          {
+            "id": "KW-GS-003",
+            "name": "Triple Burner Stove",
+            "category": "Kitchen World",
+            "subcategory": "Gas Stoves",
+            "brand": "OJAS",
+            "models": [
+              { "model_no": "TB-3031", "name": "Regular Cook" },
+              { "model_no": "TB-3001", "name": "Trendy Triple Cook" },
+              { "model_no": "TB-3211", "name": "3Check Glen" },
+              { "model_no": "TB-3221", "name": "3Plus Glen" },
+              { "model_no": "TB-3421", "name": "Black" },
+              { "model_no": "TB-3422", "name": "Mirror" },
+              { "model_no": "TB-3423", "name": "Semi Digital" },
+              { "model_no": "TB-3423", "name": "Digital" },
+              { "model_no": "TB-3405", "name": "Coloured" },
+              { "model_no": "TB-3405", "name": "Kaff-3.0" }
+            ],
+            "description": "Triple burner stoves available in different finishes and advanced digital/semi-digital variants. Suitable for larger families.",
+            "features": [
+              "Three burners for maximum cooking flexibility",
+              "Multiple design options",
+              "Available in standard, digital and semi-digital variants",
+              "Efficient gas consumption",
+              "Durable construction",
+              "Ideal for larger families"
+            ],
+            "image": "triple_burner_stove.jpg"
+          },
+          {
+            "id": "KW-GS-004",
+            "name": "Four Burner Stove",
+            "category": "Kitchen World",
+            "subcategory": "Gas Stoves",
+            "brand": "OJAS",
+            "models": [
+              { "model_no": "TB-3221", "name": "Quants Glen Black" }
+            ],
+            "description": "Premium four burner gas stove for professional or higher-end contemporary kitchens.",
+            "features": [
+              "Four burners for maximum cooking capacity",
+              "Professional-grade design",
+              "Efficient gas consumption",
+              "Durable construction",
+              "Ideal for large families or professional use"
+            ],
+            "image": "four_burner_stove.jpg"
+          },
+          {
+            "id": "KW-GS-005",
+            "name": "Green Gas 2 Burner",
+            "category": "Kitchen World",
+            "subcategory": "Gas Stoves",
+            "brand": "OJAS",
+            "description": "Eco-friendly model with enhanced efficiency and reduced environmental impact.",
+            "features": [
+              "Eco-friendly design",
+              "Reduced gas consumption",
+              "Environmentally conscious construction",
+              "Dual burners for simultaneous cooking"
+            ],
+            "image": "green_gas_burner.jpg"
+          },
+          {
+            "id": "KW-GS-006",
+            "name": "Original Burner",
+            "category": "Kitchen World",
+            "subcategory": "Gas Stoves",
+            "brand": "OJAS",
+            "description": "Standard, classic burner style with proven reliability and performance.",
+            "features": [
+              "Classic design",
+              "Reliable performance",
+              "Durable construction",
+              "Easy maintenance"
+            ],
+            "image": "original_burner.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Thermoware",
+        "products": [
+          {
+            "id": "KW-TW-001",
+            "name": "Thomos Kettle",
+            "category": "Kitchen World",
+            "subcategory": "Thermoware",
+            "brand": "OJAS",
+            "sizes": ["600ml", "1000ml", "1400ml"],
+            "description": "Insulated kettle for hot and cold liquids, maintaining temperature for hours.",
+            "features": [
+              "Double-wall insulation",
+              "Temperature retention",
+              "Suitable for hot and cold beverages",
+              "Durable construction"
+            ],
+            "image": "thomos_kettle.jpg"
+          },
+          {
+            "id": "KW-TW-002",
+            "name": "Tiffin Capsule",
+            "category": "Kitchen World",
+            "subcategory": "Thermoware",
+            "brand": "OJAS",
+            "variants": ["3 Capsule", "4 Capsule"],
+            "description": "Compact, insulated lunch carriers (capsule form) for daily use.",
+            "features": [
+              "Compact capsule design",
+              "Insulated compartments",
+              "Stackable containers",
+              "Leak-proof seals",
+              "Available in 3 or 4 container configurations"
+            ],
+            "image": "tiffin_capsule.jpg"
+          },
+          {
+            "id": "KW-TW-003",
+            "name": "Tiffin Tablet",
+            "category": "Kitchen World",
+            "subcategory": "Thermoware",
+            "brand": "OJAS",
+            "variants": ["3 Tablet", "4 Tablet"],
+            "description": "Tablet-style insulated lunch boxes for convenient transport.",
+            "features": [
+              "Flat tablet design for easy transport",
+              "Insulated compartments",
+              "Stackable containers",
+              "Leak-proof seals",
+              "Available in 3 or 4 container configurations"
+            ],
+            "image": "tiffin_tablet.jpg"
+          },
+          {
+            "id": "KW-TW-004",
+            "name": "Lite",
+            "category": "Kitchen World",
+            "subcategory": "Thermoware",
+            "brand": "OJAS",
+            "description": "Simple, lightweight thermoware series for everyday use.",
+            "features": [
+              "Lightweight construction",
+              "Basic insulation",
+              "Affordable price point",
+              "Practical design"
+            ],
+            "image": "lite_thermoware.jpg"
+          },
+          {
+            "id": "KW-TW-005",
+            "name": "Casserole",
+            "category": "Kitchen World",
+            "subcategory": "Thermoware",
+            "brand": "OJAS",
+            "sizes": ["1500ml", "2000ml", "2500ml", "3000ml", "3500ml", "4500ml", "5000ml", "5500ml"],
+            "description": "Insulated casseroles for keeping food hot or cold for extended periods.",
+            "features": [
+              "Superior insulation",
+              "Wide range of sizes",
+              "Elegant design",
+              "Suitable for serving and storage",
+              "Temperature retention for hours"
+            ],
+            "image": "casserole_thermoware.jpg"
+          },
+          {
+            "id": "KW-TW-006",
+            "name": "Travel Jug",
+            "category": "Kitchen World",
+            "subcategory": "Thermoware",
+            "brand": "OJAS",
+            "sizes": ["3L", "5L", "6L", "7L", "8L", "12L", "16L", "20L"],
+            "description": "Large capacity portable jugs with insulation for picnics or travel.",
+            "features": [
+              "High capacity options",
+              "Excellent insulation",
+              "Portable design with handle",
+              "Suitable for outdoor use",
+              "Durable construction"
+            ],
+            "image": "travel_jug.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Cookware",
+        "products": [
+          {
+            "id": "KW-CW-001",
+            "name": "Cookware Set",
+            "category": "Kitchen World",
+            "subcategory": "Cookware",
+            "brand": "OJAS",
+            "items": {
+              "Tope": ["12", "14", "16", "18"],
+              "Tawa": ["9\"", "10\"", "11\""],
+              "Kadai": ["1", "2", "3", "4", "5"],
+              "Sauce Pan": ["0", "1", "2"],
+              "Fry Pan": ["0", "1", "2"],
+              "Tadka Pan": ["5 No", "6 No", "7 No", "8 No", "9 No", "10 No", "11 No", "12 No"]
+            },
+            "description": "Comprehensive kitchen cookware set, suitable for all standard Indian cooking needs.",
+            "features": [
+              "Complete cooking solution",
+              "Multiple sizes for each cookware type",
+              "Durable construction",
+              "Suitable for Indian cooking styles",
+              "Consistent heat distribution"
+            ],
+            "image": "cookware_set.jpg"
+          },
+          {
+            "id": "KW-CW-002",
+            "name": "Idli Pot",
+            "category": "Kitchen World",
+            "subcategory": "Cookware",
+            "brand": "OJAS",
+            "series": {
+              "Np Series": ["12", "16"],
+              "Heavy Series": ["12", "16"],
+              "Deluxe Series": ["12", "16", "22", "48"]
+            },
+            "description": "Aluminium idli steamers; available in basic (NP), heavy, and deluxe series for different capacity requirements.",
+            "features": [
+              "Specialized design for perfect idlis",
+              "Multiple series options",
+              "Various capacity choices",
+              "Efficient steaming",
+              "Durable construction"
+            ],
+            "image": "idli_pot.jpg"
+          },
+          {
+            "id": "KW-CW-003",
+            "name": "Amlet",
+            "category": "Kitchen World",
+            "subcategory": "Cookware",
+            "brand": "OJAS",
+            "description": "Specialty utensil designed specifically for making perfect omelettes.",
+            "features": [
+              "Specialized design for omelettes",
+              "Non-stick surface",
+              "Even heat distribution",
+              "Easy to clean",
+              "Comfortable handle"
+            ],
+            "image": "amlet_pan.jpg"
+          },
+          {
+            "id": "KW-CW-004",
+            "name": "Bati Bartan",
+            "category": "Kitchen World",
+            "subcategory": "Cookware",
+            "brand": "OJAS",
+            "description": "Traditional Indian vessel, used for making bati or serving dal-bati; details on sizes on request.",
+            "features": [
+              "Traditional design",
+              "Authentic cooking experience",
+              "Durable construction",
+              "Even heat distribution",
+              "Multiple size options available"
+            ],
+            "image": "bati_bartan.jpg"
+          },
+          {
+            "id": "KW-CW-005",
+            "name": "Barbeque Aanch",
+            "category": "Kitchen World",
+            "subcategory": "Cookware",
+            "brand": "OJAS",
+            "description": "Traditional/modern barbeque set for indoor or outdoor grilling.",
+            "features": [
+              "Versatile grilling solution",
+              "Suitable for indoor and outdoor use",
+              "Traditional design with modern features",
+              "Durable construction",
+              "Easy to clean"
+            ],
+            "image": "barbeque_aanch.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Industrial Plastic Crates",
+    "subcategories": [
+      {
+        "name": "300 x 200 Series",
+        "products": [
+          {
+            "id": "IPC-300-001",
+            "name": "300 x 200 x 70 mm Crate",
+            "category": "Industrial Plastic Crates",
+            "subcategory": "300 x 200 Series",
+            "brand": "Saran",
+            "outer_dimension": "300 x 200 x 70 mm",
+            "inner_dimension": "265 x 165 x 65 mm",
+            "capacity_l": 2,
+            "description": "Industrial plastic crate suitable for small parts storage",
+            "image": "300x200x70_crate.jpg"
+          },
+          {
+            "id": "IPC-300-002",
+            "name": "300 x 200 x 100 mm Crate",
+            "category": "Industrial Plastic Crates",
+            "subcategory": "300 x 200 Series",
+            "brand": "Saran",
+            "outer_dimension": "300 x 200 x 100 mm",
+            "inner_dimension": "265 x 165 x 95 mm",
+            "capacity_l": 4,
+            "description": "Industrial plastic crate suitable for small parts storage",
+            "image": "300x200x100_crate.jpg"
+          }
+        ]
+      },
+      {
+        "name": "400 x 300 Series",
+        "products": [
+          {
+            "id": "IPC-400-001",
+            "name": "400 x 300 x 65 mm Crate",
+            "category": "Industrial Plastic Crates",
+            "subcategory": "400 x 300 Series",
+            "brand": "Saran",
+            "outer_dimension": "400 x 300 x 65 mm",
+            "inner_dimension": "365 x 265 x 60 mm",
+            "capacity_l": 6,
+            "description": "Industrial plastic crate suitable for medium parts storage",
+            "image": "400x300x65_crate.jpg"
+          },
+          {
+            "id": "IPC-400-002",
+            "name": "400 x 300 x 100 mm Crate",
+            "category": "Industrial Plastic Crates",
+            "subcategory": "400 x 300 Series",
+            "brand": "Saran",
+            "outer_dimension": "400 x 300 x 100 mm",
+            "inner_dimension": "365 x 265 x 95 mm",
+            "capacity_l": 9,
+            "description": "Industrial plastic crate suitable for medium parts storage",
+            "image": "400x300x100_crate.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Hotel Amenities",
+    "subcategories": [
+      {
+        "name": "Hotel Soaps",
+        "products": [
+          {
+            "id": "HA-HS-001",
+            "name": "Hotel Soap – Square (Orange)",
+            "category": "Hotel Amenities",
+            "subcategory": "Hotel Soaps",
+            "packaging": "Bulk",
+            "colors": ["Orange"],
+            "moq": 5000,
+            "price_per_kg": 150,
+            "description": "Available in transparent orange square form. Bulk packaging for hotels.",
+            "image": "hotel_soap_orange.jpg"
+          },
+          {
+            "id": "HA-HS-002",
+            "name": "Hotel Soap – Round (Yellow)",
+            "category": "Hotel Amenities",
+            "subcategory": "Hotel Soaps",
+            "packaging": "Bulk",
+            "colors": ["Yellow"],
+            "moq": 5000,
+            "price_per_kg": 150,
+            "description": "Round yellow soap bars, ideal for hotel amenities.",
+            "image": "hotel_soap_yellow.jpg"
+          },
+          {
+            "id": "HA-HS-003",
+            "name": "Hotel Soap – Sachet Packaged",
+            "category": "Hotel Amenities",
+            "subcategory": "Hotel Soaps",
+            "packaging": "Individual sachet",
+            "moq": 5000,
+            "price_per_kg": 150,
+            "description": "Hotel soap packed in individual sachets for hygienic use.",
+            "image": "hotel_soap_sachet.jpg"
+          },
+          {
+            "id": "HA-HS-004",
+            "name": "Hotel Soap – Square (White)",
+            "category": "Hotel Amenities",
+            "subcategory": "Hotel Soaps",
+            "packaging": "Bulk",
+            "colors": ["White"],
+            "moq": 5000,
+            "price_per_kg": 150,
+            "description": "White square soaps, available in bulk with optional custom branding.",
+            "image": "hotel_soap_white.jpg"
+          },
+          {
+            "id": "HA-HS-005",
+            "name": "Hotel Soap – Custom Branding",
+            "category": "Hotel Amenities",
+            "subcategory": "Hotel Soaps",
+            "packaging": "Single wrap, custom label",
+            "moq": 5000,
+            "price_per_kg": 150,
+            "description": "Custom label option available for hotel soaps.",
+            "image": "hotel_soap_custom.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Guest Toiletries",
+        "products": [
+          {
+            "id": "HA-GT-001",
+            "name": "Moisturizer",
+            "category": "Hotel Amenities",
+            "subcategory": "Guest Toiletries",
+            "size_ml": 20,
+            "packaging": "Plastic bottle",
+            "moq": 1000,
+            "features": [
+              "Premium, skin-friendly ingredients",
+              "Recyclable bottles",
+              "Custom branding available"
+            ],
+            "description": "High-quality 20ml moisturizer, travel-sized for hotels. Custom branding and eco-friendly packaging.",
+            "image": "moisturizer_20ml.jpg"
+          },
+          {
+            "id": "HA-GT-002",
+            "name": "Conditioner",
+            "category": "Hotel Amenities",
+            "subcategory": "Guest Toiletries",
+            "size_ml": 20,
+            "packaging": "Plastic bottle",
+            "moq": 1000,
+            "features": [
+              "Premium, skin-friendly ingredients",
+              "Recyclable bottles",
+              "Custom branding available"
+            ],
+            "description": "20ml hotel conditioner in convenient bottle. Custom hotel branding possible.",
+            "image": "conditioner_20ml.jpg"
+          },
+          {
+            "id": "HA-GT-003",
+            "name": "Shower Gel",
+            "category": "Hotel Amenities",
+            "subcategory": "Guest Toiletries",
+            "size_ml": 20,
+            "packaging": "Plastic bottle",
+            "moq": 1000,
+            "features": [
+              "Premium, skin-friendly ingredients",
+              "Recyclable bottles",
+              "Custom branding available"
+            ],
+            "description": "20ml shower gel meant for short-stay guests or travel use.",
+            "image": "shower_gel_20ml.jpg"
+          },
+          {
+            "id": "HA-GT-004",
+            "name": "Shampoo",
+            "category": "Hotel Amenities",
+            "subcategory": "Guest Toiletries",
+            "size_ml": 20,
+            "packaging": "Plastic bottle",
+            "moq": 1000,
+            "features": [
+              "Premium, skin-friendly ingredients",
+              "Recyclable bottles",
+              "Custom branding available"
+            ],
+            "description": "Travel-size hotel shampoo, 20ml per bottle.",
+            "image": "shampoo_20ml.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Disposable Slippers",
+        "products": [
+          {
+            "id": "HA-DS-001",
+            "name": "Disposable Slippers (Regular)",
+            "category": "Hotel Amenities",
+            "subcategory": "Disposable Slippers",
+            "moq": 500,
+            "price_each": 20,
+            "features": [
+              "Soft, breathable material",
+              "Non-slip sole for safety on various surfaces",
+              "Unisex – suitable for men and women"
+            ],
+            "description": "Comfortable, hygienic slippers for hotels, spas, salons, or guest use.",
+            "image": "disposable_slippers_regular.jpg"
+          },
+          {
+            "id": "HA-DS-002",
+            "name": "Disposable Slippers (Green Logo)",
+            "category": "Hotel Amenities",
+            "subcategory": "Disposable Slippers",
+            "moq": 500,
+            "price_each": 20,
+            "features": [
+              "Soft, breathable material",
+              "Non-slip sole for all surfaces",
+              "Green logo branding"
+            ],
+            "description": "Branded with a green logo, these are also suitable for hotels and guest rooms.",
+            "image": "disposable_slippers_green.jpg"
+          },
+          {
+            "id": "HA-DS-003",
+            "name": "Disposable Slippers (With Open Toe)",
+            "category": "Hotel Amenities",
+            "subcategory": "Disposable Slippers",
+            "moq": 500,
+            "price_each": 20,
+            "features": [
+              "Open toe design",
+              "Soft and breathable",
+              "Non-slip"
+            ],
+            "description": "Open toe slippers for enhanced comfort, supplied in bulk.",
+            "image": "disposable_slippers_open_toe.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Dental & Oral Care",
+        "products": [
+          {
+            "id": "HA-DOC-001",
+            "name": "Toothpaste",
+            "category": "Hotel Amenities",
+            "subcategory": "Dental & Oral Care",
+            "brands": [
+              {"name": "Patanjali", "weight": "4g"},
+              {"name": "Vicco Vajradanti", "weight": "4g"},
+              {"name": "Colgate", "weight": "4g"},
+              {"name": "Pepsodent", "weight": "4.5g"}
+            ],
+            "packaging": "Mini tube",
+            "moq": 1000,
+            "description": "Available in leading Indian brands. Small tubes ideal for one-time hotel guest use.",
+            "image": "toothpaste_mini.jpg"
+          },
+          {
+            "id": "HA-DOC-002",
+            "name": "Dental Kit",
+            "category": "Hotel Amenities",
+            "subcategory": "Dental & Oral Care",
+            "components": [
+              "Toothpaste 10g",
+              "Toothbrush",
+              "Custom box"
+            ],
+            "moq": 500,
+            "price_per_kit": 13,
+            "description": "Complete dental kit (toothpaste+toothbrush) in printed box for hotels. MOQ 500 sets.",
+            "image": "dental_kit.jpg"
+          },
+          {
+            "id": "HA-DOC-003",
+            "name": "Wooden Toothbrush",
+            "category": "Hotel Amenities",
+            "subcategory": "Dental & Oral Care",
+            "material": "Wood",
+            "moq": 1000,
+            "description": "Eco-friendly bamboo/wooden toothbrush for sustainable hotel amenities.",
+            "image": "wooden_toothbrush.jpg"
+          },
+          {
+            "id": "HA-DOC-004",
+            "name": "Plastic Toothbrush",
+            "category": "Hotel Amenities",
+            "subcategory": "Dental & Oral Care",
+            "moq": 1000,
+            "price_per_piece": 3,
+            "description": "Standard white hotel-use toothbrushes.",
+            "image": "plastic_toothbrush.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Shaving Kits",
+        "products": [
+          {
+            "id": "HA-SK-001",
+            "name": "Shaving Razor",
+            "category": "Hotel Amenities",
+            "subcategory": "Shaving Kits",
+            "price": 0.5,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Disposable razors suitable for hotel amenities or travel kits.",
+            "image": "shaving_razor.jpg"
+          },
+          {
+            "id": "HA-SK-002",
+            "name": "Shaving Kit Pouch",
+            "category": "Hotel Amenities",
+            "subcategory": "Shaving Kits",
+            "price": 1,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Compact kit in a pouch, ideal for guest amenities.",
+            "image": "shaving_kit_pouch.jpg"
+          },
+          {
+            "id": "HA-SK-003",
+            "name": "Shaving Kit Box",
+            "category": "Hotel Amenities",
+            "subcategory": "Shaving Kits",
+            "price": 1.5,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Complete shaving kit with razor and gel in a printed box. Wholesale packaging for hotels, also customizable.",
+            "image": "shaving_kit_box.jpg"
+          },
+          {
+            "id": "HA-SK-004",
+            "name": "Shaving Gel",
+            "category": "Hotel Amenities",
+            "subcategory": "Shaving Kits",
+            "price": 0.45,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Sachet of shaving gel - compact and convenient for single use.",
+            "image": "shaving_gel.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Shoes Shiner",
+        "products": [
+          {
+            "id": "HA-SS-001",
+            "name": "Wax Shoes Shiner",
+            "category": "Hotel Amenities",
+            "subcategory": "Shoes Shiner",
+            "price": 4.5,
+            "currency": "INR",
+            "min_order_qty": 500,
+            "description": "Premium wax shoe shiner for hotels. Convenient and effective for guests' footwear. Provides a polished, long-lasting shine with minimal effort. Suitable for travel, hotel rooms, and guest kits.",
+            "image": "wax_shoes_shiner.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Combs",
+        "products": [
+          {
+            "id": "HA-CB-001",
+            "name": "Comb",
+            "category": "Hotel Amenities",
+            "subcategory": "Combs",
+            "size": "8 inch",
+            "color": "White",
+            "variants": [
+              {
+                "packaging": "Bulk",
+                "description": "Durable hotel-grade combs in classic 8-inch design for guest use."
+              },
+              {
+                "packaging": "Pouch packing",
+                "description": "Comb individually packed in a hygienic pouch, ideal for hotels and guest kits."
+              }
+            ],
+            "image": "hotel_comb.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Guest Kits",
+        "products": [
+          {
+            "id": "HA-GK-001",
+            "name": "Hotel Guest Kit",
+            "category": "Hotel Amenities",
+            "subcategory": "Guest Kits",
+            "description": "A curated collection of essential toiletries and amenities designed to provide a luxurious hotel stay experience. Each kit includes: premium shampoo, conditioner, body wash, body lotion, dental care set, and a comb, all beautifully packed for convenience. Crafted with gentle, skin-friendly ingredients for a refreshing and comfortable guest experience. Suitable for hotels seeking to enhance their amenity offerings.",
+            "typical_contents": [
+              "Shampoo",
+              "Conditioner",
+              "Body Wash",
+              "Body Lotion",
+              "Dental Care Set",
+              "Comb",
+              "Shaving Kit",
+              "Vanity Kit"
+            ],
+            "customization": "Packaging and product selection customizable as per hotel requirements.",
+            "image": "hotel_guest_kit.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Naphthalene Balls",
+        "products": [
+          {
+            "id": "HA-NB-001",
+            "name": "Naphthalene Balls (Colored)",
+            "category": "Hotel Amenities",
+            "subcategory": "Naphthalene Balls",
+            "brand": "Swiss Comforts",
+            "description": "Multi-colored naphthalene balls used for deodorizing and insect repellent purposes in closets, bathrooms, and storage spaces. Available in attractive pastel colors.",
+            "packaging_options": [
+              "Bulk pack (pouch with Swiss Comforts logo)",
+              "Transparent plastic pouch (assorted colors)"
+            ],
+            "features": [
+              "Long-lasting fragrance",
+              "Protects clothes and storage spaces from insects",
+              "Ideal for hotels, homes, wardrobes, and restrooms"
+            ],
+            "image": "naphthalene_balls_colored.jpg"
+          },
+          {
+            "id": "HA-NB-002",
+            "name": "Naphthalene Balls (White)",
+            "category": "Hotel Amenities",
+            "subcategory": "Naphthalene Balls",
+            "brand": "Swiss Comforts",
+            "description": "Classic white naphthalene balls, ideal for repelling insects and maintaining a fresh scent in various storage and sanitary areas.",
+            "packaging_options": [
+              "Wooden bowl (for display/use in rooms)"
+            ],
+            "features": [
+              "Traditional strong fragrance",
+              "Multi-purpose use"
+            ],
+            "image": "naphthalene_balls_white.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Urinal Screen Deodorizer Mats",
+        "products": [
+          {
+            "id": "HA-USM-001",
+            "name": "Urinal Screen Deodorizer Mat",
+            "category": "Hotel Amenities",
+            "subcategory": "Urinal Screen Deodorizer Mats",
+            "brand": "Swiss Comforts",
+            "description": "Durable, non-slip urinal screen mat designed to fit in urinals, trap debris, prevent clogs, and release a fresh fragrance to maintain restroom cleanliness and hygiene. Especially suited for high-traffic public restrooms.",
+            "features": [
+              "Traps debris, prevents clogs",
+              "Fresh and clean scent (lemon, orange, rose, ocean)",
+              "Multi-colour, standard size",
+              "Flexible to fit all urinals",
+              "Anti-splash design",
+              "Controls restroom odor"
+            ],
+            "fragrance_options": [
+              "Lemon",
+              "Orange",
+              "Rose",
+              "Ocean"
+            ],
+            "color_options": [
+              "Green",
+              "Yellow",
+              "Orange",
+              "Purple",
+              "Blue",
+              "Red"
+            ],
+            "packaging": "Individually wrapped",
+            "image": "urinal_screen_mat.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Glass Covers",
+        "products": [
+          {
+            "id": "HA-GC-001",
+            "name": "Disposable Glass Cover",
+            "category": "Hotel Amenities",
+            "subcategory": "Glass Covers",
+            "brand": "Swiss Comforts",
+            "description": "Single-use, paper-based glass covers designed to provide a hygienic drinking glass experience for hotel guests. Helps assure cleanliness and safety in hospitality settings.",
+            "packaging_options": [
+              "Flat paper sleeves (custom branding available)",
+              "Cups with custom printed covers",
+              "Boxed, bulk packs"
+            ],
+            "features": [
+              "Printed 'Sanitized & Cleaned' message or custom hotel branding",
+              "Fits standard hotel glasses",
+              "Hygienic, disposable"
+            ],
+            "image": "disposable_glass_cover.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Laundry Bags",
+        "products": [
+          {
+            "id": "HA-LB-001",
+            "name": "Non Woven Disposable Laundry Bag",
+            "category": "Hotel Amenities",
+            "subcategory": "Laundry Bags",
+            "brand": "Swiss Comforts",
+            "description": "Single-use laundry bags made from durable non-woven material, designed for hotels and hospitality industry. Ideal for guest laundry collection.",
+            "customization": "Branding/logo printing available for large hotel chains (e.g., 'Hyatt Place', 'The Fern', 'Marigold').",
+            "features": [
+              "Disposable and hygienic",
+              "Strong non-woven fabric",
+              "Drawstring or sealed closure options",
+              "Available in different sizes"
+            ],
+            "packaging_options": [
+              "Folded in bulk",
+              "Individual roll packs"
+            ],
+            "image": "disposable_laundry_bag.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Toilet Seat WC Band",
+        "products": [
+          {
+            "id": "HA-TSB-001",
+            "name": "Toilet Seat WC Band",
+            "category": "Hotel Amenities",
+            "subcategory": "Toilet Seat WC Band",
+            "brand": "Swiss Comforts",
+            "description": "Ensures hygiene and cleanliness for hotels, hospitals, and premium establishments. Used as a seal of sanitation, assures guests that the toilet seat has been freshly cleaned and disinfected.",
+            "features": [
+              "Acts as a seal of sanitation for toilets",
+              "Made from durable, eco-friendly material",
+              "Easily fits around standard toilet seats",
+              "Disposable after use"
+            ],
+            "applications": [
+              "Hotels",
+              "Hospitals",
+              "Premium establishments"
+            ],
+            "packaging": "Bulk or custom packs",
+            "customization": "Custom branding/logos available",
+            "image": "toilet_seat_band.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Paper Glass Coaster",
+        "products": [
+          {
+            "id": "HA-PGC-001",
+            "name": "Paper Glass Coaster",
+            "category": "Hotel Amenities",
+            "subcategory": "Paper Glass Coaster",
+            "brand": "Swiss Comforts",
+            "description": "Lightweight, eco-friendly beverage coaster made from high-quality paper material. Designed to protect surfaces from spills, condensation, or heat damage in hotels, cafes, and events.",
+            "features": [
+              "Protects surfaces from glasses/condensation",
+              "Disposable and hygienic",
+              "Sleek, minimalist design",
+              "Available with branding, designs, and messages"
+            ],
+            "applications": [
+              "Hotels",
+              "Cafes",
+              "Events",
+              "Special occasions",
+              "Everyday use"
+            ],
+            "variants": [
+              "Plain white paper coasters",
+              "Printed designs",
+              "Glass coaster with branding"
+            ],
+            "packaging": "Bulk or custom printed packs",
+            "image": "paper_glass_coaster.jpg"
+          }
+        ]
+      },
+      {
+        "name": "Shower Caps",
+        "products": [
+          {
+            "id": "HA-SC-001",
+            "name": "Premium Disposable Bouffant Cap (Green)",
+            "category": "Hotel Amenities",
+            "subcategory": "Shower Caps",
+            "brand": "Swiss Comforts",
+            "material": "Non-woven",
+            "color": "Green",
+            "size": "Universal fit",
+            "features": [
+              "Elastic band",
+              "Hygienic hair protection",
+              "Bulk pack of 100 pcs"
+            ],
+            "applications": [
+              "Salons",
+              "Spas",
+              "Hotels",
+              "Guest rooms"
+            ],
+            "price_per_piece_inr": 3,
+            "min_order_quantity": 1000,
+            "packaging": "Bulk",
+            "image": "shower_cap_green.jpg"
+          },
+          {
+            "id": "HA-SC-002",
+            "name": "Premium Disposable Bouffant Cap (White)",
+            "category": "Hotel Amenities",
+            "subcategory": "Shower Caps",
+            "brand": "Swiss Comforts",
+            "material": "Non-woven",
+            "color": "White",
+            "size": "Universal fit",
+            "features": [
+              "Elastic band",
+              "Hygienic hair protection",
+              "Bulk pack of 100 pcs"
+            ],
+            "applications": [
+              "Salons",
+              "Spas",
+              "Hotels",
+              "Guest rooms"
+            ],
+            "price_per_piece_inr": 3,
+            "min_order_quantity": 1000,
+            "packaging": "Bulk",
+            "image": "shower_cap_white.jpg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Premium Cookware",
+    "subcategories": [
+      {
+        "name": "Tri-Ply Stainless Steel",
+        "products": [
+          {
+            "id": "PC-TP-001",
+            "name": "Triply Kadai",
+            "category": "Premium Cookware",
+            "subcategory": "Tri-Ply Stainless Steel",
+            "brand": "Bergner",
+            "series": "TriPro",
+            "finish": "Triply Stainless Steel",
+            "sizes_cm": [20, 22, 24, 26, 28, 30],
+            "options": [
+              {
+                "with_lid": true,
+                "description": "Stainless steel kadai with triply construction, matching lid available."
+              },
+              {
+                "with_lid": false,
+                "description": "Stainless steel kadai with triply construction, without lid option."
+              }
+            ],
+            "features": [
+              "Tri-ply construction: even heat distribution, prevents hot spots",
+              "Compatible with induction and gas stoves",
+              "Premium handles and finishing"
+            ],
+            "description": "Premium triply stainless steel kadai available in multiple sizes with or without lid",
+            "image": "triply_kadai.jpg"
+          },
+          {
+            "id": "PC-TP-002",
+            "name": "Triply Tasla",
+            "category": "Premium Cookware",
+            "subcategory": "Tri-Ply Stainless Steel",
+            "brand": "Bergner",
+            "series": "TriPro",
+            "finish": "Triply Stainless Steel",
+            "sizes_cm": [20, 22, 24, 26, 28, 30],
+            "description": "Same body as kadai, but without handles; triply construction.",
+            "features": [
+              "Tri-ply construction: even heat distribution, prevents hot spots",
+              "Compatible with induction and gas stoves",
+              "Premium finishing"
+            ],
+            "image": "triply_tasla.jpg"
+          }
+        ]
+      }
+    ]
+  }
+] 

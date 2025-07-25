@@ -1,0 +1,521 @@
+[
+  {
+    "category": "Industrial Plastic Crates",
+    "series": [
+      {
+        "name": "300 x 200 Series",
+        "variants": [
+          {
+            "outer_dimension": "300 x 200 x 70 mm",
+            "inner_dimension": "265 x 165 x 65 mm",
+            "capacity_l": 2
+          },
+          {
+            "outer_dimension": "300 x 200 x 100 mm",
+            "inner_dimension": "265 x 165 x 95 mm",
+            "capacity_l": 4
+          },
+          {
+            "outer_dimension": "300 x 200 x 150 mm",
+            "inner_dimension": "265 x 165 x 145 mm",
+            "capacity_l": 6
+          },
+          {
+            "outer_dimension": "300 x 200 x 200 mm",
+            "inner_dimension": "265 x 165 x 195 mm",
+            "capacity_l": 8
+          }
+        ]
+      },
+      {
+        "name": "400 x 300 Series",
+        "variants": [
+          {
+            "outer_dimension": "400 x 300 x 65 mm",
+            "inner_dimension": "365 x 265 x 60 mm",
+            "capacity_l": 6
+          },
+          {
+            "outer_dimension": "400 x 300 x 100 mm",
+            "inner_dimension": "365 x 265 x 95 mm",
+            "capacity_l": 9
+          },
+          {
+            "outer_dimension": "400 x 300 x 120 mm",
+            "inner_dimension": "365 x 265 x 115 mm",
+            "capacity_l": 11.5
+          },
+          {
+            "outer_dimension": "400 x 300 x 150 mm",
+            "inner_dimension": "365 x 265 x 145 mm",
+            "capacity_l": 11.5
+          },
+          {
+            "outer_dimension": "400 x 300 x 175 mm",
+            "inner_dimension": "365 x 265 x 170 mm",
+            "capacity_l": 17
+          },
+          {
+            "outer_dimension": "400 x 300 x 220 mm",
+            "inner_dimension": "365 x 265 x 215 mm",
+            "capacity_l": 20
+          },
+          {
+            "outer_dimension": "400 x 300 x 275 mm",
+            "inner_dimension": "365 x 265 x 265 mm",
+            "capacity_l": 26
+          },
+          {
+            "outer_dimension": "400 x 300 x 320 mm",
+            "inner_dimension": "365 x 265 x 315 mm",
+            "capacity_l": 28.5
+          }
+        ]
+      },
+      {
+        "name": "500 x 325 Series",
+        "variants": [
+          {
+            "outer_dimension": "500 x 325 x 100 mm",
+            "inner_dimension": "465 x 290 x 90 mm",
+            "capacity_l": 12
+          },
+          {
+            "outer_dimension": "500 x 325 x 150 mm",
+            "inner_dimension": "465 x 290 x 140 mm",
+            "capacity_l": 19
+          },
+          {
+            "outer_dimension": "500 x 325 x 200 mm",
+            "inner_dimension": "465 x 290 x 190 mm",
+            "capacity_l": 26
+          },
+          {
+            "outer_dimension": "500 x 325 x 250 mm",
+            "inner_dimension": "465 x 290 x 240 mm",
+            "capacity_l": 32
+          }
+        ]
+      },
+      {
+        "name": "Catering & Bottle Crates",
+        "variants": [
+          {
+            "outer_dimension": "465 x 370 x 250 mm",
+            "inner_dimension": "430 x 340 x 230 mm",
+            "capacity": "20 x 500 ml bottles"
+          },
+          {
+            "outer_dimension": "465 x 370 x 250 mm",
+            "inner_dimension": "430 x 340 x 230 mm",
+            "capacity": "30 x 350 ml bottles"
+          },
+          {
+            "outer_dimension": "540 x 360 x 350 mm",
+            "inner_dimension": "510 x 355 x 340 mm",
+            "capacity_l": 54
+          }
+        ]
+      },
+      {
+        "name": "600 x 400 Series",
+        "variants": [
+          {
+            "outer_dimension": "600 x 400 x 80 mm",
+            "inner_dimension": "565 x 365 x 75 mm",
+            "capacity_l": 14
+          },
+          {
+            "outer_dimension": "600 x 400 x 120 mm",
+            "inner_dimension": "565 x 365 x 115 mm",
+            "capacity_l": 25
+          },
+          {
+            "outer_dimension": "600 x 400 x 160 mm",
+            "inner_dimension": "565 x 365 x 155 mm",
+            "capacity_l": 30
+          },
+          {
+            "outer_dimension": "600 x 400 x 175 mm",
+            "inner_dimension": "565 x 365 x 170 mm",
+            "capacity_l": 35
+          },
+          {
+            "outer_dimension": "600 x 400 x 220 mm",
+            "inner_dimension": "565 x 365 x 215 mm",
+            "capacity_l": 45
+          },
+          {
+            "outer_dimension": "600 x 400 x 240 mm",
+            "inner_dimension": "565 x 365 x 235 mm",
+            "capacity_l": 49
+          },
+          {
+            "outer_dimension": "600 x 400 x 280 mm",
+            "inner_dimension": "565 x 365 x 275 mm",
+            "capacity_l": 57
+          }
+        ]
+      },
+      {
+        "name": "Fruit & Vegetable Crates",
+        "variants": [
+          {
+            "outer_dimension": "540 x 360 x 300 mm",
+            "inner_dimension": "505 x 326 x 290 mm",
+            "capacity_l": 48
+          },
+          {
+            "outer_dimension": "540 x 390 x 340 mm",
+            "inner_dimension": "505 x 355 x 335 mm",
+            "capacity_l": 56
+          }
+        ]
+      },
+      {
+        "name": "600 x 450 Jumbo Series",
+        "variants": [
+          {
+            "outer_dimension": "600 x 400 x 320 mm",
+            "inner_dimension": "565 x 365 x 315 mm",
+            "capacity_l": 66
+          }
+        ]
+      },
+      {
+        "name": "Mini/Medium/Jumbo Series",
+        "variants": [
+          {
+            "name": "Mini Jumbo",
+            "outer_dimension": "650 x 450 x 210 mm",
+            "inner_dimension": "610 x 410 x 200 mm",
+            "capacity_l": 50
+          },
+          {
+            "name": "Medium Jumbo",
+            "outer_dimension": "650 x 450 x 260 mm",
+            "inner_dimension": "610 x 410 x 250 mm",
+            "capacity_l": 60
+          },
+          {
+            "name": "Jumbo",
+            "outer_dimension": "650 x 450 x 315 mm",
+            "inner_dimension": "610 x 410 x 310 mm",
+            "capacity_l": 76
+          },
+          {
+            "name": "Super Jumbo",
+            "outer_dimension": "810 x 570 x 425 mm",
+            "inner_dimension": "765 x 525 x 410 mm",
+            "capacity_l": 165
+          }
+        ]
+      },
+      {
+        "name": "Dairy Crates",
+        "variants": [
+          {
+            "outer_dimension": "600 x 400 x 220 mm",
+            "inner_dimension": "565 x 365 x 215 mm",
+            "capacity_l": 45
+          }
+        ]
+      },
+      {
+        "name": "Perforated Crates",
+        "variants": [
+          {
+            "outer_dimension": "600 x 400 x 120 mm",
+            "inner_dimension": "565 x 365 x 115 mm",
+            "capacity_l": 25
+          },
+          {
+            "outer_dimension": "600 x 400 x 220 mm",
+            "inner_dimension": "565 x 365 x 215 mm",
+            "capacity_l": 45
+          },
+          {
+            "outer_dimension": "600 x 400 x 320 mm",
+            "inner_dimension": "565 x 365 x 320 mm",
+            "capacity_l": 66
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Custom & Partition Crates",
+    "features": [
+      "Can be designed to needs",
+      "Antistatic ESD options available",
+      "Electrically conductive material for safe storage and transport of electronic goods"
+    ]
+  },
+  {
+    "category": "Front Partly Open Bins",
+    "products": [
+      {
+        "outer_dimension": "95 x 102 x 52 mm",
+        "inner_dimension": "61 x 100 x 50 mm"
+      },
+      {
+        "outer_dimension": "160 x 115 x 80 mm",
+        "inner_dimension": "120 x 100 x 75 mm"
+      },
+      {
+        "outer_dimension": "200 x 125 x 100 mm"
+      },
+      {
+        "outer_dimension": "230 x 150 x 125 mm"
+      },
+      {
+        "outer_dimension": "275 x 204 x 150 mm"
+      },
+      {
+        "outer_dimension": "350 x 210 x 200 mm"
+      },
+      {
+        "outer_dimension": "305 x 190 x 190 mm"
+      },
+      {
+        "outer_dimension": "450 x 295 x 200 mm"
+      },
+      {
+        "outer_dimension": "415 x 275 x 190 mm"
+      }
+    ]
+  },
+  {
+    "category": "Waste Bins & Dustbins",
+    "variants": [
+      {
+        "type": "Small",
+        "capacities_l": [10, 12, 15, 18, 20, 25, 30, 40],
+        "colors": ["Blue", "Green", "Red", "Yellow", "Multicolor"],
+        "descriptions": ["For household and commercial use", "Biohazard options available"]
+      },
+      {
+        "type": "Medium",
+        "capacities_l": [40],
+        "colors": ["Blue", "Green", "Red"],
+        "descriptions": ["For commercial and hospital use"]
+      },
+      {
+        "type": "Big",
+        "capacities_l": [50, 60, 80, 100, 200],
+        "colors": ["Blue", "Green", "Red", "Yellow"],
+        "material": "HDPE",
+        "features": ["Swachh Bharat logo", "Color-coded for wet/dry waste"]
+      },
+      {
+        "type": "Large",
+        "capacities_l": [120, 240],
+        "colors": ["Blue", "Green"],
+        "material": "HDPE"
+      },
+      {
+        "type": "Extra Large",
+        "capacities_l": [660, 1100],
+        "colors": ["Blue", "Green"],
+        "material": "HDPE"
+      }
+    ],
+    "plastic_stand_dustbin": {
+      "capacities_l": [40, 60, 80, 100],
+      "types": ["Dum", "Swing", "Flat"],
+      "packs": ["Pack of 1", "Pack of 2", "Pack of 3"]
+    },
+    "steel_dustbin": {
+      "material": "SS",
+      "features": ["Multiple sizes", "Available in stand/mesh options", "Push and pedal types"]
+    }
+  },
+  {
+    "category": "Material Handling Equipment",
+    "products": [
+      "Cycle Rickshaw Garbage (300L, 350L, 400L, 500L, 6 Bin, 8 Bin)",
+      "Garbage Rickshaw Trolley",
+      "Push Trolley (1 wheel, 2 wheel; packs of 1 or 2)",
+      "Dustbin with Trolley"
+    ]
+  },
+  {
+    "category": "Chairs & Benches",
+    "products": [
+      "Park Chairs",
+      "School Chairs",
+      "Railway Platform Bench"
+    ]
+  },
+  {
+    "category": "Artificial Toilets",
+    "variants": [
+      {
+        "material": "Indian Sheet"
+      },
+      {
+        "material": "English Sheet"
+      }
+    ]
+  },
+  {
+    "category": "Safety Equipment",
+    "products": [
+      {
+        "name": "Hospital Gloves",
+        "variants": [
+          "Latex Vinyl",
+          "Latex White",
+          "Latex Blue",
+          "Nitrile Black",
+          "Nylon",
+          "Nitrile Blue"
+        ]
+      },
+      "Road Safety Equipment",
+      "Personal Protection Kits"
+    ]
+  },
+  {
+    "category": "Outdoor Gym & Park Fitness Equipment",
+    "series": [
+      {
+        "name": "Regular Series",
+        "equipments": [
+          { "name": "Chest Press", "code": "ARE/CP/201" },
+          { "name": "Triceps Puller", "code": "ARE/TP/202" },
+          { "name": "Push & Pull Chair", "code": "ARE/PPC/205" },
+          { "name": "Single Seated Puller", "code": "ARE/SSP/207" },
+          { "name": "Single Pec Dec", "code": "ARE/SPD/206" },
+          { "name": "Double Press Down", "code": "ARE/DPD/208" },
+          { "name": "Double Standing Twister", "code": "ARE/TST/210" },
+          { "name": "Triple Standing Twister", "code": "ARE/TST/210" },
+          { "name": "Seating & Standing Twister", "code": "ARE/SST/211" },
+          { "name": "Double Seating Twister", "code": "ARE/DST/212" },
+          { "name": "4in1 Twister", "code": "ARE/4in1/215" },
+          { "name": "Air Walker", "code": "ARE/AW217" },
+          { "name": "Double Air Walker", "code": "ARE/DAM/218" },
+          { "name": "Double Cross Walker", "code": "ARE/DCW/219" },
+          { "name": "Sky Walker", "code": "ARE/SW/220" },
+          { "name": "Cross Trainer", "code": "ARE/CT/221" },
+          { "name": "Cross Walker", "code": "ARE/CW/222" },
+          { "name": "Surf Board", "code": "ARE/S8/223" },
+          { "name": "Horse Rider", "code": "ARE/HR/224" },
+          { "name": "Hand & Foot Cycle", "code": "ARE/HFC/225" },
+          { "name": "Fitness Bike", "code": "ARE/FR/226" },
+          { "name": "Cycle", "code": "ARE/C/227" },
+          { "name": "Arm Paddle Bike", "code": "ARE/APB/228" },
+          { "name": "Sit-up-board", "code": "ARE/SUB/229" },
+          { "name": "Sit-up-bench", "code": "ARE/SUB/230" },
+          { "name": "Sit-up-station", "code": "ARE/SUS/231" },
+          { "name": "Abs Crunch Board", "code": "ARE/ACB/232" },
+          { "name": "Back Extension", "code": "ARE/BE/233" },
+          { "name": "Rower", "code": "ARE/R/234" },
+          { "name": "Leg Press", "code": "ARE/LP/235" },
+          { "name": "Surfing Board", "code": "ARE/S8/236" },
+          { "name": "Shoulder Builder", "code": "ARE/SB/237" },
+          { "name": "Taichi 2in1", "code": "ARE/T2in1/238" },
+          { "name": "Taichi 4in1", "code": "ARE/T4in1/239" },
+          { "name": "Taichi cum Shoulder Builder", "code": "ARE/TCSB/240" },
+          { "name": "Inversion Machine", "code": "AREAM/241" },
+          { "name": "Shoulder Builder cum Leg Press", "code": "ARE/SBCLP/242" },
+          { "name": "Tread Mill", "code": "ARE/TM/243" }
+        ]
+      },
+      {
+        "name": "Cardio Series",
+        "equipments": [
+          { "name": "Push-up-bar, Twister, Shoulder Builder", "code": "ARE/3in1/253" },
+          { "name": "Back Massager", "code": "ARE/B5/254" },
+          { "name": "Twister, Shoulder Builder, Air Walker", "code": "ARE/3in1/255" },
+          { "name": "Twister, Leg Press, Air Walker", "code": "ARE/3in1/256" },
+          { "name": "Air Walker, Leg Press, Shoulder Builder", "code": "ARE/3in1/257" },
+          { "name": "Seated Puller, Twister, Surf Board, Leg Press", "code": "ARE/4in1/258" },
+          { "name": "Back Stretcher, Chin-ups, Leg Raiser, Push-up-bar", "code": "ARE/MFT/260" },
+          { "name": "Bench with Fixed Dumbbells", "code": "ARE/BWFW/262" }
+        ]
+      },
+      {
+        "name": "Locking Series",
+        "equipments": [
+          { "name": "Locking Chest Press", "code": "ARE/LCP/73" },
+          { "name": "Locking Seated Puller", "code": "ARE/LSP/274" },
+          { "name": "Locking Triceps Puller", "code": "ARE/LTP/275" },
+          { "name": "Locking Leg Press", "code": "ARE/LLP/276" },
+          { "name": "Locking Horse Rider", "code": "ARE/LHR/277" },
+          { "name": "Locking Rower", "code": "ARE/LR/278" },
+          { "name": "Locking CUM Twister", "code": "ARE/LSSCT/279" },
+          { "name": "Chest Press Cum Seated Puller", "code": "ARE/CPCSP/280" }
+        ]
+      },
+      {
+        "name": "Exclusive Series",
+        "equipments": [
+          { "name": "Sit-up-board", "code": "ARE/SUB281" },
+          { "name": "Double Air Walker", "code": "ARE/DAW/282" },
+          { "name": "Push-up-bar", "code": "ARE/PUB/283" },
+          { "name": "Leg Press", "code": "ARE/LP/284" },
+          { "name": "Shoulder Press", "code": "ARE/SP/285" },
+          { "name": "Sky Walker", "code": "ARE/SWOSE" },
+          { "name": "Tripple Standing Twister", "code": "ARE/TST/287" },
+          { "name": "Double Multi Functional Trainer", "code": "ARL/DMFT/285" }
+        ]
+      },
+      {
+        "name": "Weight Assisted Series",
+        "equipments": [
+          { "name": "Chest Press", "code": "ARE/WACP/289" },
+          { "name": "Shoulder Press", "code": "ARE/WASP/290" },
+          { "name": "Shoulder Curl", "code": "ARE/WASC/291" },
+          { "name": "Arnold Press", "code": "ARE/WAAP/292" },
+          { "name": "Thigh Extension", "code": "ARE/WALE/253" },
+          { "name": "Rowing Machine", "code": "ARE/WARM/294" },
+          { "name": "Leg Press", "code": "ARE/WALP/295" },
+          { "name": "Calf Exercise", "code": "ART/WACE/296" },
+          { "name": "Squat Machine", "code": "ARE/WASM/298" },
+          { "name": "Leg Extension", "code": "ARE/WALE/299" },
+          { "name": "Bench Press", "code": "ARE/WABP/300" }
+        ]
+      },
+      {
+        "name": "Kids Series",
+        "equipments": [
+          { "name": "Mini Air Walker", "code": "ARE/MAW/301" },
+          { "name": "Mini Cross Walker", "code": "ARF/MCW/302" },
+          { "name": "Mini Leg Press", "code": "ARF/MLP/303" },
+          { "name": "Mini Rower", "code": "ARE/MR/304" },
+          { "name": "Mini Sky Walker", "code": "ARL/MSW 3DS" },
+          { "name": "Mini Seated Puller", "code": "ARE/MSP1306" },
+          { "name": "Orbitrack", "code": "ARF/OT/307" },
+          { "name": "Mini Chest Press", "code": "ARE/MCP/308" }
+        ]
+      },
+      {
+        "name": "Crossfit & Handicap Series",
+        "equipments": [
+          { "name": "Crossfit-1", "code": "ARE/CF1309" },
+          { "name": "Crossfit-2", "code": "AREACF2/310" },
+          { "name": "Crossfit-3", "code": "ARE/CF3/311" },
+          { "name": "Crossfit-4", "code": "AREACF4/312" },
+          { "name": "Handicap Seated Puller", "code": "ARE/HSP/313" },
+          { "name": "Handicap Chest Press", "code": "ARE/HCP/314" },
+          { "name": "Handicap Thaichi Wheel", "code": "SLEMIHIR-3000" },
+          { "name": "Handicap Cycle", "code": "SLE/DH-1000" }
+        ]
+      },
+      {
+        "name": "Wooden Series",
+        "equipments": [
+          { "name": "Wooden Bench Press", "code": "ARE/WBP/317" },
+          { "name": "Wooden Multi Gym", "code": "ARE/WMG318" },
+          { "name": "Wooden Dumbbells Set With Bench", "code": "ARE/WDSWB/319" },
+          { "name": "Wooden Abs Crunch", "code": "ARE/WAC/320" },
+          { "name": "Wooden Crossfit-1", "code": "ARE/WCF1/321" },
+          { "name": "Wooden Monkey Bar", "code": "ARE/WMBCPB" },
+          { "name": "Wooden Crossfit-2", "code": "ARE/WCF2/323" },
+          { "name": "Wooden Multi Station", "code": "ARD/WMS/324" }
+        ]
+      }
+    ]
+  }
+]

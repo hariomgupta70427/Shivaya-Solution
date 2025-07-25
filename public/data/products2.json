@@ -1,0 +1,42 @@
+[
+  {
+    "id": "9",
+    "name": "A4 Notebook Set",
+    "category": "Stationery",
+    "type": "Notebook",
+    "tags": ["notebook", "paper", "office"],
+    "description": "Premium A4 notebooks for office use. Brand: RST Papers.",
+    "price": 120,
+    "quantity": 80
+  },
+  {
+    "id": "10",
+    "name": "Thermal Jug",
+    "category": "Kitchenware",
+    "type": "Jug",
+    "tags": ["jug", "thermal", "kitchen"],
+    "description": "Insulated thermal jug for hot beverages. Brand: UVW Kitchen.",
+    "price": 280,
+    "quantity": 45
+  },
+  {
+    "id": "11",
+    "name": "Industrial Storage Crate",
+    "category": "Utility",
+    "type": "Crate",
+    "tags": ["crate", "industrial", "storage"],
+    "description": "Heavy-duty industrial crate for warehousing. Brand: XYZ Industrial.",
+    "price": 800,
+    "quantity": 30
+  },
+  {
+    "id": "12",
+    "name": "Conference Table",
+    "category": "Furniture",
+    "type": "Table",
+    "tags": ["table", "conference", "office"],
+    "description": "Professional conference table for meetings. Brand: ABC Furniture.",
+    "price": 5000,
+    "quantity": 15
+  }
+] 

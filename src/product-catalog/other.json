@@ -1,0 +1,89 @@
+{
+  "category": "Premium Tri-Ply Stainless Steel Cookware",
+  "brand": "Bergner",
+  "series": "TriPro",
+  "finish": "Triply Stainless Steel (same for all items)",
+  "handle": "Stainless steel, heat-resistant (as per original set)",
+  "products": [
+    {
+      "type": "Triply Kadai",
+      "sizes_cm": [20, 22, 24, 26, 28, 30],
+      "options": [
+        {
+          "with_lid": true,
+          "description": "Stainless steel kadai with triply construction, matching lid available."
+        },
+        {
+          "with_lid": false,
+          "description": "Stainless steel kadai with triply construction, without lid option."
+        }
+      ]
+    },
+    {
+      "type": "Triply Tasla (Kadai without handle)",
+      "sizes_cm": [20, 22, 24, 26, 28, 30],
+      "description": "Same body as kadai, but without handles; triply construction."
+    },
+    {
+      "type": "Triply Sauce Pan",
+      "sizes": [
+        {
+          "size": "Small",
+          "description": "Ideal for small quantities, with matching triply finish and handle."
+        },
+        {
+          "size": "Medium",
+          "description": "Medium capacity saucepan with triply finish and ergonomically designed handle."
+        }
+      ]
+    },
+    {
+      "type": "Fry Pan",
+      "sizes": [
+        {
+          "size": "Small",
+          "description": "Small fry pan, triply construction, same handle and finish."
+        },
+        {
+          "size": "Medium",
+          "description": "Medium size suitable for multipurpose frying."
+        },
+        {
+          "size": "Big",
+          "description": "Large fry pan, triply material for even heat. Suitable for families."
+        }
+      ]
+    },
+    {
+      "type": "Triply Pressure Cooker",
+      "shape": "Contura",
+      "capacities_l": [
+        {
+          "size_l": 2,
+          "status": "Sampling; available within 2 weeks",
+          "description": "Contura shape, triply stainless steel. Compact size."
+        },
+        {
+          "size_l": 3,
+          "status": "Available",
+          "description": "Contura shape, triply stainless steel. Family-size cooker."
+        },
+        {
+          "size_l": 5,
+          "status": "Available",
+          "description": "Contura shape, triply stainless steel. Large capacity."
+        }
+      ]
+    }
+  ],
+  "key_features": [
+    "Tri-ply construction: even heat distribution, prevents hot spots",
+    "Compatible with induction and gas stoves",
+    "Premium handles and finishing as in main TriPro set",
+    "Options for lids available as specified",
+    "Easy to clean, durable, and long-lasting material",
+    "Ideal for gifting and premium kitchen setup"
+  ],
+  "warranty": "5 years (as per main set warranty)",
+  "reference": "See Bergner TriPro Tri-Ply Stainless Steel Set details for construction and finish consistency[1]"
+}
