@@ -2,6 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { ArrowLeft, Package, AlertCircle } from 'lucide-react';
 import { useProducts, Product } from '../hooks/useProducts';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
+import { useInquiry } from '../contexts/InquiryContext';
 import ProductImage from '../components/Products/ProductImage';
 import SearchBar from '../components/Products/SearchBar';
 
@@ -33,6 +34,7 @@ const findBySlug = (items: any[], slug: string): any | undefined => {
 
 const Products: React.FC = () => {
   const { catalog, loading, error, searchProducts } = useProducts();
+  const { setInquiryProduct } = useInquiry();
   const navigate = useNavigate();
   const location = useLocation();
   const { categorySlug, subcategorySlug, productSlug } = useParams<{
@@ -127,6 +129,11 @@ const Products: React.FC = () => {
     console.log('Navigating to product:', product.name);
     setSelectedProduct(product);
     navigate(`/products/${createSlug(product.category)}/${createSlug(product.subcategory)}/${createSlug(product.name)}`);
+  };
+
+  const handleInquireProduct = (product: Product) => {
+    setInquiryProduct(product);
+    navigate('/contact');
   };
   
   const goBack = () => {
@@ -390,10 +397,12 @@ const Products: React.FC = () => {
                     {products.map((product, index) => (
                       <div 
                         key={index}
-                        onClick={() => goToProduct(product)}
-                        className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:-translate-y-1 hover:shadow-xl"
+                        className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:-translate-y-1 hover:shadow-xl"
                       >
-                        <div className="h-48 overflow-hidden">
+                        <div 
+                          className="h-48 overflow-hidden cursor-pointer"
+                          onClick={() => goToProduct(product)}
+                        >
                           <ProductImage
                             product={product}
                             className="w-full h-full object-cover"
@@ -401,12 +410,37 @@ const Products: React.FC = () => {
                           />
                         </div>
                         <div className="p-4">
-                          <h3 className="text-lg font-bold text-light-primary dark:text-dark-primary mb-2 line-clamp-1">
-                            {product.name}
-                          </h3>
-                          <p className="text-light-secondary dark:text-dark-secondary text-sm line-clamp-2">
-                            {product.description}
-                          </p>
+                          <div 
+                            className="cursor-pointer mb-3"
+                            onClick={() => goToProduct(product)}
+                          >
+                            <h3 className="text-lg font-bold text-light-primary dark:text-dark-primary mb-2 line-clamp-1">
+                              {product.name}
+                            </h3>
+                            <p className="text-light-secondary dark:text-dark-secondary text-sm line-clamp-2">
+                              {product.description}
+                            </p>
+                          </div>
+                          <div className="flex space-x-2">
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                goToProduct(product);
+                              }}
+                              className="flex-1 px-3 py-2 bg-brand-warm-orange text-white text-sm rounded-lg hover:bg-brand-mustard transition-colors"
+                            >
+                              View Details
+                            </button>
+                            <button
+                              onClick={(e) => {
+                                e.stopPropagation();
+                                handleInquireProduct(product);
+                              }}
+                              className="flex-1 px-3 py-2 bg-brand-sage text-white text-sm rounded-lg hover:bg-brand-sage/80 transition-colors"
+                            >
+                              Inquire
+                            </button>
+                          </div>
                         </div>
                       </div>
                     ))}
@@ -523,7 +557,7 @@ const Products: React.FC = () => {
                     
                     <div className="mt-8 flex space-x-4">
                       <button
-                        onClick={() => window.location.href = '/contact'}
+                        onClick={() => handleInquireProduct(selectedProduct)}
                         className="px-6 py-3 bg-brand-warm-orange text-white rounded-lg hover:bg-brand-mustard transition-colors"
                       >
                         Inquire About This Product

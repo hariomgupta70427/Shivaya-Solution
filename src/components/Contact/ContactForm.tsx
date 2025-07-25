@@ -1,9 +1,11 @@
-import React, { useState, FormEvent } from 'react';
+import React, { useState, FormEvent, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, User, MessageSquare, Send, CheckCircle, AlertCircle, Phone, FileText } from 'lucide-react';
 import { ContactFormData } from '../../types';
+import { useInquiry } from '../../contexts/InquiryContext';
 
 const ContactForm: React.FC = () => {
+  const { inquiryProduct, generateInquiryMessage, setInquiryProduct } = useInquiry();
   const [formData, setFormData] = useState<ContactFormData>({
     name: '',
     email: '',
@@ -14,6 +16,18 @@ const ContactForm: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState('');
+
+  // Pre-fill message when inquiry product is set
+  useEffect(() => {
+    if (inquiryProduct) {
+      const inquiryMessage = generateInquiryMessage(inquiryProduct);
+      setFormData(prev => ({
+        ...prev,
+        message: inquiryMessage,
+        productInterest: inquiryProduct.name
+      }));
+    }
+  }, [inquiryProduct, generateInquiryMessage]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -66,6 +80,9 @@ const ContactForm: React.FC = () => {
         productInterest: ''
       });
       
+      // Clear inquiry product after successful submission
+      setInquiryProduct(null);
+      
       // Reset success message after 5 seconds
       setTimeout(() => {
         setSuccess(false);
@@ -89,6 +106,26 @@ const ContactForm: React.FC = () => {
           Send us a message and we'll get back to you as soon as possible.
         </p>
       </div>
+
+      {inquiryProduct && (
+        <motion.div
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="mb-6 p-4 bg-blue-100 dark:bg-blue-900/30 border border-blue-300 dark:border-blue-700 text-blue-700 dark:text-blue-300 rounded-lg flex items-center space-x-2"
+        >
+          <FileText className="h-5 w-5" />
+          <div>
+            <span className="font-medium">Product Inquiry Pre-filled:</span>
+            <span className="ml-2">{inquiryProduct.name}</span>
+            <button
+              onClick={() => setInquiryProduct(null)}
+              className="ml-4 text-sm underline hover:no-underline"
+            >
+              Clear
+            </button>
+          </div>
+        </motion.div>
+      )}
 
       {error && (
         <motion.div
