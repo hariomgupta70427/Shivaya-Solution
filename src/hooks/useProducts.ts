@@ -29,10 +29,13 @@ export interface Product {
   outer_dimension?: string;
   inner_dimension?: string;
   capacity_l?: number;
+  capacity?: string;
   packaging?: string;
   moq?: number;
   price_per_kg?: number;
   finish?: string;
+  type?: string;
+  code?: string;
 }
 
 export interface SearchResult {
@@ -55,14 +58,32 @@ export function useProducts() {
     const fetchCatalog = async () => {
       try {
         setLoading(true);
+        console.log('Fetching product catalog...');
         
         // Use the loadProducts function from productLoader
         const productCatalog = await loadProducts();
+        
+        if (!productCatalog || productCatalog.length === 0) {
+          console.error('Product catalog is empty');
+          setError('Product catalog is empty. Please check the data files.');
+          return;
+        }
+        
+        console.log('Product catalog fetched successfully:', productCatalog.length, 'categories');
+        
+        // Debug: Log each category and its subcategories
+        productCatalog.forEach((category, index) => {
+          console.log(`Category ${index + 1}: ${category.category} (${category.subcategories.length} subcategories)`);
+          category.subcategories.forEach((subcategory, subIndex) => {
+            console.log(`  Subcategory ${subIndex + 1}: ${subcategory.name} (${subcategory.products.length} products)`);
+          });
+        });
+        
         setCatalog(productCatalog);
         setError(null);
       } catch (err) {
         console.error('Error loading product catalog:', err);
-        setError('Failed to load product catalog. Please try again later.');
+        setError(`Failed to load product catalog: ${err instanceof Error ? err.message : 'Unknown error'}`);
       } finally {
         setLoading(false);
       }
@@ -98,6 +119,7 @@ export function useProducts() {
     }
     
     const searchTerm = query.toLowerCase();
+    console.log('Searching for:', searchTerm, 'in', catalog.length, 'categories');
     
     // Search in categories
     catalog.forEach(categoryData => {
@@ -132,7 +154,9 @@ export function useProducts() {
           product.description.toLowerCase().includes(searchTerm) ||
           (product.brand && product.brand.toLowerCase().includes(searchTerm)) ||
           (product.subcategory && product.subcategory.toLowerCase().includes(searchTerm)) ||
-          (product.features && product.features.some(feature => feature.toLowerCase().includes(searchTerm)))
+          (product.features && product.features.some(feature => feature.toLowerCase().includes(searchTerm))) ||
+          (product.series && product.series.toLowerCase().includes(searchTerm)) ||
+          (product.material && product.material.toLowerCase().includes(searchTerm))
         );
         
         // Add matching products to results
@@ -150,6 +174,8 @@ export function useProducts() {
         });
       });
     });
+    
+    console.log('Search results found:', results.length);
     
     // Sort results by relevance (exact matches first, then partial matches)
     results.sort((a, b) => {

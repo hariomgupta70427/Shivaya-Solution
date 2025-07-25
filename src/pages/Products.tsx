@@ -53,26 +53,43 @@ const Products: React.FC = () => {
   useEffect(() => {
     if (loading || error || !catalog.length) return;
 
+    console.log('URL params:', { categorySlug, subcategorySlug, productSlug });
+    console.log('Catalog categories:', catalog.map(cat => cat.category));
+
     if (categorySlug) {
       const category = catalog.find(cat => createSlug(cat.category) === categorySlug);
+      
       if (category) {
+        console.log('Found category:', category.category);
         setSelectedCategory(category.category);
         setLayer('subcategory');
 
         if (subcategorySlug) {
+          console.log('Subcategories in', category.category, ':', category.subcategories.map(sub => sub.name));
           const subcategory = category.subcategories.find(sub => createSlug(sub.name) === subcategorySlug);
+          
           if (subcategory) {
+            console.log('Found subcategory:', subcategory.name);
             setSelectedSubcategory(subcategory.name);
             setLayer('product');
 
             if (productSlug) {
+              console.log('Products in', subcategory.name, ':', subcategory.products.map(prod => prod.name));
               const product = subcategory.products.find(prod => createSlug(prod.name) === productSlug);
+              
               if (product) {
+                console.log('Found product:', product.name);
                 setSelectedProduct(product);
+              } else {
+                console.log('Product not found:', productSlug);
               }
             }
+          } else {
+            console.log('Subcategory not found:', subcategorySlug);
           }
         }
+      } else {
+        console.log('Category not found:', categorySlug);
       }
     }
   }, [catalog, categorySlug, subcategorySlug, productSlug, loading, error]);
@@ -81,11 +98,16 @@ const Products: React.FC = () => {
   const searchResults = useMemo(() => {
     if (!debouncedSearch.trim()) return [];
     
-    return searchProducts(debouncedSearch).slice(0, 15);
+    console.log('Searching for:', debouncedSearch);
+    const results = searchProducts(debouncedSearch);
+    console.log('Search results:', results.length);
+    
+    return results.slice(0, 15);
   }, [debouncedSearch, searchProducts]);
 
   // Navigation functions
   const goToCategory = (category: string) => {
+    console.log('Navigating to category:', category);
     setSelectedCategory(category);
     setLayer('subcategory');
     setSelectedSubcategory(null);
@@ -94,6 +116,7 @@ const Products: React.FC = () => {
   };
 
   const goToSubcategory = (subcategory: string) => {
+    console.log('Navigating to subcategory:', subcategory, 'in category:', selectedCategory);
     setSelectedSubcategory(subcategory);
     setLayer('product');
     setSelectedProduct(null);
@@ -101,6 +124,7 @@ const Products: React.FC = () => {
   };
 
   const goToProduct = (product: Product) => {
+    console.log('Navigating to product:', product.name);
     setSelectedProduct(product);
     navigate(`/products/${createSlug(product.category)}/${createSlug(product.subcategory)}/${createSlug(product.name)}`);
   };
@@ -124,6 +148,8 @@ const Products: React.FC = () => {
   };
 
   const handleSearchResult = (result: any) => {
+    console.log('Selected search result:', result);
+    
     if (result.type === 'category') {
       setSelectedCategory(result.name);
       setLayer('subcategory');
@@ -143,6 +169,7 @@ const Products: React.FC = () => {
       setLayer('product');
       navigate(`/products/${createSlug(result.category)}/${createSlug(result.subcategory)}/${createSlug(result.name)}`);
     }
+    
     setSearchOpen(false);
     setSearch('');
   };
@@ -275,39 +302,57 @@ const Products: React.FC = () => {
             <h2 className="text-2xl font-bold text-light-primary dark:text-dark-primary mb-6">
               {selectedCategory} Subcategories
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-              {catalog
-                .find(cat => cat.category === selectedCategory)?.subcategories
-                .map((subcategory, index) => (
-                  <div 
-                    key={index} 
-                    onClick={() => goToSubcategory(subcategory.name)}
-                    className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:-translate-y-1 hover:shadow-xl"
-                  >
-                    <div className="h-40 overflow-hidden relative">
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                      <ProductImage
-                        product={{
-                          id: `subcategory-${index}`,
-                          name: subcategory.name,
-                          category: selectedCategory,
-                          subcategory: subcategory.name,
-                          description: `${subcategory.name} collection`,
-                        }}
-                        className="w-full h-full object-cover"
-                        alt={subcategory.name}
-                      />
-                      <h3 className="absolute bottom-3 left-3 text-white text-xl font-bold z-20">{subcategory.name}</h3>
-                    </div>
-                    <div className="p-4">
-                      <p className="text-light-secondary dark:text-dark-secondary">
-                        {subcategory.products.length} products
-                      </p>
-                    </div>
+            {(() => {
+              const currentCategory = catalog.find(cat => cat.category === selectedCategory);
+              const subcategories = currentCategory?.subcategories || [];
+              
+              if (subcategories.length === 0) {
+                return (
+                  <div className="text-center py-12">
+                    <Package className="h-16 w-16 text-gray-400 mx-auto mb-4" />
+                    <h3 className="text-xl font-semibold text-light-primary dark:text-dark-primary mb-2">
+                      No Subcategories Found
+                    </h3>
+                    <p className="text-light-secondary dark:text-dark-secondary">
+                      This category doesn't have any subcategories yet.
+                    </p>
                   </div>
-                ))
+                );
               }
-            </div>
+              
+              return (
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                  {subcategories.map((subcategory, index) => (
+                    <div 
+                      key={index} 
+                      onClick={() => goToSubcategory(subcategory.name)}
+                      className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:-translate-y-1 hover:shadow-xl"
+                    >
+                      <div className="h-40 overflow-hidden relative">
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
+                        <ProductImage
+                          product={{
+                            id: `subcategory-${index}`,
+                            name: subcategory.name,
+                            category: selectedCategory,
+                            subcategory: subcategory.name,
+                            description: `${subcategory.name} collection`,
+                          }}
+                          className="w-full h-full object-cover"
+                          alt={subcategory.name}
+                        />
+                        <h3 className="absolute bottom-3 left-3 text-white text-xl font-bold z-20">{subcategory.name}</h3>
+                      </div>
+                      <div className="p-4">
+                        <p className="text-light-secondary dark:text-dark-secondary">
+                          {subcategory.products.length} products
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              );
+            })()}
           </div>
         )}
 
@@ -321,35 +366,53 @@ const Products: React.FC = () => {
             
             {!selectedProduct ? (
               // Products Grid
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                {catalog
-                  .find(cat => cat.category === selectedCategory)
-                  ?.subcategories.find(sub => sub.name === selectedSubcategory)
-                  ?.products.map((product, index) => (
-                    <div 
-                      key={index}
-                      onClick={() => goToProduct(product)}
-                      className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:-translate-y-1 hover:shadow-xl"
-                    >
-                      <div className="h-48 overflow-hidden">
-                        <ProductImage
-                          product={product}
-                          className="w-full h-full object-cover"
-                          alt={product.name}
-                        />
-                      </div>
-                      <div className="p-4">
-                        <h3 className="text-lg font-bold text-light-primary dark:text-dark-primary mb-2 line-clamp-1">
-                          {product.name}
-                        </h3>
-                        <p className="text-light-secondary dark:text-dark-secondary text-sm line-clamp-2">
-                          {product.description}
-                        </p>
-                      </div>
+              (() => {
+                const currentCategory = catalog.find(cat => cat.category === selectedCategory);
+                const currentSubcategory = currentCategory?.subcategories.find(sub => sub.name === selectedSubcategory);
+                const products = currentSubcategory?.products || [];
+                
+                if (products.length === 0) {
+                  return (
+                    <div className="text-center py-12">
+                      <Package className="h-16 w-16 text-gray-400 mx-auto mb-4" />
+                      <h3 className="text-xl font-semibold text-light-primary dark:text-dark-primary mb-2">
+                        No Products Found
+                      </h3>
+                      <p className="text-light-secondary dark:text-dark-secondary">
+                        This subcategory doesn't have any products yet.
+                      </p>
                     </div>
-                  ))
+                  );
                 }
-              </div>
+                
+                return (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    {products.map((product, index) => (
+                      <div 
+                        key={index}
+                        onClick={() => goToProduct(product)}
+                        className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:-translate-y-1 hover:shadow-xl"
+                      >
+                        <div className="h-48 overflow-hidden">
+                          <ProductImage
+                            product={product}
+                            className="w-full h-full object-cover"
+                            alt={product.name}
+                          />
+                        </div>
+                        <div className="p-4">
+                          <h3 className="text-lg font-bold text-light-primary dark:text-dark-primary mb-2 line-clamp-1">
+                            {product.name}
+                          </h3>
+                          <p className="text-light-secondary dark:text-dark-secondary text-sm line-clamp-2">
+                            {product.description}
+                          </p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                );
+              })()
             ) : (
               // Product Detail View
               <div className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden">

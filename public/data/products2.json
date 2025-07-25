@@ -1,42 +1,776 @@
 [
   {
+    "id": "1",
+    "name": "Elite GT Pen",
+    "category": "Metal Pens",
+    "type": "Premium Ball Pens",
+    "tags": ["pen", "premium", "elite"],
+    "description": "Premium executive ball pen with chrome finish. Brand: Shivaya Solutions.",
+    "quantity": 500
+  },
+  {
+    "id": "2",
+    "name": "Chrome Edge Pen",
+    "category": "Metal Pens",
+    "type": "Premium Ball Pens",
+    "tags": ["pen", "chrome", "premium"],
+    "description": "Chrome-finished premium ball pen for professional use. Brand: Shivaya Solutions.",
+    "quantity": 400
+  },
+  {
+    "id": "3",
+    "name": "Dyna Smooth Grip",
+    "category": "Metal Pens",
+    "type": "Premium Ball Pens",
+    "tags": ["pen", "smooth", "grip"],
+    "description": "Smooth grip premium ball pen for comfortable writing. Brand: Shivaya Solutions.",
+    "quantity": 600
+  },
+  {
+    "id": "4",
+    "name": "Dyna Budget Pen",
+    "category": "Metal Pens",
+    "type": "Promotional Pens",
+    "tags": ["pen", "budget", "promotional"],
+    "description": "Cost-effective promotional ball pen for bulk orders. Brand: Shivaya Solutions.",
+    "quantity": 2000
+  },
+  {
+    "id": "5",
+    "name": "Push-Button Promo",
+    "category": "Metal Pens",
+    "type": "Promotional Pens",
+    "tags": ["pen", "push-button", "promo"],
+    "description": "Push-button promotional pen with click mechanism. Brand: Shivaya Solutions.",
+    "quantity": 1500
+  },
+  {
+    "id": "6",
+    "name": "Curve Clip Pen",
+    "category": "Metal Pens",
+    "type": "Promotional Pens",
+    "tags": ["pen", "curve", "clip"],
+    "description": "Curved clip promotional pen for easy attachment. Brand: Shivaya Solutions.",
+    "quantity": 1200
+  },
+  {
+    "id": "7",
+    "name": "Executive Metal Set",
+    "category": "Metal Pens",
+    "type": "Gift Sets",
+    "tags": ["pen", "executive", "gift"],
+    "description": "Premium executive metal pen gift set. Brand: Shivaya Solutions.",
+    "quantity": 200
+  },
+  {
+    "id": "8",
+    "name": "Pen + Keychain Set",
+    "category": "Metal Pens",
+    "type": "Gift Sets",
+    "tags": ["pen", "keychain", "gift"],
+    "description": "Pen and keychain combination gift set. Brand: Shivaya Solutions.",
+    "quantity": 300
+  },
+  {
     "id": "9",
-    "name": "A4 Notebook Set",
-    "category": "Stationery",
-    "type": "Notebook",
-    "tags": ["notebook", "paper", "office"],
-    "description": "Premium A4 notebooks for office use. Brand: RST Papers.",
-    "price": 120,
-    "quantity": 80
+    "name": "3-in-1 Corporate Combo",
+    "category": "Metal Pens",
+    "type": "Gift Sets",
+    "tags": ["pen", "corporate", "combo"],
+    "description": "3-in-1 corporate gift combo with multiple functions. Brand: Shivaya Solutions.",
+    "quantity": 150
   },
   {
     "id": "10",
-    "name": "Thermal Jug",
-    "category": "Kitchenware",
-    "type": "Jug",
-    "tags": ["jug", "thermal", "kitchen"],
-    "description": "Insulated thermal jug for hot beverages. Brand: UVW Kitchen.",
-    "price": 280,
-    "quantity": 45
+    "name": "Stylus Chrome Grip",
+    "category": "Metal Pens",
+    "type": "Stylus Pens",
+    "tags": ["pen", "stylus", "chrome"],
+    "description": "Chrome grip stylus pen for touch devices. Brand: Shivaya Solutions.",
+    "quantity": 400
   },
   {
     "id": "11",
-    "name": "Industrial Storage Crate",
-    "category": "Utility",
-    "type": "Crate",
-    "tags": ["crate", "industrial", "storage"],
-    "description": "Heavy-duty industrial crate for warehousing. Brand: XYZ Industrial.",
-    "price": 800,
-    "quantity": 30
+    "name": "Dyna Touch Tip",
+    "category": "Metal Pens",
+    "type": "Stylus Pens",
+    "tags": ["pen", "touch", "tip"],
+    "description": "Advanced touch tip stylus pen for precision. Brand: Shivaya Solutions.",
+    "quantity": 350
   },
   {
     "id": "12",
-    "name": "Conference Table",
-    "category": "Furniture",
-    "type": "Table",
-    "tags": ["table", "conference", "office"],
-    "description": "Professional conference table for meetings. Brand: ABC Furniture.",
-    "price": 5000,
-    "quantity": 15
+    "name": "Laser Pointer Pen",
+    "category": "Metal Pens",
+    "type": "Multi-function Pens",
+    "tags": ["pen", "laser", "pointer"],
+    "description": "Multi-function pen with built-in laser pointer. Brand: Shivaya Solutions.",
+    "quantity": 250
+  },
+  {
+    "id": "13",
+    "name": "2-in-1 Pen + Light",
+    "category": "Metal Pens",
+    "type": "Multi-function Pens",
+    "tags": ["pen", "light", "multi"],
+    "description": "2-in-1 pen with integrated LED light. Brand: Shivaya Solutions.",
+    "quantity": 300
+  },
+  {
+    "id": "14",
+    "name": "Dyna Engrave Classic",
+    "category": "Metal Pens",
+    "type": "Customized Engraving Pens",
+    "tags": ["pen", "engrave", "classic"],
+    "description": "Classic engraving pen for personalized gifts. Brand: Shivaya Solutions.",
+    "quantity": 100
+  },
+  {
+    "id": "15",
+    "name": "Signature Pen Series",
+    "category": "Metal Pens",
+    "type": "Customized Engraving Pens",
+    "tags": ["pen", "signature", "series"],
+    "description": "Signature series engraving pens for executives. Brand: Shivaya Solutions.",
+    "quantity": 80
+  },
+  {
+    "id": "16",
+    "name": "2-Compartment Steel",
+    "category": "Household Products",
+    "type": "Lunch Boxes",
+    "tags": ["lunch", "steel", "compartment"],
+    "description": "2-compartment stainless steel lunch box. Brand: Shivaya Solutions.",
+    "quantity": 400
+  },
+  {
+    "id": "17",
+    "name": "Insulated Plastic Box",
+    "category": "Household Products",
+    "type": "Lunch Boxes",
+    "tags": ["lunch", "plastic", "insulated"],
+    "description": "Insulated plastic lunch box for temperature control. Brand: Shivaya Solutions.",
+    "quantity": 350
+  },
+  {
+    "id": "18",
+    "name": "Bento Style Box",
+    "category": "Household Products",
+    "type": "Lunch Boxes",
+    "tags": ["lunch", "bento", "style"],
+    "description": "Japanese-style bento lunch box with compartments. Brand: Shivaya Solutions.",
+    "quantity": 200
+  },
+  {
+    "id": "19",
+    "name": "Sports Bottle 1L",
+    "category": "Household Products",
+    "type": "Water Bottles",
+    "tags": ["water", "sports", "1L"],
+    "description": "1L sports water bottle for active lifestyle. Brand: Shivaya Solutions.",
+    "quantity": 500
+  },
+  {
+    "id": "20",
+    "name": "Kids' Sipper 500ml",
+    "category": "Household Products",
+    "type": "Water Bottles",
+    "tags": ["water", "kids", "sipper"],
+    "description": "500ml kids' sipper bottle with spill-proof design. Brand: Shivaya Solutions.",
+    "quantity": 300
+  },
+  {
+    "id": "21",
+    "name": "Steel Fridge Bottle",
+    "category": "Household Products",
+    "type": "Water Bottles",
+    "tags": ["water", "steel", "fridge"],
+    "description": "Stainless steel fridge bottle for cold storage. Brand: Shivaya Solutions.",
+    "quantity": 250
+  },
+  {
+    "id": "22",
+    "name": "Airtight Box Set",
+    "category": "Household Products",
+    "type": "Storage Containers",
+    "tags": ["storage", "airtight", "set"],
+    "description": "Airtight storage container set for food preservation. Brand: Shivaya Solutions.",
+    "quantity": 400
+  },
+  {
+    "id": "23",
+    "name": "Modular Containers",
+    "category": "Household Products",
+    "type": "Storage Containers",
+    "tags": ["storage", "modular", "containers"],
+    "description": "Modular storage containers for organized storage. Brand: Shivaya Solutions.",
+    "quantity": 350
+  },
+  {
+    "id": "24",
+    "name": "Steel Jug 1.5L",
+    "category": "Household Products",
+    "type": "Steelware",
+    "tags": ["steel", "jug", "1.5L"],
+    "description": "1.5L stainless steel jug for kitchen use. Brand: Shivaya Solutions.",
+    "quantity": 200
+  },
+  {
+    "id": "25",
+    "name": "Steel Plate Set",
+    "category": "Household Products",
+    "type": "Steelware",
+    "tags": ["steel", "plate", "set"],
+    "description": "Stainless steel plate set for dining. Brand: Shivaya Solutions.",
+    "quantity": 300
+  },
+  {
+    "id": "26",
+    "name": "Multipurpose Tray",
+    "category": "Household Products",
+    "type": "Plasticware",
+    "tags": ["plastic", "tray", "multipurpose"],
+    "description": "Multipurpose plastic tray for various uses. Brand: Shivaya Solutions.",
+    "quantity": 450
+  },
+  {
+    "id": "27",
+    "name": "Plastic Basket",
+    "category": "Household Products",
+    "type": "Plasticware",
+    "tags": ["plastic", "basket", "storage"],
+    "description": "Plastic storage basket for household organization. Brand: Shivaya Solutions.",
+    "quantity": 500
+  },
+  {
+    "id": "28",
+    "name": "Soap Case",
+    "category": "Household Products",
+    "type": "Plasticware",
+    "tags": ["plastic", "soap", "case"],
+    "description": "Plastic soap case for bathroom organization. Brand: Shivaya Solutions.",
+    "quantity": 600
+  },
+  {
+    "id": "29",
+    "name": "Insulated Jug",
+    "category": "Household Products",
+    "type": "Insulated Products",
+    "tags": ["insulated", "jug", "thermal"],
+    "description": "Insulated jug for hot/cold beverages. Brand: Shivaya Solutions.",
+    "quantity": 200
+  },
+  {
+    "id": "30",
+    "name": "Thermo Flask",
+    "category": "Household Products",
+    "type": "Insulated Products",
+    "tags": ["thermo", "flask", "insulated"],
+    "description": "Thermal flask for temperature retention. Brand: Shivaya Solutions.",
+    "quantity": 250
+  },
+  {
+    "id": "31",
+    "name": "Casserole Set",
+    "category": "Household Products",
+    "type": "Insulated Products",
+    "tags": ["casserole", "set", "insulated"],
+    "description": "Insulated casserole set for food serving. Brand: Shivaya Solutions.",
+    "quantity": 150
+  },
+  {
+    "id": "32",
+    "name": "3-Piece Non-Stick Set",
+    "category": "Kitchen World",
+    "type": "Cookware Sets",
+    "tags": ["cookware", "non-stick", "3-piece"],
+    "description": "3-piece non-stick cookware set for modern cooking. Brand: Shivaya Solutions.",
+    "quantity": 120
+  },
+  {
+    "id": "33",
+    "name": "Induction Base Combo",
+    "category": "Kitchen World",
+    "type": "Cookware Sets",
+    "tags": ["cookware", "induction", "combo"],
+    "description": "Induction base cookware combo set. Brand: Shivaya Solutions.",
+    "quantity": 100
+  },
+  {
+    "id": "34",
+    "name": "Spark Lighter",
+    "category": "Kitchen World",
+    "type": "Gas Lighters",
+    "tags": ["lighter", "spark", "gas"],
+    "description": "Spark gas lighter for kitchen use. Brand: Shivaya Solutions.",
+    "quantity": 800
+  },
+  {
+    "id": "35",
+    "name": "Jumbo Grip Lighter",
+    "category": "Kitchen World",
+    "type": "Gas Lighters",
+    "tags": ["lighter", "jumbo", "grip"],
+    "description": "Jumbo grip gas lighter for easy handling. Brand: Shivaya Solutions.",
+    "quantity": 600
+  },
+  {
+    "id": "36",
+    "name": "Chef Knife",
+    "category": "Kitchen World",
+    "type": "Knives",
+    "tags": ["knife", "chef", "professional"],
+    "description": "Professional chef knife for culinary use. Brand: Shivaya Solutions.",
+    "quantity": 150
+  },
+  {
+    "id": "37",
+    "name": "Multi-Purpose Knife",
+    "category": "Kitchen World",
+    "type": "Knives",
+    "tags": ["knife", "multi-purpose", "kitchen"],
+    "description": "Multi-purpose kitchen knife for various tasks. Brand: Shivaya Solutions.",
+    "quantity": 200
+  },
+  {
+    "id": "38",
+    "name": "Non-Stick Tawa",
+    "category": "Kitchen World",
+    "type": "Tawa/Kadai",
+    "tags": ["tawa", "non-stick", "cooking"],
+    "description": "Non-stick tawa for traditional cooking. Brand: Shivaya Solutions.",
+    "quantity": 180
+  },
+  {
+    "id": "39",
+    "name": "Aluminium Kadai",
+    "category": "Kitchen World",
+    "type": "Tawa/Kadai",
+    "tags": ["kadai", "aluminium", "cooking"],
+    "description": "Aluminium kadai for deep frying and cooking. Brand: Shivaya Solutions.",
+    "quantity": 120
+  },
+  {
+    "id": "40",
+    "name": "3L Aluminium Cooker",
+    "category": "Kitchen World",
+    "type": "Pressure Cookers",
+    "tags": ["cooker", "aluminium", "3L"],
+    "description": "3L aluminium pressure cooker for family use. Brand: Shivaya Solutions.",
+    "quantity": 90
+  },
+  {
+    "id": "41",
+    "name": "5L Hard Anodised",
+    "category": "Kitchen World",
+    "type": "Pressure Cookers",
+    "tags": ["cooker", "hard", "anodised"],
+    "description": "5L hard anodised pressure cooker for heavy use. Brand: Shivaya Solutions.",
+    "quantity": 70
+  },
+  {
+    "id": "42",
+    "name": "Veg Chopper",
+    "category": "Kitchen World",
+    "type": "Choppers & Peelers",
+    "tags": ["chopper", "vegetable", "kitchen"],
+    "description": "Vegetable chopper for quick food preparation. Brand: Shivaya Solutions.",
+    "quantity": 250
+  },
+  {
+    "id": "43",
+    "name": "Smart Peeler",
+    "category": "Kitchen World",
+    "type": "Choppers & Peelers",
+    "tags": ["peeler", "smart", "kitchen"],
+    "description": "Smart peeler for efficient vegetable peeling. Brand: Shivaya Solutions.",
+    "quantity": 300
+  },
+  {
+    "id": "44",
+    "name": "310x210x125 mm",
+    "category": "Plastic Crates",
+    "type": "300x200 Series",
+    "tags": ["crate", "plastic", "310x210"],
+    "description": "310x210x125mm plastic crate for standard storage. Brand: Shivaya Solutions.",
+    "quantity": 400
+  },
+  {
+    "id": "45",
+    "name": "320x230x150 mm",
+    "category": "Plastic Crates",
+    "type": "300x200 Series",
+    "tags": ["crate", "plastic", "320x230"],
+    "description": "320x230x150mm plastic crate for medium storage. Brand: Shivaya Solutions.",
+    "quantity": 350
+  },
+  {
+    "id": "46",
+    "name": "410x310x130 mm",
+    "category": "Plastic Crates",
+    "type": "400x300 Series",
+    "tags": ["crate", "plastic", "410x310"],
+    "description": "410x310x130mm plastic crate for industrial use. Brand: Shivaya Solutions.",
+    "quantity": 300
+  },
+  {
+    "id": "47",
+    "name": "425x325x150 mm",
+    "category": "Plastic Crates",
+    "type": "400x300 Series",
+    "tags": ["crate", "plastic", "425x325"],
+    "description": "425x325x150mm plastic crate for heavy storage. Brand: Shivaya Solutions.",
+    "quantity": 250
+  },
+  {
+    "id": "48",
+    "name": "520x330x140 mm",
+    "category": "Plastic Crates",
+    "type": "500x325 Series",
+    "tags": ["crate", "plastic", "520x330"],
+    "description": "520x330x140mm plastic crate for large storage. Brand: Shivaya Solutions.",
+    "quantity": 200
+  },
+  {
+    "id": "49",
+    "name": "530x335x160 mm",
+    "category": "Plastic Crates",
+    "type": "500x325 Series",
+    "tags": ["crate", "plastic", "530x335"],
+    "description": "530x335x160mm plastic crate for bulk storage. Brand: Shivaya Solutions.",
+    "quantity": 180
+  },
+  {
+    "id": "50",
+    "name": "610x410x170 mm",
+    "category": "Plastic Crates",
+    "type": "600x400 Series",
+    "tags": ["crate", "plastic", "610x410"],
+    "description": "610x410x170mm plastic crate for extra large storage. Brand: Shivaya Solutions.",
+    "quantity": 150
+  },
+  {
+    "id": "51",
+    "name": "620x420x200 mm",
+    "category": "Plastic Crates",
+    "type": "600x400 Series",
+    "tags": ["crate", "plastic", "620x420"],
+    "description": "620x420x200mm plastic crate for maximum storage. Brand: Shivaya Solutions.",
+    "quantity": 120
+  },
+  {
+    "id": "52",
+    "name": "Mesh Vegetable Crate",
+    "category": "Plastic Crates",
+    "type": "Perforated Crates",
+    "tags": ["crate", "mesh", "vegetable"],
+    "description": "Mesh perforated crate for vegetable storage. Brand: Shivaya Solutions.",
+    "quantity": 300
+  },
+  {
+    "id": "53",
+    "name": "Vented Dairy Crate",
+    "category": "Plastic Crates",
+    "type": "Perforated Crates",
+    "tags": ["crate", "vented", "dairy"],
+    "description": "Vented perforated crate for dairy products. Brand: Shivaya Solutions.",
+    "quantity": 250
+  },
+  {
+    "id": "54",
+    "name": "Tool Storage Crate",
+    "category": "Plastic Crates",
+    "type": "Custom & Partition Crates",
+    "tags": ["crate", "tool", "storage"],
+    "description": "Custom tool storage crate with partitions. Brand: Shivaya Solutions.",
+    "quantity": 100
+  },
+  {
+    "id": "55",
+    "name": "Electronics Divider Crate",
+    "category": "Plastic Crates",
+    "type": "Custom & Partition Crates",
+    "tags": ["crate", "electronics", "divider"],
+    "description": "Custom electronics divider crate for organization. Brand: Shivaya Solutions.",
+    "quantity": 80
+  },
+  {
+    "id": "56",
+    "name": "Mango Crate",
+    "category": "Plastic Crates",
+    "type": "Fruit & Vegetable Crates",
+    "tags": ["crate", "mango", "fruit"],
+    "description": "Specialized crate for mango storage and transport. Brand: Shivaya Solutions.",
+    "quantity": 400
+  },
+  {
+    "id": "57",
+    "name": "Tomato Crate",
+    "category": "Plastic Crates",
+    "type": "Fruit & Vegetable Crates",
+    "tags": ["crate", "tomato", "vegetable"],
+    "description": "Specialized crate for tomato storage and transport. Brand: Shivaya Solutions.",
+    "quantity": 350
+  },
+  {
+    "id": "58",
+    "name": "Swing Lid 10L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Small Bins (10–40L)",
+    "tags": ["dustbin", "swing", "10L"],
+    "description": "10L swing lid dustbin for home use. Brand: Shivaya Solutions.",
+    "quantity": 600
+  },
+  {
+    "id": "59",
+    "name": "Dum Type 20L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Small Bins (10–40L)",
+    "tags": ["dustbin", "dum", "20L"],
+    "description": "20L dum type dustbin for office use. Brand: Shivaya Solutions.",
+    "quantity": 500
+  },
+  {
+    "id": "60",
+    "name": "Swing Type 40L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Medium Bins (40L)",
+    "tags": ["dustbin", "swing", "40L"],
+    "description": "40L swing type dustbin for commercial use. Brand: Shivaya Solutions.",
+    "quantity": 400
+  },
+  {
+    "id": "61",
+    "name": "Pedal Bin 35L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Medium Bins (40L)",
+    "tags": ["dustbin", "pedal", "35L"],
+    "description": "35L pedal bin for hands-free operation. Brand: Shivaya Solutions.",
+    "quantity": 300
+  },
+  {
+    "id": "62",
+    "name": "HDPE Bin 100L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Big Bins (50–200L)",
+    "tags": ["dustbin", "HDPE", "100L"],
+    "description": "100L HDPE dustbin for industrial use. Brand: Shivaya Solutions.",
+    "quantity": 200
+  },
+  {
+    "id": "63",
+    "name": "Lid Drum 200L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Big Bins (50–200L)",
+    "tags": ["dustbin", "drum", "200L"],
+    "description": "200L lid drum for bulk waste collection. Brand: Shivaya Solutions.",
+    "quantity": 100
+  },
+  {
+    "id": "64",
+    "name": "Green Garbage Bin 240L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Extra Large (120L–1100L)",
+    "tags": ["dustbin", "green", "240L"],
+    "description": "240L green garbage bin for municipal use. Brand: Shivaya Solutions.",
+    "quantity": 80
+  },
+  {
+    "id": "65",
+    "name": "Municipal Use Bin 660L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Extra Large (120L–1100L)",
+    "tags": ["dustbin", "municipal", "660L"],
+    "description": "660L municipal use bin for public areas. Brand: Shivaya Solutions.",
+    "quantity": 50
+  },
+  {
+    "id": "66",
+    "name": "Stand Type Twin Bin",
+    "category": "Dustbins & Waste Bins",
+    "type": "Plastic Stand Dustbins",
+    "tags": ["dustbin", "stand", "twin"],
+    "description": "Stand type twin bin for waste segregation. Brand: Shivaya Solutions.",
+    "quantity": 250
+  },
+  {
+    "id": "67",
+    "name": "Dome Lid Plastic Stand",
+    "category": "Dustbins & Waste Bins",
+    "type": "Plastic Stand Dustbins",
+    "tags": ["dustbin", "dome", "stand"],
+    "description": "Dome lid plastic stand dustbin for modern use. Brand: Shivaya Solutions.",
+    "quantity": 200
+  },
+  {
+    "id": "68",
+    "name": "SS Swing Bin 30L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Steel Dustbins",
+    "tags": ["dustbin", "steel", "30L"],
+    "description": "30L stainless steel swing bin for premium facilities. Brand: Shivaya Solutions.",
+    "quantity": 150
+  },
+  {
+    "id": "69",
+    "name": "Open Top Bin 50L",
+    "category": "Dustbins & Waste Bins",
+    "type": "Steel Dustbins",
+    "tags": ["dustbin", "steel", "50L"],
+    "description": "50L open top steel bin for easy access. Brand: Shivaya Solutions.",
+    "quantity": 120
+  },
+  {
+    "id": "70",
+    "name": "Glycerin Bath Soap 20g",
+    "category": "Hotel Amenities",
+    "type": "Hotel Soaps",
+    "tags": ["soap", "glycerin", "20g"],
+    "description": "20g glycerin bath soap for hotel guests. Brand: Shivaya Solutions.",
+    "quantity": 3000
+  },
+  {
+    "id": "71",
+    "name": "Floral Soap 30g",
+    "category": "Hotel Amenities",
+    "type": "Hotel Soaps",
+    "tags": ["soap", "floral", "30g"],
+    "description": "30g floral soap for premium hotel amenities. Brand: Shivaya Solutions.",
+    "quantity": 2500
+  },
+  {
+    "id": "72",
+    "name": "Shampoo 20ml",
+    "category": "Hotel Amenities",
+    "type": "20ml Toiletries",
+    "tags": ["shampoo", "20ml", "hotel"],
+    "description": "20ml shampoo bottle for hotel toiletries. Brand: Shivaya Solutions.",
+    "quantity": 2000
+  },
+  {
+    "id": "73",
+    "name": "Conditioner 20ml",
+    "category": "Hotel Amenities",
+    "type": "20ml Toiletries",
+    "tags": ["conditioner", "20ml", "hotel"],
+    "description": "20ml conditioner bottle for hotel toiletries. Brand: Shivaya Solutions.",
+    "quantity": 1800
+  },
+  {
+    "id": "74",
+    "name": "Lotion 20ml",
+    "category": "Hotel Amenities",
+    "type": "20ml Toiletries",
+    "tags": ["lotion", "20ml", "hotel"],
+    "description": "20ml lotion bottle for hotel toiletries. Brand: Shivaya Solutions.",
+    "quantity": 1600
+  },
+  {
+    "id": "75",
+    "name": "Toothbrush + Paste Combo",
+    "category": "Hotel Amenities",
+    "type": "Dental Kits",
+    "tags": ["dental", "toothbrush", "paste"],
+    "description": "Toothbrush and paste combo for hotel guests. Brand: Shivaya Solutions.",
+    "quantity": 2500
+  },
+  {
+    "id": "76",
+    "name": "Transparent Box Dental Kit",
+    "category": "Hotel Amenities",
+    "type": "Dental Kits",
+    "tags": ["dental", "transparent", "kit"],
+    "description": "Transparent box dental kit for premium hotels. Brand: Shivaya Solutions.",
+    "quantity": 1500
+  },
+  {
+    "id": "77",
+    "name": "Non-Woven Slippers",
+    "category": "Hotel Amenities",
+    "type": "Slippers",
+    "tags": ["slippers", "non-woven", "hotel"],
+    "description": "Non-woven slippers for hotel guest comfort. Brand: Shivaya Solutions.",
+    "quantity": 1200
+  },
+  {
+    "id": "78",
+    "name": "Terry Slippers",
+    "category": "Hotel Amenities",
+    "type": "Slippers",
+    "tags": ["slippers", "terry", "hotel"],
+    "description": "Terry cloth slippers for premium hotel amenities. Brand: Shivaya Solutions.",
+    "quantity": 800
+  },
+  {
+    "id": "79",
+    "name": "Razor + Cream Sachet",
+    "category": "Hotel Amenities",
+    "type": "Shaving Kits",
+    "tags": ["shaving", "razor", "cream"],
+    "description": "Razor and cream sachet for hotel shaving kits. Brand: Shivaya Solutions.",
+    "quantity": 1000
+  },
+  {
+    "id": "80",
+    "name": "Black Sponge Shine",
+    "category": "Hotel Amenities",
+    "type": "Shoe Shiners",
+    "tags": ["shoe", "sponge", "shine"],
+    "description": "Black sponge shoe shine for hotel services. Brand: Shivaya Solutions.",
+    "quantity": 600
+  },
+  {
+    "id": "81",
+    "name": "Cream Shine",
+    "category": "Hotel Amenities",
+    "type": "Shoe Shiners",
+    "tags": ["shoe", "cream", "shine"],
+    "description": "Cream shoe shine for premium hotel services. Brand: Shivaya Solutions.",
+    "quantity": 500
+  },
+  {
+    "id": "82",
+    "name": "Printed Disposable Cover",
+    "category": "Hotel Amenities",
+    "type": "Glass Covers",
+    "tags": ["glass", "cover", "disposable"],
+    "description": "Printed disposable glass cover for hotel amenities. Brand: Shivaya Solutions.",
+    "quantity": 800
+  },
+  {
+    "id": "83",
+    "name": "Lemon Scent Screen",
+    "category": "Hotel Amenities",
+    "type": "Urinal Screens",
+    "tags": ["urinal", "screen", "lemon"],
+    "description": "Lemon scented urinal screen for hotel hygiene. Brand: Shivaya Solutions.",
+    "quantity": 1000
+  },
+  {
+    "id": "84",
+    "name": "Comb + Sewing + Vanity",
+    "category": "Hotel Amenities",
+    "type": "Guest Kits",
+    "tags": ["guest", "kit", "vanity"],
+    "description": "Comb, sewing kit, and vanity items for hotel guests. Brand: Shivaya Solutions.",
+    "quantity": 1500
+  },
+  {
+    "id": "85",
+    "name": "String Closure Cotton Bag",
+    "category": "Hotel Amenities",
+    "type": "Laundry Bags",
+    "tags": ["laundry", "cotton", "bag"],
+    "description": "String closure cotton laundry bag for hotel services. Brand: Shivaya Solutions.",
+    "quantity": 900
+  },
+  {
+    "id": "86",
+    "name": "Paper Seat Band with Print",
+    "category": "Hotel Amenities",
+    "type": "Toilet Seat Bands",
+    "tags": ["toilet", "seat", "band"],
+    "description": "Printed paper seat band for hotel hygiene. Brand: Shivaya Solutions.",
+    "quantity": 2000
   }
 ] 
