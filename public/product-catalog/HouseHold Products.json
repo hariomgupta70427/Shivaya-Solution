@@ -1,0 +1,768 @@
+[
+  {
+    "category": "Water Buckets",
+    "products": [
+      {
+        "series": "Stallio Bucket",
+        "variants": [
+          "Stallio 07 Print",
+          "Stallio 11 Print",
+          "Stallio 15 Print",
+          "Stallio 18 Print",
+          "Stallio 20 Print",
+          "Stallio 25 Print",
+          "Stallio Bucket 07",
+          "Stallio Bucket 11",
+          "Stallio Bucket 15",
+          "Stallio Bucket WL 15",
+          "Stallio Bucket 18",
+          "Stallio Bucket WL 18",
+          "Stallio Bucket 20",
+          "Stallio Bucket WL 20",
+          "Stallio Bucket 25",
+          "Stallio Bucket WL 25"
+        ],
+        "features": ["Available with or without lid", "Durable plastic", "Printed options"]
+      },
+      {
+        "series": "Round Bucket",
+        "variants": [
+          "Round Printed 18",
+          "Round Bucket Plain 18"
+        ]
+      },
+      {
+        "series": "Rainbow Bucket",
+        "variants": [
+          "Rainbow Bucket 20 (Printed/Plain)",
+          "Rainbow Bucket 22 (Printed/Plain)"
+        ]
+      },
+      {
+        "series": "Dot Bucket",
+        "variants": [
+          "Dot Bucket Printed 18"
+        ]
+      },
+      {
+        "series": "Eco Bucket",
+        "variants": [
+          "Bucket PH Eco 103",
+          "Bucket PH Eco 1105",
+          "Bucket PH Eco 1107",
+          "Bucket PH Eco 1109",
+          "Bucket PH Eco 1113",
+          "Bucket PH Eco 125",
+          "Bucket PH Eco 0116",
+          "Bucket PH Eco 1114",
+          "Bucket PH Eco 1118",
+          "Bucket PH Eco 1125",
+          "Bucket UB 19"
+        ],
+        "features": ["Option for lid"]
+      },
+      {
+        "series": "Frosty Bucket",
+        "variants": [
+          "Frosty Bucket 07",
+          "Frosty Bucket 09",
+          "Frosty Bucket 13",
+          "Frosty Bucket WL 13",
+          "Frosty Bucket 16",
+          "Frosty Bucket WL 16",
+          "Frosty Bucket 18",
+          "Frosty Bucket WL 18",
+          "Frosty Bucket 25",
+          "Frosty Bucket WL 25"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Bath Mug",
+    "products": [
+      {
+        "series": "Mug Polo",
+        "variants": ["Mug Polo 1000", "Mug Polo 2"]
+      },
+      {
+        "series": "Mug Square",
+        "variants": [
+          "Mug Square 100",
+          "Mug Square 150",
+          "Mug Square Printed 100",
+          "Mug Square Printed 150"
+        ]
+      },
+      {
+        "series": "Mug Stallio",
+        "variants": [
+          "Mug Stallio 1000",
+          "Mug Stallio 1500",
+          "Mug Stallio 2000"
+        ]
+      },
+      {
+        "variants": [
+          "Mug 115 CH",
+          "Mug 211 (500 ml)",
+          "Mug 213",
+          "Mug 217",
+          "Mug 218",
+          "Mug 219",
+          "Mug Printed 213",
+          "Mug New Printed 213",
+          "Mug Printed 217",
+          "Mug New Printed 217"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Storage Containers",
+    "products": [
+      {
+        "series": "Papad Box",
+        "variants": [
+          "Printed 222",
+          "Printed 333",
+          "Printed 444",
+          "Papad Box Set"
+        ]
+      },
+      {
+        "series": "TP Set",
+        "variants": [
+          "TP 111",
+          "TP 222",
+          "TP 333",
+          "TP 444",
+          "222, 333, 444 (TP Set)",
+          "222, 333, 444 (Printed Set)"
+        ]
+      },
+      {
+        "series": "Container TP/Printed",
+        "sizes": ["1 KG", "2 KG", "3 KG", "5 KG", "7 KG", "10 KG", "15 KG"],
+        "variants": [
+          "Container 1 KG TP/Printed",
+          "Container 2 KG TP/Printed",
+          "Container 3 KG TP/Printed",
+          "Container 5 KG TP/Printed",
+          "Container 7 KG TP/Printed",
+          "Container 10 KG TP/Printed",
+          "Container 15 KG TP/Printed"
+        ]
+      },
+      {
+        "series": "Euro Container",
+        "capacities": [
+          "200 ml (6 pc)",
+          "250 ml (6 pc)",
+          "500 ml (6 pc)",
+          "750 ml (6 pc)",
+          "1000 ml (3 pc)",
+          "1500 ml (3 pc)",
+          "2000 ml (3 pc)",
+          "3000 ml (1 pc)"
+        ]
+      },
+      {
+        "series": "Ever Fresh",
+        "variants": [
+          "Ever Fresh TP 4pc 300g",
+          "Ever Fresh TP 3pc 500g",
+          "Ever Fresh TP 3pc 750g",
+          "Ever Fresh TP 3pc 1000g",
+          "Ever Fresh TP 3pc 1500g",
+          "Ever Fresh TP 3pc 2000g"
+        ]
+      },
+      {
+        "series": "Sunshine",
+        "capacities": [
+          "250ml (3 pc)",
+          "500ml (3 pc)",
+          "750ml (3 pc)",
+          "1000ml (3 pc)",
+          "1500ml (3 pc)",
+          "2000ml (3 pc)"
+        ]
+      },
+      {
+        "series": "Steelo",
+        "capacities": [
+          "500ml (3 pc)",
+          "1000ml (3 pc)",
+          "1500ml (3 pc)",
+          "2000ml (3 pc)"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Fridge Bottles",
+    "products": [
+      {
+        "series": "SPL PET Bottles",
+        "variants": [
+          "SPL Trolly (6 pc)",
+          "SPL Super Delux (6 pc)",
+          "SPL Flip Cap Classic (6 pc)",
+          "SPL Pouch Packing (6 pc)",
+          "SPL Trolly 29 mm 1000 (6 pc)",
+          "SPL Trolly 29 mm 500 (6 pc)"
+        ]
+      },
+      {
+        "series": "DLX Series",
+        "variants": [
+          "Tokyo DLX 1000 ml",
+          "Canada DLX 1000 ml",
+          "Sydney DLX 1000 ml",
+          "Paris DLX 1000 ml",
+          "London DLX 1000 ml"
+        ]
+      },
+      {
+        "series": "Regular Series",
+        "variants": [
+          "Sydney 1000 ml",
+          "Canada 1000 ml",
+          "Brazil 1000 ml",
+          "Texas 1000 ml",
+          "Brazil 500 ml",
+          "Texas 500 ml",
+          "London 1000 ml",
+          "Paris 1000 ml",
+          "Tokyo 1000 ml"
+        ]
+      },
+      {
+        "series": "Flora",
+        "variants": [
+          "Flora (P) 1000 ml",
+          "Flora (P) 500 ml"
+        ]
+      },
+      {
+        "series": "PP Bottles",
+        "variants": [
+          "Yamuna PP 1000 ml",
+          "Narmada PP 1000 ml",
+          "Ganga I Plain Cap 500 ml"
+        ]
+      },
+      {
+        "series": "Ganga Flip Cap",
+        "variants": [
+          "Ganga Flip Cap PP 1000 ml",
+          "Ganga Flip Cap PP 500 ml"
+        ]
+      },
+      {
+        "series": "Kaveri",
+        "variants": [
+          "Kavery DLX 1000 ml (3 pcs)",
+          "Kavery (Plain Cap) 500 ml",
+          "Kaveri Flip Cap PP 1000 ml",
+          "Kaveri Flip Cap PP 500 ml"
+        ]
+      },
+      {
+        "series": "Super Cool",
+        "variants": [
+          "Super Cool PP 1000 ml",
+          "Super Cool PP 500 ml"
+        ]
+      },
+      {
+        "series": "Diamond",
+        "variants": [
+          "Diamond 1000 ml"
+        ]
+      },
+      {
+        "series": "Glassmate and Blossom",
+        "variants": [
+          "Glassmate 1000 ml",
+          "Blossom (P) 1000 ml"
+        ]
+      },
+      {
+        "series": "Jasmin",
+        "variants": [
+          "Jasmin (P) 1000 ml",
+          "Jasmin (P) 500 ml"
+        ]
+      },
+      {
+        "series": "SRI PET Bottles",
+        "variants": [
+          "SPL SRI 6 pc",
+          "Jasmin Classic Pouch Packing (3 pc)",
+          "Jasmine DLX (P) 1000 ml",
+          "Jasmine DLX (P) 500 ml",
+          "Dubai 1000 ml",
+          "Chicago 1000 ml",
+          "New York 1000 ml"
+        ]
+      },
+      {
+        "series": "PC Cap Bottles",
+        "variants": [
+          "Germany PC Cap 1000 ml",
+          "Rome PC Cap 1000 ml",
+          "Japan PC Cap 1000 ml",
+          "Russia PC Cap 1000 ml",
+          "Korea PC Cap 1000 ml"
+        ]
+      },
+      {
+        "series": "Naigara/Ocean/Alaska",
+        "variants": [
+          "Naigara 1500 ml",
+          "Ocean DLX 1000 ml",
+          "Alaska 1000 ml (SRD)"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Lemon Set & Jug",
+    "products": [
+      {
+        "series": "Jug Sets",
+        "variants": [
+          "Dew Jug Set (6 Glass + 1 Jug)",
+          "Aqua Lemon Set (6 Glass + 1 Jug)",
+          "Celebration Lemon Set (6 Glass + 1 Jug)",
+          "Dew Jug Set (Delux)",
+          "TP Jug 1501",
+          "TP Jug 1502",
+          "TP Jug 1503",
+          "TP Jug 1504",
+          "Jug Printed 1501",
+          "Jug Printed 1502",
+          "Jug Printed 1503",
+          "Jug Printed 1504",
+          "Jug CP 1501",
+          "Jug CP 1502",
+          "Jug CP 1503",
+          "Jug CP 1504",
+          "Jug 1505 Aqua TP/Printed"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Tub & Basins",
+    "products": [
+      {
+        "series": "Tubs",
+        "variants": [
+          "Tub 1033 Printed",
+          "Tub 1035 Printed",
+          "Square Tub 200 Printed",
+          "Frosty Tub 816",
+          "Frosty Tub 818",
+          "Deep Tub 1060",
+          "Deep Tub 1033",
+          "Deep Tub 1055",
+          "Deep Tub 1050",
+          "Frosty Tub 820",
+          "Square Tub 350 Printed",
+          "Square Tub 200",
+          "Square Tub 350",
+          "Unbreakable Tasla 620",
+          "Unbreakable Tasla 716",
+          "Unbreakable Tasla 717",
+          "Unbreakable Tasla 720",
+          "Unbreakable Tasla 722",
+          "Deep Tub 1052",
+          "Deep Tub 1053",
+          "LEO Tub 1021",
+          "Construction Tasla 171/181",
+          "Tub 825 With Handle",
+          "Tub 828 With Handle"
+        ]
+      },
+      {
+        "series": "Basins",
+        "variants": [
+          "Basins 512 to Basins 524"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Patla",
+    "products": [
+      {
+        "variants": [
+          "Patla 440 (Height 6 inch)",
+          "Patla 441 (Height 5.5 inch)",
+          "Patla 442 (Height 8.5 inch, Printed Option)",
+          "Patla 444 (Height 10 inch)",
+          "Patla 445 (Height 10.5 inch, Printed Option)",
+          "Patla 446",
+          "Patla 447 (Height 11.5 inch)",
+          "Patla 448 (Height 12 inch, Height 15 inch)",
+          "Patla 501 (Height 4 inch)",
+          "Patla 502 (Height 4 inch)",
+          "Patla 503 (Height 4 inch, Printed Option)",
+          "Patla 507 (Height 5.25 inch, Printed Option)",
+          "Patla 508 (Height 5.5 inch, Printed Option)",
+          "Patla 509 (Height 7 inch, Printed Option)",
+          "Patla 510 (Height 4.5 inch)",
+          "Patla 511 (Height 5.25 inch)"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Dustbin & Drums",
+    "products": [
+      {
+        "series": "Waste Paper Basket",
+        "variants": [
+          "WPB 900 (10 Ltr)",
+          "WPB 901 (8 Ltr)",
+          "WPB 902 (5 Ltr)",
+          "WPB 903 (6 Ltr)",
+          "WPB 904 (7 Ltr)",
+          "WPB 905 (8 Ltr, Printed)",
+          "WPB 906 (10 Ltr)",
+          "WPB 1113 (11 Ltr)",
+          "WPB with Lid 1113"
+        ]
+      },
+      {
+        "series": "Paddle Bin",
+        "variants": [
+          "Paddle Bin 006 (Printed Option)",
+          "Paddle Bin 007 (Printed Dot)",
+          "Paddle Bin 008 (Printed)",
+          "Paddle Bin 009 (16.5 Ltr, Printed Option)",
+          "Paddle Bin New Dot 007",
+          "Paddle Bin New Dot 008"
+        ]
+      },
+      {
+        "series": "Swing Bin",
+        "variants": [
+          "Swing Bin 1125",
+          "Swing Bin 1032",
+          "Swing Bin 1042",
+          "Swing Bin 1080",
+          "Swing Bin 1060"
+        ]
+      },
+      {
+        "series": "Dome",
+        "variants": ["Dome 1060"]
+      },
+      {
+        "series": "Drums",
+        "variants": [
+          "Drum 125",
+          "Drum 1125",
+          "Drum 1042",
+          "Drum 1060",
+          "Drum 1080",
+          "Drum 1032",
+          "Drum 1100"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Basket & Rack",
+    "products": [
+      {
+        "series": "Shopping Basket",
+        "variants": [
+          "Juhi Big",
+          "Shoppers Big",
+          "Shoppers Medium",
+          "Shoppers Small",
+          "Rockey"
+        ]
+      },
+      {
+        "series": "Fruit Basket",
+        "variants": [
+          "Round Tokra",
+          "Basket Ventilated 611",
+          "File Try 607",
+          "Basket Alyia"
+        ]
+      },
+      {
+        "series": "Multipurpose",
+        "variants": [
+          "Corner 3",
+          "Corner 2",
+          "Basket 602",
+          "Basket 603",
+          "Basket 604 (Rectangular)",
+          "Tulip 4/3/2",
+          "Karina Small/Big",
+          "Sonam",
+          "Lily 4/3/2",
+          "Basket 301/302/303",
+          "Daisy 4/3/2"
+        ]
+      },
+      {
+        "series": "Multipurpose Rack",
+        "variants": [
+          "Marigold 4/3/2",
+          "Rack Filler 3",
+          "Lotus 3/2",
+          "Tower 3/2",
+          "Liza 3/2",
+          "Dux 3/2"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Bathroom Set",
+    "products": [
+      {
+        "series": "Glamour Bathroom Set",
+        "variants": ["11 + 1 PC"]
+      },
+      {
+        "series": "Maxx Bathroom Set",
+        "variants": ["11 PC"]
+      },
+      {
+        "series": "Grand Bathroom Set",
+        "variants": ["9 + 1 PC"]
+      },
+      {
+        "series": "Supreme Bathroom Set",
+        "variants": ["8 + 1 PC"]
+      },
+      {
+        "series": "Galaxy Bathroom Set",
+        "variants": ["6 PC"]
+      },
+      {
+        "series": "Sunshine Bathroom Set",
+        "variants": ["6 PC"]
+      },
+      {
+        "series": "Ronak Bathroom Set",
+        "variants": ["6 PC"]
+      },
+      {
+        "series": "Glory Bathroom Set",
+        "variants": ["6 PC"]
+      }
+    ]
+  },
+  {
+    "category": "Dinner Set & Gift Set",
+    "products": [
+      {
+        "series": "Royal Dinner Set",
+        "variants": ["44 PC"]
+      },
+      {
+        "series": "Khatta Mittha Dinner Set",
+        "variants": ["30 PC"]
+      },
+      {
+        "series": "Kitkat Dinner Set",
+        "variants": ["13 PC"]
+      },
+      {
+        "series": "Mithas Dinner Set",
+        "variants": ["14 PC"]
+      },
+      {
+        "series": "Dawat Dinner Set",
+        "variants": ["13 PC"]
+      },
+      {
+        "series": "Kitchen Kart Dinner Set",
+        "variants": ["32 PC"]
+      },
+      {
+        "series": "Mitha Namkeen Set",
+        "variants": ["30 PC"]
+      },
+      {
+        "series": "Snacks Set",
+        "variants": ["10 PC"]
+      },
+      {
+        "series": "Perk Set",
+        "variants": ["13 PC"]
+      },
+      {
+        "series": "Soup Bowl Set",
+        "variants": ["12 PC"]
+      }
+    ]
+  },
+  {
+    "category": "Donga & Bowl",
+    "products": [
+      {
+        "series": "Serving Bowl",
+        "variants": [
+          "Serving Bowl 1",
+          "Serving Bowl 2",
+          "Serving Bowl 2 Deluxe Printed",
+          "Serving Bowl 3 Deluxe",
+          "Serving Bowl 3 Deluxe Printed"
+        ]
+      },
+      {
+        "series": "Plaza Bowl Set",
+        "variants": ["13 PC"]
+      },
+      {
+        "series": "Vivo Bowl Set",
+        "variants": ["13 PC"]
+      }
+    ]
+  },
+  {
+    "category": "Plates & Trays",
+    "products": [
+      {
+        "series": "Plates",
+        "variants": [
+          "Square Plate Big 6 PC",
+          "Square Plate Small 6 PC",
+          "Round Plate Small 6 PC",
+          "Round Plate Big 6 PC (P)",
+          "Curver Plate Small 6 PC",
+          "Curver Plate Big 6 PC (P)"
+        ]
+      },
+      {
+        "series": "Trays",
+        "variants": [
+          "Tray 101 Small",
+          "Tray 102 Medium",
+          "Tray 103 Big",
+          "Tray Elegance Small/Medium/Big",
+          "Elegance Tray Set 3 PC (SMB)",
+          "Mahak Tray Set 3 PC (SMB)",
+          "Vivo Tray"
+        ]
+      },
+      {
+        "series": "Bowls",
+        "variants": [
+          "Curver Bowl Small 6 PC Set",
+          "Curver Bowl Big 3 PC Set",
+          "Round Bowl Small 6 PC Set",
+          "Square Bowl Small 6 PC Set",
+          "Square Bowl Big 3 PC Set"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Masala Box & Roti Box",
+    "products": [
+      {
+        "series": "Masala Box",
+        "variants": [
+          "Masala Box 800",
+          "Masala Box 800 Printed",
+          "Masala Box 801",
+          "Masala Box 801 Printed",
+          "Masala Box 803",
+          "Masala Box 805 Printed (Box Packing)",
+          "Masala Box 806 Printed"
+        ]
+      },
+      {
+        "series": "Roti Box",
+        "variants": []
+      }
+    ]
+  },
+  {
+    "category": "Miscellaneous Items",
+    "products": [
+      {
+        "variants": [
+          "Study Table Printed",
+          "Bed Table Printed",
+          "Study Table",
+          "Kids Table Printed",
+          "S Bed Table",
+          "Baby Carry",
+          "Babli Small Printed",
+          "Babli Big Printed",
+          "Baby Potty 123",
+          "All Purpose Stand",
+          "Hanger Honda/Zen/Volvo/Twister"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Soapcase & Multi Stand",
+    "products": [
+      {
+        "series": "Soap Case",
+        "variants": [
+          "Soap Case 700",
+          "Royal Soap Case 701",
+          "Soap Case 703",
+          "Soap Case 703 New Printed",
+          "Soap Case 704",
+          "Soap Case 705",
+          "Soap Case 706"
+        ]
+      },
+      {
+        "series": "Multi Purpose Stand",
+        "variants": [
+          "Multi Purpose Stand 1704",
+          "All Purpose Stand",
+          "Cutlery 1703",
+          "Viola 1705",
+          "Rio 1706"
+        ]
+      },
+      {
+        "series": "Planter",
+        "variants": [
+          "Planter 6",
+          "Planter 8",
+          "Planter 10",
+          "Planter 12",
+          "Planter 14",
+          "Planter 16",
+          "Planter 18"
+        ]
+      },
+      {
+        "series": "Bottom Plate",
+        "variants": [
+          "Bottom Plate 2 No.",
+          "Bottom Plate 4 No."
+        ]
+      },
+      {
+        "series": "Dustpan",
+        "variants": [
+          "Dustpan 241",
+          "Dustpan 242",
+          "Dustpan 243"
+        ]
+      }
+    ]
+  }
+]

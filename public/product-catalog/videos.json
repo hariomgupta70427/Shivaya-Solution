@@ -1,0 +1,560 @@
+[
+  {
+    "category": "Hotel Soaps",
+    "products": [
+      {
+        "name": "Hotel Soap – Square (Orange)",
+        "packaging": "Bulk",
+        "colors": ["Orange"],
+        "moq": 5000,
+        "price_per_kg": 150,
+        "description": "Available in transparent orange square form. Bulk packaging for hotels."
+      },
+      {
+        "name": "Hotel Soap – Round (Yellow)",
+        "packaging": "Bulk",
+        "colors": ["Yellow"],
+        "moq": 5000,
+        "price_per_kg": 150,
+        "description": "Round yellow soap bars, ideal for hotel amenities."
+      },
+      {
+        "name": "Hotel Soap – Sachet Packaged",
+        "packaging": "Individual sachet",
+        "moq": 5000,
+        "price_per_kg": 150,
+        "description": "Hotel soap packed in individual sachets for hygienic use."
+      },
+      {
+        "name": "Hotel Soap – Square (White)",
+        "packaging": "Bulk",
+        "colors": ["White"],
+        "moq": 5000,
+        "price_per_kg": 150,
+        "description": "White square soaps, available in bulk with optional custom branding."
+      },
+      {
+        "name": "Hotel Soap – Custom Branding",
+        "packaging": "Single wrap, custom label",
+        "moq": 5000,
+        "price_per_kg": 150,
+        "description": "Custom label option available for hotel soaps."
+      }
+    ]
+  },
+  {
+    "category": "Guest Toiletries: 20ml Bottles",
+    "products": [
+      {
+        "name": "Moisturizer",
+        "size_ml": 20,
+        "packaging": "Plastic bottle",
+        "moq": 1000,
+        "features": [
+          "Premium, skin-friendly ingredients",
+          "Recyclable bottles",
+          "Custom branding available"
+        ],
+        "description": "High-quality 20ml moisturizer, travel-sized for hotels. Custom branding and eco-friendly packaging."
+      },
+      {
+        "name": "Conditioner",
+        "size_ml": 20,
+        "packaging": "Plastic bottle",
+        "moq": 1000,
+        "features": [
+          "Premium, skin-friendly ingredients",
+          "Recyclable bottles",
+          "Custom branding available"
+        ],
+        "description": "20ml hotel conditioner in convenient bottle. Custom hotel branding possible."
+      },
+      {
+        "name": "Shower Gel",
+        "size_ml": 20,
+        "packaging": "Plastic bottle",
+        "moq": 1000,
+        "features": [
+          "Premium, skin-friendly ingredients",
+          "Recyclable bottles",
+          "Custom branding available"
+        ],
+        "description": "20ml shower gel meant for short-stay guests or travel use."
+      },
+      {
+        "name": "Shampoo",
+        "size_ml": 20,
+        "packaging": "Plastic bottle",
+        "moq": 1000,
+        "features": [
+          "Premium, skin-friendly ingredients",
+          "Recyclable bottles",
+          "Custom branding available"
+        ],
+        "description": "Travel-size hotel shampoo, 20ml per bottle."
+      }
+    ],
+    "notes": [
+      "All items (moisturizer, conditioner, shower gel, shampoo) available with custom hotel logo.",
+      "Orderable in assorted or single-type cartons."
+    ]
+  },
+  {
+    "category": "Disposable Slippers",
+    "products": [
+      {
+        "name": "Disposable Slippers (Regular)",
+        "moq": 500,
+        "price_each": 20,
+        "features": [
+          "Soft, breathable material",
+          "Non-slip sole for safety on various surfaces",
+          "Unisex – suitable for men and women"
+        ],
+        "description": "Comfortable, hygienic slippers for hotels, spas, salons, or guest use."
+      },
+      {
+        "name": "Disposable Slippers (Green Logo)",
+        "moq": 500,
+        "price_each": 20,
+        "features": [
+          "Soft, breathable material",
+          "Non-slip sole for all surfaces",
+          "Green logo branding"
+        ],
+        "description": "Branded with a green logo, these are also suitable for hotels and guest rooms."
+      },
+      {
+        "name": "Disposable Slippers (With Open Toe)",
+        "moq": 500,
+        "price_each": 20,
+        "features": [
+          "Open toe design",
+          "Soft and breathable",
+          "Non-slip"
+        ],
+        "description": "Open toe slippers for enhanced comfort, supplied in bulk."
+      }
+    ]
+  },
+  {
+    "category": "Dental & Oral Care",
+    "products": [
+      {
+        "name": "Toothpaste",
+        "brands": [
+          {"name": "Patanjali", "weight": "4g"},
+          {"name": "Vicco Vajradanti", "weight": "4g"},
+          {"name": "Colgate", "weight": "4g"},
+          {"name": "Pepsodent", "weight": "4.5g"}
+        ],
+        "packaging": "Mini tube",
+        "moq": 1000,
+        "description": "Available in leading Indian brands. Small tubes ideal for one-time hotel guest use."
+      },
+      {
+        "name": "Dental Kit",
+        "components": [
+          "Toothpaste 10g",
+          "Toothbrush",
+          "Custom box"
+        ],
+        "moq": 500,
+        "price_per_kit": 13,
+        "description": "Complete dental kit (toothpaste+toothbrush) in printed box for hotels. MOQ 500 sets."
+      },
+      {
+        "name": "Wooden Toothbrush",
+        "material": "Wood",
+        "moq": 1000,
+        "price_per_piece": null,
+        "description": "Eco-friendly bamboo/wooden toothbrush for sustainable hotel amenities."
+      },
+      {
+        "name": "Plastic Toothbrush",
+        "moq": 1000,
+        "price_per_piece": 3,
+        "description": "Standard white hotel-use toothbrushes."
+      }
+    ]
+  },
+  {
+    "category": "Shaving Kits & Razors",
+    "products": [
+      {
+        "name": "Shaving Razor",
+        "variants": [
+          {
+            "price": 0.5,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Disposable razors suitable for hotel amenities or travel kits."
+          }
+        ]
+      },
+      {
+        "name": "Shaving Kit Pouch",
+        "variants": [
+          {
+            "price": 1,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Compact kit in a pouch, ideal for guest amenities."
+          }
+        ]
+      },
+      {
+        "name": "Shaving Kit Box",
+        "variants": [
+          {
+            "price": 1.5,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Complete shaving kit with razor and gel in a printed box. Wholesale packaging for hotels, also customizable."
+          }
+        ]
+      },
+      {
+        "name": "Shaving Gel",
+        "variants": [
+          {
+            "price": 0.45,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Sachet of shaving gel - compact and convenient for single use."
+          }
+        ]
+      },
+      {
+        "name": "Shaving Kit with Pouch",
+        "variants": [
+          {
+            "price": 1.2,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Kit includes razor and shaving gel packed in a pouch."
+          }
+        ]
+      },
+      {
+        "name": "Shaving Kit with Box",
+        "variants": [
+          {
+            "price": 1.5,
+            "currency": "INR",
+            "min_order_qty": 1000,
+            "description": "Shaving kit (razor + gel) in custom-printed box. Bulk supply."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Shoes Shiner",
+    "products": [
+      {
+        "name": "Wax Shoes Shiner",
+        "variants": [
+          {
+            "price": 4.5,
+            "currency": "INR",
+            "min_order_qty": 500,
+            "description": "Premium wax shoe shiner for hotels. Convenient and effective for guests’ footwear. Provides a polished, long-lasting shine with minimal effort. Suitable for travel, hotel rooms, and guest kits."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Combs",
+    "products": [
+      {
+        "name": "Comb",
+        "size": "8 inch",
+        "color": "White",
+        "variants": [
+          {
+            "packaging": "Bulk",
+            "description": "Durable hotel-grade combs in classic 8-inch design for guest use."
+          },
+          {
+            "packaging": "Pouch packing",
+            "description": "Comb individually packed in a hygienic pouch, ideal for hotels and guest kits."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Guest Kits",
+    "products": [
+      {
+        "name": "Hotel Guest Kit",
+        "description": "A curated collection of essential toiletries and amenities designed to provide a luxurious hotel stay experience. Each kit includes: premium shampoo, conditioner, body wash, body lotion, dental care set, and a comb, all beautifully packed for convenience. Crafted with gentle, skin-friendly ingredients for a refreshing and comfortable guest experience. Suitable for hotels seeking to enhance their amenity offerings.",
+        "typical_contents": [
+          "Shampoo",
+          "Conditioner",
+          "Body Wash",
+          "Body Lotion",
+          "Dental Care Set",
+          "Comb",
+          "Shaving Kit",
+          "Vanity Kit"
+        ],
+        "customization": "Packaging and product selection customizable as per hotel requirements."
+      }
+    ]
+  },
+  {
+    "category": "Naphthalene Balls",
+    "brand": "Swiss Comforts",
+    "products": [
+      {
+        "name": "Naphthalene Balls (Colored)",
+        "description": "Multi-colored naphthalene balls used for deodorizing and insect repellent purposes in closets, bathrooms, and storage spaces. Available in attractive pastel colors.",
+        "packaging_options": [
+          "Bulk pack (pouch with Swiss Comforts logo)",
+          "Transparent plastic pouch (assorted colors)"
+        ],
+        "features": [
+          "Long-lasting fragrance",
+          "Protects clothes and storage spaces from insects",
+          "Ideal for hotels, homes, wardrobes, and restrooms"
+        ]
+      },
+      {
+        "name": "Naphthalene Balls (White)",
+        "description": "Classic white naphthalene balls, ideal for repelling insects and maintaining a fresh scent in various storage and sanitary areas.",
+        "packaging_options": [
+          "Wooden bowl (for display/use in rooms)"
+        ],
+        "features": [
+          "Traditional strong fragrance",
+          "Multi-purpose use"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Urinal Screen Deodorizer Mats",
+    "brand": "Swiss Comforts",
+    "products": [
+      {
+        "name": "Urinal Screen Deodorizer Mat",
+        "description": "Durable, non-slip urinal screen mat designed to fit in urinals, trap debris, prevent clogs, and release a fresh fragrance to maintain restroom cleanliness and hygiene. Especially suited for high-traffic public restrooms.",
+        "features": [
+          "Traps debris, prevents clogs",
+          "Fresh and clean scent (lemon, orange, rose, ocean)",
+          "Multi-colour, standard size",
+          "Flexible to fit all urinals",
+          "Anti-splash design",
+          "Controls restroom odor"
+        ],
+        "fragrance_options": [
+          "Lemon",
+          "Orange",
+          "Rose",
+          "Ocean"
+        ],
+        "color_options": [
+          "Green",
+          "Yellow",
+          "Orange",
+          "Purple",
+          "Blue",
+          "Red"
+        ],
+        "packaging": "Individually wrapped"
+      }
+    ]
+  },
+  {
+    "category": "Glass Covers",
+    "brand": "Swiss Comforts",
+    "products": [
+      {
+        "name": "Disposable Glass Cover",
+        "description": "Single-use, paper-based glass covers designed to provide a hygienic drinking glass experience for hotel guests. Helps assure cleanliness and safety in hospitality settings.",
+        "packaging_options": [
+          "Flat paper sleeves (custom branding available)",
+          "Cups with custom printed covers",
+          "Boxed, bulk packs"
+        ],
+        "features": [
+          "Printed 'Sanitized & Cleaned' message or custom hotel branding",
+          "Fits standard hotel glasses",
+          "Hygienic, disposable"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Laundry Bags",
+    "brand": "Swiss Comforts",
+    "products": [
+      {
+        "name": "Non Woven Disposable Laundry Bag",
+        "description": "Single-use laundry bags made from durable non-woven material, designed for hotels and hospitality industry. Ideal for guest laundry collection.",
+        "customization": "Branding/logo printing available for large hotel chains (e.g., 'Hyatt Place', 'The Fern', 'Marigold').",
+        "features": [
+          "Disposable and hygienic",
+          "Strong non-woven fabric",
+          "Drawstring or sealed closure options",
+          "Available in different sizes"
+        ],
+        "packaging_options": [
+          "Folded in bulk",
+          "Individual roll packs"
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Toilet Seat WC Band",
+    "brand": "Swiss Comforts",
+    "products": [
+      {
+        "name": "Toilet Seat WC Band",
+        "description": "Ensures hygiene and cleanliness for hotels, hospitals, and premium establishments. Used as a seal of sanitation, assures guests that the toilet seat has been freshly cleaned and disinfected.",
+        "features": [
+          "Acts as a seal of sanitation for toilets",
+          "Made from durable, eco-friendly material",
+          "Easily fits around standard toilet seats",
+          "Disposable after use"
+        ],
+        "applications": [
+          "Hotels",
+          "Hospitals",
+          "Premium establishments"
+        ],
+        "packaging": "Bulk or custom packs",
+        "customization": "Custom branding/logos available"
+      }
+    ]
+  },
+  {
+    "category": "Paper Glass Coaster",
+    "brand": "Swiss Comforts",
+    "products": [
+      {
+        "name": "Paper Glass Coaster",
+        "description": "Lightweight, eco-friendly beverage coaster made from high-quality paper material. Designed to protect surfaces from spills, condensation, or heat damage in hotels, cafes, and events.",
+        "features": [
+          "Protects surfaces from glasses/condensation",
+          "Disposable and hygienic",
+          "Sleek, minimalist design",
+          "Available with branding, designs, and messages"
+        ],
+        "applications": [
+          "Hotels",
+          "Cafes",
+          "Events",
+          "Special occasions",
+          "Everyday use"
+        ],
+        "variants": [
+          "Plain white paper coasters",
+          "Printed designs",
+          "Glass coaster with branding"
+        ],
+        "packaging": "Bulk or custom printed packs"
+      }
+    ]
+  },
+  {
+    "category": "Shower Caps",
+    "brand": "Swiss Comforts",
+    "products": [
+      {
+        "name": "Premium Disposable Bouffant Cap (Green)",
+        "material": "Non-woven",
+        "color": "Green",
+        "size": "Universal fit",
+        "features": [
+          "Elastic band",
+          "Hygienic hair protection",
+          "Bulk pack of 100 pcs"
+        ],
+        "applications": [
+          "Salons",
+          "Spas",
+          "Hotels",
+          "Guest rooms"
+        ],
+        "price_per_piece_inr": 3,
+        "min_order_quantity": 1000,
+        "packaging": "Bulk"
+      },
+      {
+        "name": "Premium Disposable Bouffant Cap (White)",
+        "material": "Non-woven",
+        "color": "White",
+        "size": "Universal fit",
+        "features": [
+          "Elastic band",
+          "Hygienic hair protection",
+          "Bulk pack of 100 pcs"
+        ],
+        "applications": [
+          "Salons",
+          "Spas",
+          "Hotels",
+          "Guest rooms"
+        ],
+        "price_per_piece_inr": 3,
+        "min_order_quantity": 1000,
+        "packaging": "Bulk"
+      },
+      {
+        "name": "Shower Cap",
+        "description": "Disposable shower cap available in green, blue and white color options. Waterproof, elastic, individually packed.",
+        "color_options": [
+          "Green",
+          "Blue",
+          "White",
+          "Transparent"
+        ],
+        "features": [
+          "Elastic band for secure fit",
+          "One size fits all",
+          "Hygienic and waterproof",
+          "Great for hotels, salons, spas"
+        ],
+        "price_per_piece_inr": 3,
+        "min_order_quantity": 1000,
+        "packaging": "Individually packed or bulk"
+      }
+    ]
+  },
+  {
+    "category": "Sewing Kit",
+    "brand": "Swiss Comforts",
+    "products": [
+      {
+        "name": "Sewing Kit",
+        "description": "Practical and compact sewing kit ideal for hotel guests. Contains all basic sewing essentials for minor repairs.",
+        "kit_contents": [
+          "Needle",
+          "Thread (multiple colors)",
+          "Buttons",
+          "Safety pin"
+        ],
+        "packaging": [
+          "Paper foldable card",
+          "Printed pouch",
+          "Assorted sets available"
+        ],
+        "applications": [
+          "Hotel amenities",
+          "Travel kits",
+          "Guest rooms"
+        ],
+        "features": [
+          "Lightweight and travel-friendly",
+          "Basic essentials for emergencies",
+          "Custom branding possible"
+        ]
+      }
+    ]
+  }
+]

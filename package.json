@@ -5,7 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node build.cjs --prebuild",
     "build": "vite build",
+    "postbuild": "node build.cjs --postbuild",
     "lint": "eslint .",
     "preview": "vite preview"
   },

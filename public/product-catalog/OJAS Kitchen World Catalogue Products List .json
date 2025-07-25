@@ -1,0 +1,194 @@
+[
+  {
+    "name": "Aluminium Pressure Cooker",
+    "category": "Pressure Cooker",
+    "material": "Aluminium",
+    "available_sizes": ["8L", "10L", "12L", "15L", "18L", "20L", "22L"],
+    "description": "Crafted from virgin aluminium. Extra heavy gauge, rust-free stainless steel vent tube, bakelite heat-resistant handles, and safety valve."
+  },
+  {
+    "name": "Elegance Plain Aluminium Pressure Cooker",
+    "category": "Pressure Cooker",
+    "material": "Aluminium",
+    "available_sizes": ["1.5L", "2L", "3L", "5L", "7L", "35L", "40L", "60L", "80L"],
+    "description": "Premium virgin aluminium, extra heavy gauge. Rust-free SS vent, heat-resistant bakelite handles, safety valve, and curved body for easy stirring."
+  },
+  {
+    "name": "Elegance Handi Aluminium Pressure Cooker",
+    "category": "Pressure Cooker",
+    "material": "Aluminium",
+    "available_sizes": ["1.5L", "2L", "3L", "5L", "7L", "8L", "10L", "12L"],
+    "description": "Handi shape for traditional Indian cooking, with the same high standards of safety and durability as other Ojas cookers."
+  },
+  {
+    "name": "Elegance Contura Aluminium Pressure Cooker",
+    "category": "Pressure Cooker",
+    "material": "Aluminium",
+    "available_sizes": ["1.5L", "2L", "3L", "5L"],
+    "description": "Contura body for convenient stirring. Virgin aluminium, heavy gauge, secure handles and safety features."
+  },
+  {
+    "name": "Hard Anodised Pressure Cooker",
+    "category": "Pressure Cooker",
+    "material": "Hard Anodized Aluminium",
+    "available_sizes": ["2L", "3L", "5L"],
+    "description": "Hard anodized finish for extra durability and corrosion resistance. Standard Ojas safety and handling features."
+  },
+  {
+    "name": "Stainless Steel Pressure Cooker",
+    "category": "Pressure Cooker",
+    "material": "Stainless Steel",
+    "available_sizes": ["2L", "3L", "5L"],
+    "description": "Rust-proof, elegant stainless steel body. Equipped with all standard Ojas safety and durability features."
+  },
+  {
+    "name": "Single Burner Stove",
+    "category": "Gas Stove",
+    "models": [
+      {
+        "model_no": "SB 1001",
+        "name": "Solo B"
+      },
+      {
+        "model_no": "SB 1011",
+        "name": "Solo Mini"
+      }
+    ],
+    "description": "Compact gas stoves ideal for single-burner kitchens, student accommodations or as auxiliary burners."
+  },
+  {
+    "name": "Double Burner Stove",
+    "category": "Gas Stove",
+    "models": [
+      { "model_no": "DB-2001", "name": "Classic" },
+      { "model_no": "DB-2041", "name": "Commando" },
+      { "model_no": "DB-2011", "name": "Vs2 Tablet" },
+      { "model_no": "DB-2021", "name": "Triplet" },
+      { "model_no": "DB-2031", "name": "Minimum" },
+      { "model_no": "DB-2051", "name": "Saturn" },
+      { "model_no": "DB-2091", "name": "Pajaro" },
+      { "model_no": "DB-2081", "name": "Lite" },
+      { "model_no": "DB-2081", "name": "Chrome" },
+      { "model_no": "DB-2211", "name": "Super Max" },
+      { "model_no": "DB-2301", "name": "2Check Glen" },
+      { "model_no": "DB-2171", "name": "Polo" },
+      { "model_no": "DB-2161", "name": "Omega" },
+      { "model_no": "DB-2311", "name": "2 Plus Glen" },
+      { "model_no": "DB-2421", "name": "Black" },
+      { "model_no": "DB-2422", "name": "Mirror" },
+      { "model_no": "DB-2423", "name": "Coloured" },
+      { "model_no": "DB-2405", "name": "Kaff-2.0" },
+      { "model_no": "DB-2422", "name": "Semi Digital" },
+      { "model_no": "DB-2423", "name": "Digital" }
+    ],
+    "description": "Wide range of double-burner stoves in varying finishes, features, and designs for household or semi-commercial use."
+  },
+  {
+    "name": "Triple Burner Stove",
+    "category": "Gas Stove",
+    "models": [
+      { "model_no": "TB-3031", "name": "Regular Cook" },
+      { "model_no": "TB-3001", "name": "Trendy Triple Cook" },
+      { "model_no": "TB-3211", "name": "3Check Glen" },
+      { "model_no": "TB-3221", "name": "3Plus Glen" },
+      { "model_no": "TB-3421", "name": "Black" },
+      { "model_no": "TB-3422", "name": "Mirror" },
+      { "model_no": "TB-3423", "name": "Semi Digital" },
+      { "model_no": "TB-3423", "name": "Digital" },
+      { "model_no": "TB-3405", "name": "Coloured" },
+      { "model_no": "TB-3405", "name": "Kaff-3.0" }
+    ],
+    "description": "Triple burner stoves available in different finishes and advanced digital/semi-digital variants. Suitable for larger families."
+  },
+  {
+    "name": "Four Burner Stove",
+    "category": "Gas Stove",
+    "models": [
+      { "model_no": "TB-3221", "name": "Quants Glen Black" }
+    ],
+    "description": "Premium four burner gas stove for professional or higher-end contemporary kitchens."
+  },
+  {
+    "name": "Green Gas 2 Burner",
+    "category": "Gas Stove",
+    "description": "Eco-friendly model, further details available on request."
+  },
+  {
+    "name": "Original Burner",
+    "category": "Gas Stove",
+    "description": "Standard, classic burner style."
+  },
+  {
+    "name": "Thomos Kettle",
+    "category": "Thermoware",
+    "available_sizes": ["600ml", "1000ml", "1400ml"],
+    "description": "Insulated kettle for hot and cold liquids."
+  },
+  {
+    "name": "Tiffin Capsule",
+    "category": "Thermoware",
+    "variants": ["3 Capsule", "4 Capsule"],
+    "description": "Compact, insulated lunch carriers (capsule form) for daily use."
+  },
+  {
+    "name": "Tiffin Tablet",
+    "category": "Thermoware",
+    "variants": ["3 Tablet", "4 Tablet"],
+    "description": "Tablet-style insulated lunch boxes for convenient transport."
+  },
+  {
+    "name": "Lite",
+    "category": "Thermoware",
+    "description": "Simple, lightweight thermoware series."
+  },
+  {
+    "name": "Casserole",
+    "category": "Thermoware",
+    "available_sizes": ["1500ml", "2000ml", "2500ml", "3000ml", "3500ml", "4500ml", "5000ml", "5500ml"],
+    "description": "Insulated casseroles for keeping food hot or cold."
+  },
+  {
+    "name": "Travel Jug",
+    "category": "Thermoware",
+    "available_sizes": ["3L", "5L", "6L", "7L", "8L", "12L", "16L", "20L"],
+    "description": "Large capacity portable jugs with insulation for picnics or travel."
+  },
+  {
+    "name": "Cookware Set",
+    "category": "Cookware",
+    "items": {
+      "Tope": ["12", "14", "16", "18"],
+      "Tawa": ["9\"", "10\"", "11\""],
+      "Kadai": ["1", "2", "3", "4", "5"],
+      "Sauce Pan": ["0", "1", "2"],
+      "Fry Pan": ["0", "1", "2"],
+      "Tadka Pan": ["5 No", "6 No", "7 No", "8 No", "9 No", "10 No", "11 No", "12 No"]
+    },
+    "description": "Comprehensive kitchen cookware set, suitable for all standard Indian cooking needs."
+  },
+  {
+    "name": "Idli Pot",
+    "category": "Cookware",
+    "series": {
+      "Np Series": ["12", "16"],
+      "Heavy Series": ["12", "16"],
+      "Deluxe Series": ["12", "16", "22", "48"]
+    },
+    "description": "Aluminium idli steamers; available in basic (NP), heavy, and deluxe series for different capacity requirements."
+  },
+  {
+    "name": "Amlet",
+    "category": "Cookware",
+    "description": "Specialty utensil, likely for making omelettes, as per regional terminology."
+  },
+  {
+    "name": "Bati Bartan",
+    "category": "Traditional Cookware",
+    "description": "Traditional Indian vessel, used for making bati or serving dal-bati; details on sizes on request."
+  },
+  {
+    "name": "Barbeque Aanch",
+    "category": "Barbeque",
+    "description": "Traditional/modern barbeque set for indoor or outdoor grilling."
+  }
+]
