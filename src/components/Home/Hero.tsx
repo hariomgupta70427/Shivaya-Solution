@@ -1,18 +1,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Shield, Truck, Award } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { COMPANY_INFO } from '../../utils/constants';
 
 const Hero: React.FC = () => {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact-section');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
-    } else {
-      // If contact section doesn't exist, navigate to contact page
-      window.location.href = '/contact';
-    }
+  const navigate = useNavigate();
+
+  const handleGetQuote = () => {
+    // Navigate to contact page using React Router
+    navigate('/contact');
   };
 
   return (
@@ -55,12 +52,12 @@ const Hero: React.FC = () => {
               <span>Explore Products</span>
               <ArrowRight className="h-5 w-5" />
             </Link>
-            <button
-              onClick={scrollToContact}
+            <Link
+              to="/contact"
               className="flex items-center space-x-2 border-2 border-brand-warm-orange text-brand-warm-orange hover:bg-brand-warm-orange hover:text-white px-8 py-4 rounded-lg font-medium transition-all duration-300 transform hover:scale-105"
             >
               <span>Get Quote</span>
-            </button>
+            </Link>
           </motion.div>
 
           <motion.div
