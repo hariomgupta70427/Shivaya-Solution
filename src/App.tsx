@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useTheme } from './hooks/useTheme';
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
@@ -33,6 +33,8 @@ function App() {
             <Route path="/products/:categorySlug/:subcategorySlug/:productSlug" element={<Products />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            {/* Fallback route for 404 errors */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </main>
         <Footer />

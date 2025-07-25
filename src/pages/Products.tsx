@@ -16,8 +16,11 @@ function useDebounce(value: string, delay: number) {
 
 // Helper function to create URL-friendly slugs
 const createSlug = (text: string): string => {
+  if (!text) return 'unknown';
+  
   return text
     .toLowerCase()
+    .trim()
     .replace(/[^\w\s-]/g, '')
     .replace(/[\s_-]+/g, '-')
     .replace(/^-+|-+$/g, '');
