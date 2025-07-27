@@ -6,21 +6,28 @@
   "scripts": {
     "dev": "vite",
     "prebuild": "node build.cjs --prebuild",
-    "build": "vite build",
+    "build": "tsc && vite build",
     "postbuild": "node build.cjs --postbuild",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "convert-json": "node scripts/convert-json-to-csv.js",
+    "convert-catalogs": "node scripts/convert-catalogs-to-csv.js",
+    "convert-enhanced": "node scripts/enhanced-catalog-converter.js"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
+    "@supabase/supabase-js": "^2.33.2",
     "@types/papaparse": "^5.3.16",
     "emailjs-com": "^3.2.0",
     "firebase": "^11.10.0",
-    "framer-motion": "^12.23.3",
+    "framer-motion": "^10.16.4",
     "lucide-react": "^0.525.0",
     "papaparse": "^5.5.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-router-dom": "^7.6.3"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "react-router-dom": "^6.15.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",
@@ -34,6 +41,7 @@
     "globals": "^15.9.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.3.0",
     "vite": "^5.4.2"

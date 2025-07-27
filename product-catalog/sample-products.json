@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Stainless Steel Water Bottle",
+    "category": "Kitchenware",
+    "description": "Double-walled insulated water bottle that keeps drinks cold for 24 hours or hot for 12 hours.",
+    "price": 1299,
+    "image_url": "https://via.placeholder.com/300x300?text=Water+Bottle",
+    "in_stock": true
+  },
+  {
+    "name": "Food Storage Container Set",
+    "category": "Kitchenware",
+    "description": "Set of 5 airtight food storage containers in various sizes, perfect for leftovers and meal prep.",
+    "price": 1499,
+    "image_url": "https://via.placeholder.com/300x300?text=Storage+Containers",
+    "in_stock": true
+  },
+  {
+    "name": "Heavy-Duty Storage Crate",
+    "category": "Industrial Crates",
+    "description": "Industrial-grade plastic storage crate with reinforced corners and stackable design.",
+    "price": 2999,
+    "image_url": "https://via.placeholder.com/300x300?text=Storage+Crate",
+    "in_stock": true
+  },
+  {
+    "name": "Collapsible Storage Bin",
+    "category": "Home Storage",
+    "description": "Foldable fabric storage bin with handles, perfect for organizing closets and shelves.",
+    "price": 899,
+    "image_url": "https://via.placeholder.com/300x300?text=Storage+Bin",
+    "in_stock": true
+  },
+  {
+    "name": "Plastic Measuring Cups",
+    "category": "Kitchenware",
+    "description": "Set of 4 durable plastic measuring cups in standard sizes.",
+    "price": 499,
+    "image_url": "https://via.placeholder.com/300x300?text=Measuring+Cups",
+    "in_stock": true
+  }
+] 

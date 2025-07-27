@@ -1,576 +1,284 @@
-import React, { useState, useMemo, useEffect } from 'react';
-import { ArrowLeft, Package, AlertCircle } from 'lucide-react';
-import { useProducts, Product } from '../hooks/useProducts';
-import { useNavigate, useParams, useLocation } from 'react-router-dom';
-import { useInquiry } from '../contexts/InquiryContext';
-import ProductImage from '../components/Products/ProductImage';
-import SearchBar from '../components/Products/SearchBar';
-
-function useDebounce(value: string, delay: number) {
-  const [debounced, setDebounced] = useState(value);
-  React.useEffect(() => {
-    const handler = setTimeout(() => setDebounced(value), delay);
-    return () => clearTimeout(handler);
-  }, [value, delay]);
-  return debounced;
-}
-
-// Helper function to create URL-friendly slugs
-const createSlug = (text: string): string => {
-  if (!text) return 'unknown';
-  
-  return text
-    .toLowerCase()
-    .trim()
-    .replace(/[^\w\s-]/g, '')
-    .replace(/[\s_-]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-};
-
-// Helper function to find category, subcategory or product by slug
-const findBySlug = (items: any[], slug: string): any | undefined => {
-  return items.find(item => createSlug(item.name || item.category) === slug);
-};
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import { Product } from '../types';
+import { 
+  getAllProducts, 
+  searchProducts, 
+  getProductsByCategory, 
+  getCategories 
+} from '../services/csvProductService';
+import ProductDetailsModal from '../components/Products/ProductDetailsModal';
 
 const Products: React.FC = () => {
-  const { catalog, loading, error, searchProducts } = useProducts();
-  const { setInquiryProduct } = useInquiry();
-  const navigate = useNavigate();
   const location = useLocation();
-  const { categorySlug, subcategorySlug, productSlug } = useParams<{
-    categorySlug?: string;
-    subcategorySlug?: string;
-    productSlug?: string;
-  }>();
-
-  const [layer, setLayer] = useState<'category' | 'subcategory' | 'product'>('category');
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [selectedSubcategory, setSelectedSubcategory] = useState<string | null>(null);
+  const [products, setProducts] = useState<Product[]>([]);
+  const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
+  const [categories, setCategories] = useState<string[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [categoryFilter, setCategoryFilter] = useState<string | null>(null);
+  const [searchFilter, setSearchFilter] = useState<string>('');
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
-  const [searchOpen, setSearchOpen] = useState(false);
-  const [search, setSearch] = useState('');
-  const debouncedSearch = useDebounce(search, 300);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // Set up navigation based on URL params
-  useEffect(() => {
-    if (loading || error || !catalog.length) return;
-
-    console.log('URL params:', { categorySlug, subcategorySlug, productSlug });
-    console.log('Catalog categories:', catalog.map(cat => cat.category));
-
-    if (categorySlug) {
-      const category = catalog.find(cat => createSlug(cat.category) === categorySlug);
+  // Load products and categories
+  const loadData = async () => {
+    try {
+      setLoading(true);
+      setError(null);
       
-      if (category) {
-        console.log('Found category:', category.category);
-        setSelectedCategory(category.category);
-        setLayer('subcategory');
-
-        if (subcategorySlug) {
-          console.log('Subcategories in', category.category, ':', category.subcategories.map(sub => sub.name));
-          const subcategory = category.subcategories.find(sub => createSlug(sub.name) === subcategorySlug);
-          
-          if (subcategory) {
-            console.log('Found subcategory:', subcategory.name);
-            setSelectedSubcategory(subcategory.name);
-            setLayer('product');
-
-            if (productSlug) {
-              console.log('Products in', subcategory.name, ':', subcategory.products.map(prod => prod.name));
-              const product = subcategory.products.find(prod => createSlug(prod.name) === productSlug);
-              
-              if (product) {
-                console.log('Found product:', product.name);
-                setSelectedProduct(product);
-              } else {
-                console.log('Product not found:', productSlug);
-              }
-            }
-          } else {
-            console.log('Subcategory not found:', subcategorySlug);
-          }
-        }
-      } else {
-        console.log('Category not found:', categorySlug);
-      }
-    }
-  }, [catalog, categorySlug, subcategorySlug, productSlug, loading, error]);
-
-  // Search functionality
-  const searchResults = useMemo(() => {
-    if (!debouncedSearch.trim()) return [];
-    
-    console.log('Searching for:', debouncedSearch);
-    const results = searchProducts(debouncedSearch);
-    console.log('Search results:', results.length);
-    
-    return results.slice(0, 15);
-  }, [debouncedSearch, searchProducts]);
-
-  // Navigation functions
-  const goToCategory = (category: string) => {
-    console.log('Navigating to category:', category);
-    setSelectedCategory(category);
-    setLayer('subcategory');
-    setSelectedSubcategory(null);
-    setSelectedProduct(null);
-    navigate(`/products/${createSlug(category)}`);
-  };
-
-  const goToSubcategory = (subcategory: string) => {
-    console.log('Navigating to subcategory:', subcategory, 'in category:', selectedCategory);
-    setSelectedSubcategory(subcategory);
-    setLayer('product');
-    setSelectedProduct(null);
-    navigate(`/products/${createSlug(selectedCategory as string)}/${createSlug(subcategory)}`);
-  };
-
-  const goToProduct = (product: Product) => {
-    console.log('Navigating to product:', product.name);
-    setSelectedProduct(product);
-    navigate(`/products/${createSlug(product.category)}/${createSlug(product.subcategory)}/${createSlug(product.name)}`);
-  };
-
-  const handleInquireProduct = (product: Product) => {
-    setInquiryProduct(product);
-    navigate('/contact');
-  };
-  
-  const goBack = () => {
-    if (layer === 'subcategory') {
-      setLayer('category');
-      setSelectedCategory(null);
-      navigate('/products');
-    } else if (layer === 'product') {
-      if (!selectedProduct) {
-        setLayer('subcategory');
-        setSelectedSubcategory(null);
-        navigate(`/products/${createSlug(selectedCategory as string)}`);
-      } else {
-        // If viewing a specific product, go back to its subcategory
-        setSelectedProduct(null);
-        navigate(`/products/${createSlug(selectedCategory as string)}/${createSlug(selectedSubcategory as string)}`);
-      }
+      const [productsData, categoriesData] = await Promise.all([
+        getAllProducts(),
+        getCategories()
+      ]);
+      
+      setProducts(productsData);
+      setCategories(categoriesData);
+      
+      console.log(`Loaded ${productsData.length} products and ${categoriesData.length} categories`);
+    } catch (err) {
+      setError('Failed to load products. Please try again later.');
+      console.error('Error loading products:', err);
+    } finally {
+      setLoading(false);
     }
   };
 
-  const handleSearchResult = (result: any) => {
-    console.log('Selected search result:', result);
-    
-    if (result.type === 'category') {
-      setSelectedCategory(result.name);
-      setLayer('subcategory');
-      setSelectedSubcategory(null);
-      setSelectedProduct(null);
-      navigate(`/products/${createSlug(result.name)}`);
-    } else if (result.type === 'subcategory') {
-      setSelectedCategory(result.category);
-      setSelectedSubcategory(result.name);
-      setLayer('product');
-      setSelectedProduct(null);
-      navigate(`/products/${createSlug(result.category)}/${createSlug(result.name)}`);
-    } else if (result.type === 'product') {
-      setSelectedCategory(result.category);
-      setSelectedSubcategory(result.subcategory);
-      setSelectedProduct(result.product);
-      setLayer('product');
-      navigate(`/products/${createSlug(result.category)}/${createSlug(result.subcategory)}/${createSlug(result.name)}`);
+  // Initial load
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  // Parse query parameters for initial filters
+  useEffect(() => {
+    const params = new URLSearchParams(location.search);
+    const categoryParam = params.get('category');
+    if (categoryParam) {
+      setCategoryFilter(categoryParam);
     }
-    
-    setSearchOpen(false);
-    setSearch('');
+  }, [location.search]);
+
+  // Filter products based on search and category
+  useEffect(() => {
+    let result = products;
+
+    // Apply category filter
+    if (categoryFilter) {
+      result = result.filter(product => product.category === categoryFilter);
+    }
+
+    // Apply search filter
+    if (searchFilter.trim()) {
+      const searchTerm = searchFilter.toLowerCase();
+      result = result.filter(product =>
+        product.name.toLowerCase().includes(searchTerm) ||
+        product.description.toLowerCase().includes(searchTerm) ||
+        product.category.toLowerCase().includes(searchTerm) ||
+        product.subcategory.toLowerCase().includes(searchTerm)
+      );
+    }
+
+    setFilteredProducts(result);
+  }, [products, categoryFilter, searchFilter]);
+
+  // Handle search input change
+  const handleSearchChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchFilter(e.target.value);
   };
 
-  // Breadcrumbs
-  const breadcrumbs = [
-    { label: 'Categories', onClick: () => { setLayer('category'); setSelectedCategory(null); setSelectedSubcategory(null); setSelectedProduct(null); navigate('/products'); } },
-  ];
-  if (selectedCategory) breadcrumbs.push({ label: selectedCategory, onClick: () => { setLayer('subcategory'); setSelectedSubcategory(null); setSelectedProduct(null); navigate(`/products/${createSlug(selectedCategory)}`); } });
-  if (selectedSubcategory) breadcrumbs.push({ label: selectedSubcategory, onClick: () => { setLayer('product'); setSelectedProduct(null); navigate(`/products/${createSlug(selectedCategory as string)}/${createSlug(selectedSubcategory)}`); } });
-  if (selectedProduct) breadcrumbs.push({ label: selectedProduct.name, onClick: () => {} });
+  // Handle category filter change
+  const handleCategoryChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const value = e.target.value === 'all' ? null : e.target.value;
+    setCategoryFilter(value);
+  };
 
-  if (loading) {
-    return (
-      <div className="pt-16 min-h-screen bg-brand-cream dark:bg-brand-dark-bg flex items-center justify-center">
-        <div className="text-center">
-          <div className="loading-spinner mx-auto mb-4"></div>
-          <p className="text-light-secondary dark:text-dark-secondary text-lg">Loading product catalog...</p>
-        </div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="pt-16 min-h-screen bg-brand-cream dark:bg-brand-dark-bg flex items-center justify-center">
-        <div className="text-center">
-          <AlertCircle className="h-12 w-12 text-red-500 mx-auto mb-4" />
-          <p className="text-light-secondary dark:text-dark-secondary text-lg">{error}</p>
-          <button 
-            className="mt-4 px-4 py-2 bg-brand-warm-orange text-white rounded-md hover:bg-brand-warm-orange/80"
-            onClick={() => window.location.reload()}
-          >
-            Try Again
-          </button>
-        </div>
-      </div>
-    );
-  }
-
-  // Rest of the component remains the same...
   return (
-    <div className="pt-16 min-h-screen bg-brand-cream dark:bg-brand-dark-bg">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-        {/* Header with Search */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
-          <div>
-            <h1 className="text-4xl font-bold text-light-primary dark:text-dark-primary mb-2">
-              Product Catalog
-            </h1>
-            <p className="text-light-secondary dark:text-dark-secondary">
-              Explore our comprehensive range of quality products
-            </p>
+    <div className="bg-brand-cream dark:bg-brand-dark-bg min-h-screen py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-brand-cream mb-4">
+            Our Products
+          </h1>
+          <p className="text-xl text-gray-600 dark:text-brand-beige max-w-3xl mx-auto">
+            Explore our comprehensive range of high-quality products designed to meet your needs.
+          </p>
+        </div>
+
+        {/* Filters */}
+        <div className="mb-8 flex flex-col md:flex-row gap-4 justify-between items-center">
+          <div className="w-full md:w-1/3">
+            <label htmlFor="category" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              Filter by Category
+            </label>
+            <select
+              id="category"
+              name="category"
+              value={categoryFilter || 'all'}
+              onChange={handleCategoryChange}
+              className="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 dark:border-gray-600 focus:outline-none focus:ring-brand-warm-orange focus:border-brand-warm-orange sm:text-sm rounded-md dark:bg-gray-700 dark:text-white"
+            >
+              <option value="all">All Categories</option>
+              {categories.map((category) => (
+                <option key={category} value={category}>
+                  {category}
+                </option>
+              ))}
+            </select>
           </div>
           
-          {/* Search Bar Component */}
-          <SearchBar
-            onSearch={setSearch}
-            searchResults={searchResults}
-            debouncedSearch={debouncedSearch}
-            onSelectResult={handleSearchResult}
-            isOpen={searchOpen}
-            setIsOpen={setSearchOpen}
-          />
+          <div className="w-full md:w-1/2">
+            <label htmlFor="search" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
+              Search Products
+            </label>
+            <input
+              type="text"
+              name="search"
+              id="search"
+              value={searchFilter}
+              onChange={handleSearchChange}
+              className="shadow-sm focus:ring-brand-warm-orange focus:border-brand-warm-orange block w-full sm:text-sm border-gray-300 dark:border-gray-600 rounded-md py-2 px-4 dark:bg-gray-700 dark:text-white"
+              placeholder="Search by name or description..."
+            />
+          </div>
         </div>
 
-        {/* Breadcrumbs */}
-        <div className="flex items-center space-x-2 mb-8">
-          {layer !== 'category' && (
-            <button
-              onClick={goBack}
-              className="p-2 rounded-full bg-white dark:bg-brand-dark-card shadow-md hover:bg-brand-warm-orange hover:text-white transition-all duration-300 mr-2"
-              aria-label="Back"
-            >
-              <ArrowLeft className="h-5 w-5" />
-            </button>
-          )}
-          {breadcrumbs.map((crumb, index) => (
-            <span key={index} className="flex items-center">
-              <button
-                onClick={crumb.onClick}
-                className="text-brand-warm-orange hover:underline transition-colors font-medium"
-              >
-                {crumb.label}
-              </button>
-              {index < breadcrumbs.length - 1 && (
-                <span className="mx-2 text-gray-400">/</span>
-              )}
-            </span>
-          ))}
-        </div>
+        {/* Loading state */}
+        {loading && (
+          <div className="flex justify-center items-center py-20">
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-brand-warm-orange"></div>
+            <span className="ml-3 text-gray-600 dark:text-gray-300">Loading products...</span>
+          </div>
+        )}
 
-        {/* Category View */}
-        {layer === 'category' && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {catalog.map((category, index) => (
-              <div 
-                key={index} 
-                onClick={() => goToCategory(category.category)}
-                className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:-translate-y-1 hover:shadow-xl"
-              >
-                <div className="h-40 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                  <ProductImage
-                    product={{
-                      id: `category-${index}`,
-                      name: category.category,
-                      category: category.category,
-                      subcategory: '',
-                      description: `${category.category} collection`,
-                    }}
-                    className="w-full h-full object-cover"
-                    alt={category.category}
-                  />
-                  <h2 className="absolute bottom-3 left-3 text-white text-xl font-bold z-20">{category.category}</h2>
-                </div>
-                <div className="p-4">
-                  <p className="text-light-secondary dark:text-dark-secondary">
-                    {category.subcategories.length} subcategories
-                  </p>
-                </div>
+        {/* Error state */}
+        {error && (
+          <div className="bg-red-50 dark:bg-red-900/20 p-4 rounded-md my-6">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-red-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
+                </svg>
               </div>
+              <div className="ml-3">
+                <p className="text-sm text-red-700 dark:text-red-400">
+                  {error}
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* No results */}
+        {!loading && !error && filteredProducts.length === 0 && (
+          <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-md my-6">
+            <div className="flex">
+              <div className="flex-shrink-0">
+                <svg className="h-5 w-5 text-yellow-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                  <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <div className="ml-3">
+                <p className="text-sm text-yellow-700 dark:text-yellow-200">
+                  {products.length === 0 
+                    ? 'No products available at the moment.' 
+                    : 'No products found matching your criteria. Try adjusting your filters.'
+                  }
+                </p>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Products grid */}
+        {!loading && !error && filteredProducts.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            {filteredProducts.map((product) => (
+              <ProductCard 
+                key={product.id} 
+                product={product} 
+                onViewDetails={(product) => {
+                  setSelectedProduct(product);
+                  setIsModalOpen(true);
+                }}
+              />
             ))}
           </div>
         )}
 
-        {/* Subcategory View */}
-        {layer === 'subcategory' && selectedCategory && (
-          <div>
-            <h2 className="text-2xl font-bold text-light-primary dark:text-dark-primary mb-6">
-              {selectedCategory} Subcategories
-            </h2>
-            {(() => {
-              const currentCategory = catalog.find(cat => cat.category === selectedCategory);
-              const subcategories = currentCategory?.subcategories || [];
-              
-              if (subcategories.length === 0) {
-                return (
-                  <div className="text-center py-12">
-                    <Package className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                    <h3 className="text-xl font-semibold text-light-primary dark:text-dark-primary mb-2">
-                      No Subcategories Found
-                    </h3>
-                    <p className="text-light-secondary dark:text-dark-secondary">
-                      This category doesn't have any subcategories yet.
-                    </p>
-                  </div>
-                );
-              }
-              
-              return (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                  {subcategories.map((subcategory, index) => (
-                    <div 
-                      key={index} 
-                      onClick={() => goToSubcategory(subcategory.name)}
-                      className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden cursor-pointer transform transition-transform hover:-translate-y-1 hover:shadow-xl"
-                    >
-                      <div className="h-40 overflow-hidden relative">
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
-                        <ProductImage
-                          product={{
-                            id: `subcategory-${index}`,
-                            name: subcategory.name,
-                            category: selectedCategory,
-                            subcategory: subcategory.name,
-                            description: `${subcategory.name} collection`,
-                          }}
-                          className="w-full h-full object-cover"
-                          alt={subcategory.name}
-                        />
-                        <h3 className="absolute bottom-3 left-3 text-white text-xl font-bold z-20">{subcategory.name}</h3>
-                      </div>
-                      <div className="p-4">
-                        <p className="text-light-secondary dark:text-dark-secondary">
-                          {subcategory.products.length} products
-                        </p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              );
-            })()}
-          </div>
-        )}
-
-        {/* Products View */}
-        {layer === 'product' && selectedCategory && selectedSubcategory && (
-          <div>
-            <h2 className="text-2xl font-bold text-light-primary dark:text-dark-primary mb-2">
-              {selectedSubcategory} Products
-            </h2>
-            <p className="text-light-secondary dark:text-dark-secondary mb-6">{selectedCategory} Collection</p>
-            
-            {!selectedProduct ? (
-              // Products Grid
-              (() => {
-                const currentCategory = catalog.find(cat => cat.category === selectedCategory);
-                const currentSubcategory = currentCategory?.subcategories.find(sub => sub.name === selectedSubcategory);
-                const products = currentSubcategory?.products || [];
-                
-                if (products.length === 0) {
-                  return (
-                    <div className="text-center py-12">
-                      <Package className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-                      <h3 className="text-xl font-semibold text-light-primary dark:text-dark-primary mb-2">
-                        No Products Found
-                      </h3>
-                      <p className="text-light-secondary dark:text-dark-secondary">
-                        This subcategory doesn't have any products yet.
-                      </p>
-                    </div>
-                  );
-                }
-                
-                return (
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                    {products.map((product, index) => (
-                      <div 
-                        key={index}
-                        className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden transform transition-transform hover:-translate-y-1 hover:shadow-xl"
-                      >
-                        <div 
-                          className="h-48 overflow-hidden cursor-pointer"
-                          onClick={() => goToProduct(product)}
-                        >
-                          <ProductImage
-                            product={product}
-                            className="w-full h-full object-cover"
-                            alt={product.name}
-                          />
-                        </div>
-                        <div className="p-4">
-                          <div 
-                            className="cursor-pointer mb-3"
-                            onClick={() => goToProduct(product)}
-                          >
-                            <h3 className="text-lg font-bold text-light-primary dark:text-dark-primary mb-2 line-clamp-1">
-                              {product.name}
-                            </h3>
-                            <p className="text-light-secondary dark:text-dark-secondary text-sm line-clamp-2">
-                              {product.description}
-                            </p>
-                          </div>
-                          <div className="flex space-x-2">
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                goToProduct(product);
-                              }}
-                              className="flex-1 px-3 py-2 bg-brand-warm-orange text-white text-sm rounded-lg hover:bg-brand-mustard transition-colors"
-                            >
-                              View Details
-                            </button>
-                            <button
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                handleInquireProduct(product);
-                              }}
-                              className="flex-1 px-3 py-2 bg-brand-sage text-white text-sm rounded-lg hover:bg-brand-sage/80 transition-colors"
-                            >
-                              Inquire
-                            </button>
-                          </div>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                );
-              })()
-            ) : (
-              // Product Detail View
-              <div className="bg-white dark:bg-brand-dark-card rounded-xl shadow-lg overflow-hidden">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="p-6">
-                    <div className="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden h-80 md:h-96">
-                      <ProductImage
-                        product={selectedProduct}
-                        className="w-full h-full object-contain"
-                        alt={selectedProduct.name}
-                      />
-                    </div>
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-2xl font-bold text-light-primary dark:text-dark-primary mb-3">
-                      {selectedProduct.name}
-                    </h3>
-                    <p className="text-sm text-brand-warm-orange mb-4">
-                      {selectedProduct.subcategory} / {selectedProduct.category}
-                    </p>
-                    <p className="text-light-secondary dark:text-dark-secondary mb-6">
-                      {selectedProduct.description}
-                    </p>
-                    
-                    {/* Product Details */}
-                    <div className="space-y-4">
-                      {selectedProduct.features && selectedProduct.features.length > 0 && (
-                        <div>
-                          <h4 className="font-semibold text-light-primary dark:text-dark-primary mb-2">Features</h4>
-                          <ul className="list-disc ml-5 space-y-1 text-light-secondary dark:text-dark-secondary">
-                            {selectedProduct.features.map((feature, idx) => (
-                              <li key={idx}>{feature}</li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
-                      
-                      {selectedProduct.sizes && selectedProduct.sizes.length > 0 && (
-                        <div>
-                          <h4 className="font-semibold text-light-primary dark:text-dark-primary mb-2">Available Sizes</h4>
-                          <div className="flex flex-wrap gap-2">
-                            {selectedProduct.sizes.map((size, idx) => (
-                              <span key={idx} className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">
-                                {size}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                      
-                      {selectedProduct.colors && selectedProduct.colors.length > 0 && (
-                        <div>
-                          <h4 className="font-semibold text-light-primary dark:text-dark-primary mb-2">Available Colors</h4>
-                          <div className="flex flex-wrap gap-2">
-                            {selectedProduct.colors.map((color, idx) => (
-                              <span key={idx} className="px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full text-sm">
-                                {color}
-                              </span>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                      
-                      {selectedProduct.models && selectedProduct.models.length > 0 && (
-                        <div>
-                          <h4 className="font-semibold text-light-primary dark:text-dark-primary mb-2">Models</h4>
-                          <div className="space-y-2">
-                            {selectedProduct.models.map((model, idx) => (
-                              <div key={idx} className="flex items-center space-x-2">
-                                <Package className="h-4 w-4 text-brand-warm-orange" />
-                                <span className="text-light-primary dark:text-dark-primary">
-                                  {model.model_no}: {model.name}
-                                </span>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      )}
-                      
-                      {/* Additional product information */}
-                      <div className="grid grid-cols-2 gap-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                        {selectedProduct.material && (
-                          <div>
-                            <h4 className="text-sm text-light-secondary dark:text-dark-secondary">Material</h4>
-                            <p className="text-light-primary dark:text-dark-primary">{selectedProduct.material}</p>
-                          </div>
-                        )}
-                        {selectedProduct.capacity_l && (
-                          <div>
-                            <h4 className="text-sm text-light-secondary dark:text-dark-secondary">Capacity</h4>
-                            <p className="text-light-primary dark:text-dark-primary">{selectedProduct.capacity_l} L</p>
-                          </div>
-                        )}
-                        {selectedProduct.outer_dimension && (
-                          <div>
-                            <h4 className="text-sm text-light-secondary dark:text-dark-secondary">Outer Dimensions</h4>
-                            <p className="text-light-primary dark:text-dark-primary">{selectedProduct.outer_dimension}</p>
-                          </div>
-                        )}
-                        {selectedProduct.inner_dimension && (
-                          <div>
-                            <h4 className="text-sm text-light-secondary dark:text-dark-secondary">Inner Dimensions</h4>
-                            <p className="text-light-primary dark:text-dark-primary">{selectedProduct.inner_dimension}</p>
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                    
-                    <div className="mt-8 flex space-x-4">
-                      <button
-                        onClick={() => handleInquireProduct(selectedProduct)}
-                        className="px-6 py-3 bg-brand-warm-orange text-white rounded-lg hover:bg-brand-mustard transition-colors"
-                      >
-                        Inquire About This Product
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
+        {/* Products count */}
+        {!loading && !error && filteredProducts.length > 0 && (
+          <div className="text-center mt-8">
+            <p className="text-sm text-gray-600 dark:text-gray-400">
+              Showing {filteredProducts.length} of {products.length} products
+              {categoryFilter && ` in "${categoryFilter}"`}
+              {searchFilter && ` matching "${searchFilter}"`}
+            </p>
           </div>
         )}
       </div>
+
+      {/* Product Details Modal */}
+      <ProductDetailsModal
+        product={selectedProduct}
+        isOpen={isModalOpen}
+        onClose={() => {
+          setIsModalOpen(false);
+          setSelectedProduct(null);
+        }}
+      />
     </div>
+  );
+};
+
+const ProductCard: React.FC<{ 
+  product: Product; 
+  onViewDetails?: (product: Product) => void; 
+}> = ({ product, onViewDetails }) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3 }}
+      className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300"
+    >
+      <div className="h-48 overflow-hidden relative">
+        {product.image_url ? (
+          <img
+            src={product.image_url}
+            alt={product.name}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src = 'https://via.placeholder.com/300x200?text=No+Image';
+            }}
+          />
+        ) : (
+          <div className="w-full h-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+            <span className="text-gray-500 dark:text-gray-400">No image</span>
+          </div>
+        )}
+        <div className="absolute top-2 right-2 bg-brand-warm-orange text-white text-xs font-bold px-2 py-1 rounded-full">
+          {product.category}
+        </div>
+      </div>
+      
+      <div className="p-4">
+        <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-1 truncate">
+          {product.name}
+        </h3>
+        <p className="text-sm text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+          {product.description}
+        </p>
+        <div className="flex justify-between items-center">
+          <button 
+            onClick={() => onViewDetails?.(product)}
+            className="text-brand-warm-orange hover:text-brand-mustard font-medium text-sm transition-colors"
+          >
+            View Details
+          </button>
+        </div>
+      </div>
+    </motion.div>
   );
 };
 

@@ -8,9 +8,10 @@ import ProductImage from './ProductImage';
 interface ProductCardProps {
   product: Product;
   index: number;
+  onViewDetails?: (product: Product) => void;
 }
 
-const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
+const ProductCard: React.FC<ProductCardProps> = ({ product, index, onViewDetails }) => {
   const handleWhatsAppInquiry = () => {
     const message = encodeURIComponent(
       `Hi ${COMPANY_INFO.name}, I'm interested in "${product.name}". Please provide more details about pricing and availability.`
@@ -77,6 +78,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
           <motion.button
             initial={{ opacity: 0, scale: 0.8 }}
             whileHover={{ opacity: 1, scale: 1 }}
+            onClick={() => onViewDetails?.(product)}
             className="bg-white/90 text-gray-900 p-3 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
           >
             <Eye className="h-5 w-5" />
@@ -120,7 +122,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
             <MessageCircle className="h-4 w-4" />
             <span>Inquire</span>
           </button>
-          <button className="text-brand-warm-orange hover:text-brand-deep-mustard font-medium transition-colors">
+          <button 
+            onClick={() => onViewDetails?.(product)}
+            className="text-brand-warm-orange hover:text-brand-deep-mustard font-medium transition-colors"
+          >
             View Details
           </button>
         </div>
