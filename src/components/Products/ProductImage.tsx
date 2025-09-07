@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { RefreshCw, Image as ImageIcon, AlertCircle } from 'lucide-react';
 import { useImageFetch } from '../../hooks/useImageFetch';
 import { Product } from '../../hooks/useProducts';
 
@@ -9,6 +10,8 @@ interface ProductImageProps {
   width?: number;
   height?: number;
   showLoader?: boolean;
+  showRefreshButton?: boolean;
+  priority?: 'high' | 'normal' | 'low';
 }
 
 // Direct category-specific image mapping with highly relevant images only
@@ -239,8 +242,7 @@ function getDirectImage(product: Product): string | null {
 }
 
 /**
- * ProductImage component that dynamically displays contextually appropriate images
- * for products based on their attributes.
+ * Enhanced ProductImage component with real-time scraping capabilities
  */
 const ProductImage: React.FC<ProductImageProps> = ({
   product,
@@ -249,66 +251,94 @@ const ProductImage: React.FC<ProductImageProps> = ({
   width,
   height,
   showLoader = true,
+  showRefreshButton = false,
+  priority = 'normal'
 }) => {
-  // Track image loading state
+  // Track image loading and error states
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageFailed, setImageFailed] = useState(false);
   const [retryCount, setRetryCount] = useState(0);
+  const [refreshKey, setRefreshKey] = useState(0);
   
-  // Get a direct image based on product attributes
+  // Get a direct image based on product attributes as immediate fallback
   const directImage = getDirectImage(product);
   
-  // Use our custom hook to fetch a relevant image if needed
+  // Use our enhanced hook to fetch real-time scraped images
   const { imageUrl, isLoading, error } = useImageFetch(product);
   
   // Determine the final image URL to display
-  // Priority: 1. Direct image, 2. Fetched image, 3. Category-specific fallback
-  const finalImageUrl = directImage || (error || !imageUrl || imageFailed ? 
-    (product.category && CATEGORY_IMAGES[product.category] ? 
+  // Priority: 1. Scraped image from API, 2. Direct predefined image, 3. Category fallback
+  const finalImageUrl = (!error && imageUrl && !imageFailed) ? imageUrl : 
+    (directImage || 
+     (product.category && CATEGORY_IMAGES[product.category] ? 
       CATEGORY_IMAGES[product.category][0] : 
-      'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=800&h=600&q=80') : 
-    imageUrl);
+      'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=800&h=600&q=80'));
   
-  // Alt text defaults to product name if not provided
-  const imageAlt = alt || `${product.name} - ${product.category}${product.subcategory ? ` - ${product.subcategory}` : ''}`;
+  // Enhanced alt text with more context
+  const imageAlt = alt || `${product.name} - ${product.category}${product.subcategory ? ` - ${product.subcategory}` : ''} product image`;
   
-  // Reset loading state if product changes
+  // Reset states when product changes
   useEffect(() => {
     setImageLoaded(false);
     setImageFailed(false);
     setRetryCount(0);
-  }, [product.id]);
+  }, [product.id, refreshKey]);
   
-  // Handle image error with retry logic
+  // Enhanced error handling with smart retry logic
   const handleImageError = (e: React.SyntheticEvent<HTMLImageElement, Event>) => {
-    if (retryCount < 2) {
-      // Try to reload the image up to 2 times
+    console.warn(`Image load failed for ${product.name}, attempt ${retryCount + 1}`);
+    
+    if (retryCount < 3) {
       setRetryCount(prev => prev + 1);
       const img = e.currentTarget;
-      img.src = img.src.includes('?') ? 
-        `${img.src}&retry=${retryCount}` : 
-        `${img.src}?retry=${retryCount}`;
+      
+      // Try different image sources on retry
+      if (retryCount === 0 && directImage) {
+        img.src = directImage;
+      } else if (retryCount === 1 && product.category && CATEGORY_IMAGES[product.category]) {
+        const images = CATEGORY_IMAGES[product.category];
+        const fallbackIndex = Math.floor(Math.random() * images.length);
+        img.src = images[fallbackIndex];
+      } else {
+        // Final fallback
+        img.src = 'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=800&h=600&q=80';
+      }
     } else {
       setImageFailed(true);
-      // If image fails to load, use category-based fallback
-      if (product.category && CATEGORY_IMAGES[product.category]) {
-        const images = CATEGORY_IMAGES[product.category];
-        e.currentTarget.src = images[0]; // Use first image as ultimate fallback
-        setImageLoaded(true);
-      } else {
-        // Default fallback
-        e.currentTarget.src = 'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=800&h=600&q=80';
-        setImageLoaded(true);
-      }
+      setImageLoaded(true); // Stop loading state
     }
   };
   
+  // Manual refresh function
+  const handleRefresh = () => {
+    setRefreshKey(prev => prev + 1);
+    setImageLoaded(false);
+    setImageFailed(false);
+    setRetryCount(0);
+  };
+  
+  // Determine loading priority for performance optimization
+  const loading = priority === 'high' ? 'eager' : 'lazy';
+  
   return (
-    <div className={`product-image-container relative ${className}`}>
-      {/* Show loading spinner only if explicitly requested */}
+    <div className={`product-image-container relative group ${className}`}>
+      {/* Enhanced loading indicator */}
       {isLoading && showLoader && !imageLoaded && (
-        <div className="absolute inset-0 flex items-center justify-center bg-transparent">
-          <div className="w-8 h-8 border-4 border-gray-300 border-t-brand-warm-orange rounded-full animate-spin"></div>
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-800 rounded-lg">
+          <RefreshCw className="w-8 h-8 text-brand-warm-orange animate-spin mb-2" />
+          <div className="text-xs text-gray-500 dark:text-gray-400 text-center px-2">
+            {error ? 'Loading fallback...' : 'Fetching real-time image...'}
+          </div>
+        </div>
+      )}
+      
+      {/* Error state indicator */}
+      {imageFailed && !isLoading && (
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-700 rounded-lg">
+          <AlertCircle className="w-8 h-8 text-gray-400 mb-2" />
+          <div className="text-xs text-gray-500 dark:text-gray-400 text-center px-2">
+            Image unavailable
+          </div>
         </div>
       )}
       
@@ -318,12 +348,45 @@ const ProductImage: React.FC<ProductImageProps> = ({
         alt={imageAlt}
         width={width}
         height={height}
-        className="w-full h-full object-cover transition-opacity duration-300"
+        loading={loading}
+        className={`w-full h-full object-cover transition-all duration-500 rounded-lg ${
+          imageLoaded ? 'opacity-100' : 'opacity-0'
+        } ${imageFailed ? 'opacity-50' : ''}`}
         onLoad={() => {
           setImageLoaded(true);
+          console.log(`Image loaded successfully for: ${product.name}`);
         }}
         onError={handleImageError}
       />
+      
+      {/* Image source indicator */}
+      {imageLoaded && !error && imageUrl && (
+        <div className="absolute top-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+          <div className="bg-green-500 text-white text-xs px-2 py-1 rounded-full flex items-center gap-1">
+            <ImageIcon className="w-3 h-3" />
+            <span>Live</span>
+          </div>
+        </div>
+      )}
+      
+      {/* Refresh button */}
+      {showRefreshButton && (
+        <button
+          onClick={handleRefresh}
+          disabled={isLoading}
+          className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 bg-white dark:bg-gray-800 p-2 rounded-full shadow-lg hover:shadow-xl disabled:opacity-50"
+          title="Refresh image"
+        >
+          <RefreshCw className={`w-4 h-4 text-gray-600 dark:text-gray-300 ${isLoading ? 'animate-spin' : ''}`} />
+        </button>
+      )}
+      
+      {/* Loading progress bar for real-time scraping */}
+      {isLoading && !imageLoaded && (
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gray-200 dark:bg-gray-700 rounded-b-lg overflow-hidden">
+          <div className="h-full bg-brand-warm-orange animate-pulse"></div>
+        </div>
+      )}
     </div>
   );
 };

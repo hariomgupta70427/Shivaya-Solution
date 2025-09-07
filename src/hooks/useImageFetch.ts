@@ -4,8 +4,16 @@ import { Product } from './useProducts';
 // Default placeholder image if API fails or no results
 const DEFAULT_IMAGE = 'https://images.unsplash.com/photo-1553413077-190dd305871c?auto=format&fit=crop&w=800&h=600&q=80';
 
+// API endpoint for our image scraping server
+const IMAGE_API_BASE_URL = process.env.NODE_ENV === 'production' 
+  ? 'https://your-production-server.com/api' 
+  : 'http://localhost:3001/api';
+
 // Cache to prevent repeated API calls for the same query
-const imageCache: Record<string, string> = {};
+const imageCache: Record<string, { url: string; timestamp: number }> = {};
+
+// Cache timeout (1 hour)
+const CACHE_TIMEOUT = 60 * 60 * 1000;
 
 // Preload common category images to improve initial loading performance
 const PRELOADED_IMAGES: Record<string, string[]> = {
@@ -442,33 +450,62 @@ function getPredefinedImage(product: Product): string | null {
 }
 
 /**
- * Try to fetch an image from the Unsplash API
+ * Fetch image from our scraping API
  */
-async function fetchUnsplashImage(query: string, seed: number): Promise<string | null> {
+async function fetchImageFromAPI(product: Product): Promise<string | null> {
   try {
-    const unsplashUrl = `https://source.unsplash.com/featured/?${encodeURIComponent(query)}&sig=${seed}`;
-    
     const controller = new AbortController();
-    const fetchTimeoutId = setTimeout(() => controller.abort(), 3000);
+    const fetchTimeoutId = setTimeout(() => controller.abort(), 15000); // 15 second timeout for scraping
     
-    const response = await fetch(unsplashUrl, { 
-      signal: controller.signal,
-      cache: 'no-cache',
+    const requestBody = {
+      name: product.name,
+      category: product.category,
+      subcategory: product.subcategory,
+      description: product.description,
+      brand: product.brand,
+      material: product.material,
+      features: product.features ? [product.features] : undefined
+    };
+
+    console.log('Fetching real-time image for:', product.name);
+    
+    const response = await fetch(`${IMAGE_API_BASE_URL}/images/product`, {
+      method: 'POST',
       headers: {
-        'Cache-Control': 'no-cache'
-      }
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestBody),
+      signal: controller.signal
     });
     
     clearTimeout(fetchTimeoutId);
     
     if (response.ok) {
-      return response.url;
+      const data = await response.json();
+      if (data.success && data.image) {
+        console.log('Successfully fetched image from API:', data.image);
+        return data.image;
+      }
+    } else {
+      const errorData = await response.json().catch(() => ({}));
+      console.warn('API response not ok:', response.status, errorData);
     }
   } catch (error) {
-    console.warn('Failed to fetch from Unsplash:', error);
+    if (error.name === 'AbortError') {
+      console.warn('Image fetch timeout for:', product.name);
+    } else {
+      console.warn('Failed to fetch from scraping API:', error);
+    }
   }
   
   return null;
+}
+
+/**
+ * Check if cached image is still valid
+ */
+function isCacheValid(cacheEntry: { url: string; timestamp: number }): boolean {
+  return Date.now() - cacheEntry.timestamp < CACHE_TIMEOUT;
 }
 
 /**
@@ -483,85 +520,77 @@ export function useImageFetch(product: Product) {
   const cacheKey = `${product.id}-${product.name}-${product.category}-${product.subcategory || ''}-${product.description?.substring(0, 20) || ''}`;
 
   useEffect(() => {
-    // Set a timeout to show default image if fetching takes too long
+    // Set a timeout to show fallback image if scraping takes too long
     const timeoutId = setTimeout(() => {
       if (isLoading) {
-        console.warn('Image fetch timeout, using default image');
-        // Try to get a predefined image before falling back to default
+        console.warn('Real-time image fetch timeout, using predefined image for:', product.name);
         const predefinedImage = getPredefinedImage(product);
         setImageUrl(predefinedImage || DEFAULT_IMAGE);
         setIsLoading(false);
       }
-    }, 1500); // 1.5 second timeout for better UX
+    }, 20000); // 20 second timeout for scraping
     
     const fetchImage = async () => {
       try {
         setIsLoading(true);
+        setError(null);
         
-        // Check if we should bypass cache for this product to ensure variety
-        // Use the product ID to create a deterministic but varied behavior
-        const shouldBypassCache = hashCode(product.id) % 5 === 0; // 20% chance of bypassing cache
-        
-        // Check cache first for fast loading (unless bypassing)
-        if (!shouldBypassCache && imageCache[cacheKey]) {
-          setImageUrl(imageCache[cacheKey]);
+        // Check cache first for fast loading
+        const cachedEntry = imageCache[cacheKey];
+        if (cachedEntry && isCacheValid(cachedEntry)) {
+          console.log('Using cached image for:', product.name);
+          setImageUrl(cachedEntry.url);
           setIsLoading(false);
-          setError(null);
           clearTimeout(timeoutId);
           return;
         }
         
-        // Try to get a predefined image first (fastest option)
+        // Show predefined image immediately while fetching real image
         const predefinedImage = getPredefinedImage(product);
         if (predefinedImage) {
-          // Only cache if not bypassing
-          if (!shouldBypassCache) {
-            imageCache[cacheKey] = predefinedImage;
-          }
           setImageUrl(predefinedImage);
+          // Continue loading real image in background
+        }
+        
+        // Try to fetch real-time image from our scraping API
+        console.log('Fetching real-time image for product:', product.name);
+        const scrapedImage = await fetchImageFromAPI(product);
+        
+        if (scrapedImage) {
+          // Cache the scraped image with timestamp
+          imageCache[cacheKey] = {
+            url: scrapedImage,
+            timestamp: Date.now()
+          };
+          
+          setImageUrl(scrapedImage);
           setIsLoading(false);
           setError(null);
           clearTimeout(timeoutId);
+          console.log('Successfully loaded real-time image for:', product.name);
           return;
         }
         
-        // Try to fetch from Unsplash with a unique query
-        const query = createImageQuery(product);
-        // Use current timestamp to ensure variety in the seed
-        const seed = hashCode(cacheKey + Date.now().toString().slice(-4));
-        const unsplashImage = await fetchUnsplashImage(query, seed);
+        // If scraping fails, use predefined image as fallback
+        console.log('Scraping failed, using predefined image for:', product.name);
+        const fallbackImage = predefinedImage || DEFAULT_IMAGE;
         
-        if (unsplashImage) {
-          // Only cache if not bypassing
-          if (!shouldBypassCache) {
-            imageCache[cacheKey] = unsplashImage;
-          }
-          setImageUrl(unsplashImage);
-          setIsLoading(false);
-          setError(null);
-          clearTimeout(timeoutId);
-          return;
-        }
+        // Cache the fallback with a shorter timeout
+        imageCache[cacheKey] = {
+          url: fallbackImage,
+          timestamp: Date.now() - (CACHE_TIMEOUT * 0.5) // Half the normal cache time for fallbacks
+        };
         
-        // If all else fails, use a varied default image from the category
-        const categoryImages = PRELOADED_IMAGES[product.category] || PRELOADED_IMAGES['Other Products'];
-        // Use product properties + timestamp to get a varied index
-        const variedIndex = Math.abs(hashCode(`${product.id}-${Date.now() % 10000}`)) % categoryImages.length;
-        const fallbackImage = categoryImages[variedIndex];
-        
-        // Only cache if not bypassing
-        if (!shouldBypassCache) {
-          imageCache[cacheKey] = fallbackImage;
-        }
         setImageUrl(fallbackImage);
         setIsLoading(false);
-        setError(null);
+        setError('Using fallback image');
         clearTimeout(timeoutId);
         
       } catch (err) {
-        console.error('Error fetching image:', err);
+        console.error('Error in image fetch process:', err);
         setError('Failed to fetch image');
-        // Use predefined image as fallback
+        
+        // Use predefined image as final fallback
         const predefinedImage = getPredefinedImage(product);
         setImageUrl(predefinedImage || DEFAULT_IMAGE);
         setIsLoading(false);
@@ -574,7 +603,7 @@ export function useImageFetch(product: Product) {
     return () => {
       clearTimeout(timeoutId);
     };
-  }, [product.id, product.name, product.category, product.subcategory, cacheKey, isLoading]);
+  }, [product.id, product.name, product.category, product.subcategory, cacheKey]);
   
   return { imageUrl, isLoading, error };
 } 

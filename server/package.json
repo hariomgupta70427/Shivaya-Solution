@@ -1,0 +1,36 @@
+{
+  "name": "image-scraping-server",
+  "version": "1.0.0",
+  "description": "Real-time image scraping server for product images from Google, Bing, and other search engines",
+  "main": "imageScrapingServer.js",
+  "scripts": {
+    "start": "node imageScrapingServer.js",
+    "dev": "nodemon imageScrapingServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "image-scraping",
+    "google-images",
+    "bing-images",
+    "puppeteer",
+    "product-images"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "puppeteer": "^21.5.0",
+    "node-cache": "^5.1.2",
+    "sharp": "^0.32.6",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

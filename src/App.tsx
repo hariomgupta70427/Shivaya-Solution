@@ -21,6 +21,7 @@ import Categories from './pages/admin/Categories';
 import AddCategory from './pages/admin/AddCategory';
 import EditCategory from './pages/admin/EditCategory';
 import Analytics from './pages/admin/Analytics';
+import ImageScraping from './pages/admin/ImageScraping';
 
 // Protected route component that checks for authentication
 const ProtectedRoute: React.FC<{ children: React.ReactNode }> = ({ children }) => {
@@ -115,6 +116,7 @@ function AppContent() {
             <Route path="/admin/categories/new" element={<ProtectedRoute><AddCategory /></ProtectedRoute>} />
             <Route path="/admin/categories/edit/:id" element={<ProtectedRoute><EditCategory /></ProtectedRoute>} />
             <Route path="/admin/analytics" element={<ProtectedRoute><Analytics /></ProtectedRoute>} />
+            <Route path="/admin/images" element={<ProtectedRoute><ImageScraping /></ProtectedRoute>} />
             
             {/* Public routes */}
             <Route path="/" element={<><Header /><Home /><Footer /></>} />

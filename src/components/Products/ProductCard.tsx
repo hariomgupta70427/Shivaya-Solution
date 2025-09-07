@@ -68,6 +68,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index, onViewDetails
           product={product}
           className="w-full h-full"
           alt={product.name}
+          showRefreshButton={true}
+          priority="normal"
         />
         <div className="absolute top-3 right-3">
           <span className="inline-block px-3 py-1 bg-brand-warm-orange text-white text-xs font-medium rounded-full">
