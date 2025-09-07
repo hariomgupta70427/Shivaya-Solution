@@ -12,6 +12,7 @@ import {
   MoonIcon,
   ArrowRightOnRectangleIcon,
   ExclamationTriangleIcon,
+  PhotoIcon,
 } from '@heroicons/react/24/outline';
 import { useAuth } from '../../contexts/AuthContext';
 import { useTheme } from '../../hooks/useTheme';
@@ -22,6 +23,7 @@ const navigation = [
   { name: 'Products', href: '/admin/products', icon: ShoppingBagIcon },
   { name: 'Categories', href: '/admin/categories', icon: TagIcon },
   { name: 'Analytics', href: '/admin/analytics', icon: ChartBarIcon },
+  { name: 'Image Scraping', href: '/admin/images', icon: PhotoIcon },
 ];
 
 const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
